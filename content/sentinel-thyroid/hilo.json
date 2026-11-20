@@ -1,5 +1,6 @@
 {
   "id": "hilo",
+  "order": 2,
   "title": "Ablation with Low-Dose Radioiodine and Thyrotropin Alfa in Thyroid Cancer (HiLo)",
   "authors": "Mallick U, Harmer C, Yap B, Wadsley J, et al.",
   "journal": "N Engl J Med",
@@ -14,11 +15,22 @@
   "type": "RCT",
   "depth": "full",
   "reviewed": false,
-  "order": 2,
+  "flag": "Published 2012, included by agreement as the foundation of later radioiodine de-escalation trials.",
+  "related": [
+    {
+      "label": "Separate later analysis",
+      "title": "Recurrence after low-dose radioiodine ablation and recombinant human thyroid-stimulating hormone for differentiated thyroid cancer (HiLo): long-term results of an open-label, non-inferiority randomised controlled trial",
+      "journal": "Lancet Diabetes Endocrinol",
+      "date": "2019-01",
+      "doi": "10.1016/S2213-8587(18)30306-1",
+      "pmid": "30501974",
+      "note": "Long-term recurrence results of the same trial, published separately. Full text is available on PubMed Central and will be summarised here once read."
+    }
+  ],
   "pico": [
     {
       "label": "Population",
-      "text": "438 patients aged 16 to 80 at 29 UK centres (2007 to 2010) after total thyroidectomy for differentiated thyroid cancer, T1 to T3, N0, Nx or N1, M0, with no residual disease and no aggressive histological variants. 23% T3; 16% node-positive."
+      "text": "438 patients aged 16 to 80 at 29 UK centres (2007 to 2010) after total thyroidectomy for differentiated thyroid cancer, T1 to T3, N0, Nx or N1, M0, with no residual disease and no aggressive histological variants. 23% were T3; 16% were node-positive."
     },
     {
       "label": "Intervention",
@@ -33,7 +45,7 @@
       "text": "Primary: ablation success at 6 to 9 months (neck uptake below 0.1% on diagnostic scan and stimulated thyroglobulin below 2.0 ng/ml). Non-inferiority margin 10 percentage points. Secondary: hospital stay, adverse events, quality of life, recurrence."
     }
   ],
-  "bottom": "Low-dose radioiodine (1.1 GBq) achieved ablation in 85.0% against 88.9% with 3.7 GBq, and thyrotropin alfa matched hormone withdrawal (87.1% versus 86.7%), both within a 10-point non-inferiority margin, with shorter isolation, fewer adverse events and better quality of life before ablation. The full paper shows that the endpoint is ablation of the remnant, not recurrence, and that twice as many low-dose patients were given a second dose (9.5% versus 4.1%). Practice-changing for low- and intermediate-risk disease, with recurrence data provided later by the long-term follow-up.",
+  "bottom": "Low-dose radioiodine (1.1 GBq) achieved ablation in 85.0% against 88.9% with 3.7 GBq, and thyrotropin alfa matched hormone withdrawal (87.1% versus 86.7%), both within a 10-point non-inferiority margin, with shorter isolation, fewer adverse events and better quality of life before ablation. The full paper shows that the endpoint is ablation of the remnant, not recurrence, and that twice as many low-dose patients were given a second dose (9.5% versus 4.1%). This paper was hugely practice-changing for low- and intermediate-risk disease, with recurrence data provided later by the long-term follow-up.",
   "checks": [
     {
       "label": "Randomised",
@@ -104,23 +116,12 @@
     },
     {
       "heading": "What the abstract does not tell you",
-      "text": "That the endpoint is remnant ablation, not cancer control. That 9.5% of low-dose patients were given a second, usually higher, dose. That removing T3 and T2N1 patients widened the gap to -6.2 points. That the thyrotropin alfa supplier came on board partway through. The participant flow, adverse event tables, quality-of-life scores and subgroup analyses by T and N stage are in the supplementary appendix, which was not read."
+      "text": "That the endpoint is remnant ablation, not cancer control. That 9.5% of low-dose patients were given a second, usually higher, dose. That removing T3 and T2N1 patients widened the gap to -6.2 points. That the thyrotropin alfa supplier came on board partway through. ",
+      "points": []
     },
     {
       "heading": "How it changed practice",
       "text": "HiLo and ESTIMABL made 1.1 GBq with recombinant TSH the standard for low- and intermediate-risk differentiated thyroid cancer in the UK and Europe, and are reflected in BTA and ATA guidance. They shortened isolation and avoided hormone withdrawal for most patients. They also set up the next question, whether ablation is needed at all, which ESTIMABL2 and IoN answered. The long-term HiLo recurrence data are in a separate paper, shown below."
-    }
-  ],
-  "flag": "Published 2012, included by agreement as the foundation of later radioiodine de-escalation trials.",
-  "related": [
-    {
-      "label": "Separate later analysis",
-      "title": "Recurrence after low-dose radioiodine ablation and recombinant human thyroid-stimulating hormone for differentiated thyroid cancer (HiLo): long-term results of an open-label, non-inferiority randomised controlled trial",
-      "journal": "Lancet Diabetes Endocrinol",
-      "date": "2019-01",
-      "doi": "10.1016/S2213-8587(18)30306-1",
-      "pmid": "30501974",
-      "note": "Long-term recurrence results of the same trial, published separately. Full text is available on PubMed Central and will be summarised here once read."
     }
   ]
 }
