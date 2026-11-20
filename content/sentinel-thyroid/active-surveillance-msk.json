@@ -1,0 +1,110 @@
+{
+  "id": "active-surveillance-msk",
+  "title": "Natural History and Tumor Volume Kinetics of Papillary Thyroid Cancers During Active Surveillance",
+  "authors": "Tuttle RM, Fagin JA, Minkowitz G, Wong RJ, et al.",
+  "journal": "JAMA Otolaryngol Head Neck Surg",
+  "date": "2017-10-19",
+  "added": "2026-11-20",
+  "doi": "10.1001/jamaoto.2017.1442",
+  "pmid": "28859191",
+  "site": "Thyroid",
+  "discipline": [
+    "Surgery",
+    "Staging and prognosis"
+  ],
+  "type": "Cohort",
+  "depth": "full",
+  "reviewed": false,
+  "order": 8,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "291 patients at Memorial Sloan Kettering, New York, with Bethesda V or VI papillary thyroid cancer of 1.5 cm or less, no clinical extrathyroidal extension or metastases, and at least 6 months of surveillance. Median age 51; 75% women; 80% tumours 1.0 cm or less."
+    },
+    {
+      "label": "Intervention",
+      "text": "Exposure: active surveillance with ultrasound by specialist radiologists every 6 months for 2 years, then yearly, including 3-D volume measurement. Surgery advised for growth of 3 mm or more, or extrathyroidal extension or metastases."
+    },
+    {
+      "label": "Comparator",
+      "text": "None (single-arm cohort). Growth defined by diameter (3 mm or more) and by volume (more than 50% increase)."
+    },
+    {
+      "label": "Outcome",
+      "text": "Cumulative incidence, rate and magnitude of tumour growth; factors associated with growth; development of metastases."
+    }
+  ],
+  "bottom": "In a US cohort of 291 papillary cancers of 1.5 cm or less on active surveillance, growth of 3 mm or more occurred in 3.8% (12.1% cumulative at 5 years), no patient developed metastases, and growing tumours followed exponential kinetics with a median doubling time of 2.2 years. The full paper shows that follow-up was short (median 25 months), that most patients were 'appropriate' rather than ideal candidates, and that the programme relied on expert radiologists. It showed active surveillance can work outside Japan and that volume measurement detects growth about 8 months earlier than diameter.",
+  "checks": [
+    {
+      "label": "Prospective data",
+      "answer": "yes"
+    },
+    {
+      "label": "Large cohort",
+      "answer": "yes"
+    },
+    {
+      "label": "Follow-up adequate",
+      "answer": "no"
+    },
+    {
+      "label": "Consecutive unselected cohort",
+      "answer": "unclear"
+    },
+    {
+      "label": "Multicentre",
+      "answer": "no"
+    },
+    {
+      "label": "Disease-specific endpoint",
+      "answer": "yes"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "The rise in thyroid cancer incidence is largely overdiagnosis of small papillary cancers that would never cause harm. Japanese series had shown that only 10% to 15% of microcarcinomas grow over 5 years under observation, and the 2015 ATA guidelines endorsed active surveillance as an alternative to surgery. Experience outside Japan was limited, and growth had only been described as a single 3 mm threshold. This study asked how small papillary cancers behave under surveillance in a US population and whether volume kinetics add information."
+    },
+    {
+      "heading": "Who and where",
+      "text": "The thyroid cancer team at Memorial Sloan Kettering, New York, a single tertiary centre, published in JAMA Otolaryngology-Head and Neck Surgery. Funding and conflicts of interest are in the author notes, which were not read. There was no industry product involved."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Cohort of patients followed prospectively under an active surveillance programme (prospective consent for 249; the remaining 42 were included under a retrospective waiver). Patients were classified as ideal, appropriate or inappropriate for surveillance using the centre's published framework. Tumour volume was calculated with the ellipsoid formula and growth rates by regression on log volume, giving doubling times. Cumulative incidence was estimated by Kaplan-Meier, and Cox regression identified factors associated with growth."
+    },
+    {
+      "heading": "Results",
+      "text": "Median surveillance 25 months (range 6 to 166). Growth of 3 mm or more in 11 (3.8%); cumulative incidence 2.5% at 2 years and 12.1% at 5 years. Volume increase over 50% in 36 (12.4%); 24.8% at 5 years. 19 tumours shrank by more than half. No regional or distant metastases. 279 (95.9%) remained on surveillance; 5 had surgery for growth and 5 chose surgery without growth; none had adverse histology. Growing tumours showed exponential growth, median doubling time 2.2 years; volume change preceded diameter change by a median of 8.2 months. Younger age (HR 0.92 per year) and an 'inappropriate' classification (HR 55.17, 95% CI 9.40 to 323.19) predicted growth; under-50s had 27.3% versus 4.6% growth at 5 years. Tumours of 1.0 to 1.5 cm grew no more often than smaller ones."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "The first large Western cohort, showing active surveillance can be delivered outside Japan.",
+        "Standardised ultrasound by specialist radiologists, reviewed against previous images at each visit.",
+        "Introduced volume kinetics and doubling time, which identify growth earlier and allow growth to be modelled.",
+        "Clear reporting of patients who changed to surgery and of pathology after surgery."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "Median follow-up of only 25 months, short for a disease measured in decades.",
+        "Single expert centre with a dedicated radiology team; results may not transfer to routine services.",
+        "A mix of prospective and retrospective inclusion, with patients selected for and choosing surveillance, so not a population cohort.",
+        "Few events (11 diameter growths) and a very wide confidence interval for the 'inappropriate' group, which had only 5 patients.",
+        "Only 10 patients had surgery, with short postoperative follow-up, so the safety of delayed surgery is not fully tested.",
+        "Volume measurement error is an issue for small tumours, and a 50% volume change can be within measurement variation."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That five patients classed as inappropriate for surveillance (suspected minor extension or small suspicious nodes) chose it anyway, and two needed surgery. That 42 patients were included retrospectively. That five patients chose surgery without any growth. That postoperative follow-up averaged only 7 months. The cumulative incidence curve shows that the 5-year estimate of 12.1% rests on 18 patients still at risk, with the late steps driven by single events. The waterfall plot shows most tumours within 50% of baseline volume, and the individual volume plots fluctuate from visit to visit, a reminder of measurement noise in small tumours. The STROBE diagram and age-specific growth curves are in the supplement, which was not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "This study helped establish active surveillance of low-risk papillary microcarcinoma as a credible option in Western practice, and its risk framework and volume-kinetic approach are used in surveillance programmes. Guidelines, including the ATA, accept surveillance for selected very low-risk tumours, and UK centres increasingly offer it, though uptake is limited by patient preference and ultrasound capacity. For an MDT it supports discussing surveillance for small intrathyroidal papillary cancers, with extra caution in younger patients and tumours near the capsule, trachea or recurrent laryngeal nerve."
+    }
+  ]
+}

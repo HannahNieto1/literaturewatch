@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Literature Watch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: one reading column of paper cards under a filter panel; each card is
+   scanned top to bottom (badges, citation, PICO, bottom line) and opens for the appraisal. */
+:root{
+  --paper:#f3f5f6;      /* page ground, cool grey biased to the accent */
+  --surface:#ffffff;    /* cards and panels */
+  --sunk:#eef1f3;       /* PICO and bottom-line wells */
+  --ink:#17232a;        /* body text */
+  --muted:#586972;      /* secondary text */
+  --line:#d7dee2;       /* hairlines */
+  --accent:#5a3d8f;     /* iodine violet: links, active filters */
+  --accent-soft:#ece7f5;
+  --blue:#1f5fa8;       /* study-type tab */
+  --reviewed:#0b8a3e;   /* lit clinician-review tick: stronger green than --good */
+  --good:#1f6b4a; --good-soft:#e2f1ea;   /* appraised from full paper / criterion met */
+  --warn:#8a5a0a; --warn-soft:#f8ecd2;   /* abstract only / unclear */
+  --bad:#9b2f2f;  --bad-soft:#f7e3e1;    /* criterion not met */
+  --display:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#11181c; --surface:#182228; --sunk:#1f2b32; --ink:#e6ecef; --muted:#9db0b9; --line:#2d3b43;
+    --accent:#b9a2ea; --accent-soft:#2a2440; --blue:#8fbcf2; --reviewed:#35d07f;
+    --good:#7fd0a8; --good-soft:#17332a; --warn:#e6bd6a; --warn-soft:#3a2e14; --bad:#f0a09a; --bad-soft:#3d2020;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#11181c; --surface:#182228; --sunk:#1f2b32; --ink:#e6ecef; --muted:#9db0b9; --line:#2d3b43;
+  --accent:#b9a2ea; --accent-soft:#2a2440; --blue:#8fbcf2; --reviewed:#35d07f;
+  --good:#7fd0a8; --good-soft:#17332a; --warn:#e6bd6a; --warn-soft:#3a2e14; --bad:#f0a09a; --bad-soft:#3d2020;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0}
+header.masthead{padding:44px 0 26px}
+header.masthead .eyebrow{color:var(--accent)}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(1.8rem,4.6vw,2.5rem);line-height:1.15;margin:.3rem 0 .7rem;text-wrap:balance}
+.lede{max-width:65ch;color:var(--muted);margin:0 0 .8rem}
+.meta{font-family:var(--mono);font-size:.78rem;color:var(--muted);margin:0}
+
+.tabs{display:flex;flex-wrap:wrap;gap:6px;border-bottom:1px solid var(--line);margin:0 0 22px}
+.tabs a{font-size:.92rem;font-weight:500;color:var(--muted);text-decoration:none;padding:9px 14px;border:1px solid transparent;border-bottom:0;border-radius:8px 8px 0 0;margin-bottom:-1px}
+.tabs a:hover{color:var(--accent)}
+.tabs a[aria-current="page"]{color:var(--ink);background:var(--surface);border-color:var(--line);font-weight:600;box-shadow:inset 0 3px 0 var(--accent)}
+.radar ol{margin:0;padding-left:1.4rem;font-size:.93rem;max-width:70ch}
+.radar ol li+li{margin-top:6px}
+.radar .note{font-size:.88rem;color:var(--muted);max-width:70ch;margin:6px 0 10px}
+[hidden]{display:none !important}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 18px 14px;display:flex;flex-direction:column;gap:14px}
+.search{width:100%;font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.fgroup{display:flex;flex-direction:column;gap:7px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-size:.86rem;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:5px 13px;cursor:pointer}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.panel-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;border-top:1px solid var(--line);padding-top:12px;font-size:.9rem;color:var(--muted)}
+.panel-foot strong{color:var(--ink);font-variant-numeric:tabular-nums}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{font:inherit;font-size:.86rem;background:var(--surface);color:var(--ink);border:0;padding:5px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
+.clear{font:inherit;font-size:.86rem;background:none;border:0;color:var(--accent);cursor:pointer;text-decoration:underline;padding:0}
+
+main{padding:26px 0 10px;display:flex;flex-direction:column;gap:18px}
+.group-head{display:flex;align-items:baseline;gap:8px;margin:14px 0 0;font-weight:600}
+.group-head span{font-family:var(--mono);font-size:.8rem;color:var(--muted);font-weight:400}
+
+.card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:18px 20px 16px;display:flex;flex-direction:column;gap:12px}
+.card[data-depth="full"]{border-left-color:var(--good)}
+.card[data-depth="abstract"]{border-left-color:var(--warn)}
+.badges{display:flex;flex-wrap:wrap;gap:6px}
+.badge{font-family:var(--mono);font-size:.68rem;letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:5px;background:var(--sunk);color:var(--muted)}
+.badge.full{background:var(--good-soft);color:var(--good)}
+.badge.abstract{background:var(--warn-soft);color:var(--warn)}
+.badge.site{background:var(--accent);color:var(--surface);font-weight:500}
+.badge.type{background:var(--blue);color:var(--surface);font-weight:500}
+.badge.reviewed{background:transparent;color:var(--muted);border:1px dashed var(--line);padding:2px 7px}
+.badge.reviewed.on{background:var(--reviewed);color:var(--surface);border:1px solid var(--reviewed);font-weight:600}
+.cite{font-size:.9rem;color:var(--muted);margin:0}
+.cite b{color:var(--ink);font-weight:600}
+h2.title{font-family:var(--display);font-weight:600;font-size:1.28rem;line-height:1.3;margin:0;text-wrap:balance}
+.authors{font-size:.88rem;color:var(--muted);margin:-6px 0 0}
+.flag{font-size:.86rem;color:var(--warn);background:var(--warn-soft);border-radius:6px;padding:6px 10px;margin:0}
+
+.pico{background:var(--sunk);border-radius:8px;padding:12px 14px}
+.pico dl{display:grid;grid-template-columns:7.4rem 1fr;gap:8px 14px;margin:8px 0 0}
+.pico dt{font-weight:600;font-size:.92rem}
+.pico dd{margin:0;font-size:.94rem}
+.bottom{background:var(--accent-soft);border-radius:8px;padding:12px 14px}
+.bottom p{margin:6px 0 0;font-size:1rem}
+.bottom .eyebrow{color:var(--accent)}
+
+details.appraisal{border-top:1px solid var(--line);padding-top:10px}
+details.appraisal>summary{cursor:pointer;color:var(--accent);font-weight:600;font-size:.95rem;list-style:none;display:inline-flex;align-items:center;gap:8px}
+details.appraisal>summary::-webkit-details-marker{display:none}
+details.appraisal>summary::before{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);transition:transform .15s}
+details.appraisal[open]>summary::before{transform:rotate(45deg)}
+details.appraisal>summary .when-open{display:none}
+details.appraisal[open]>summary .when-open{display:inline}
+details.appraisal[open]>summary .when-closed{display:none}
+@media (prefers-reduced-motion: reduce){details.appraisal>summary::before{transition:none}}
+.appraisal-body{display:flex;flex-direction:column;gap:14px;padding-top:14px;max-width:70ch}
+.appraisal-body section p{margin:4px 0 0;font-size:.95rem}
+.appraisal-body ul{margin:4px 0 0;padding-left:1.15rem;font-size:.95rem}
+.appraisal-body li+li{margin-top:4px}
+.related{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:10px 14px;background:var(--surface)}
+.related .eyebrow{color:var(--accent)}
+.related p.rt{margin:4px 0 0;font-weight:600;font-size:.95rem}
+.related p.rm{margin:2px 0 0;font-size:.88rem;color:var(--muted)}
+.related p.rl{margin:6px 0 0;font-size:.88rem}
+.related p.rl a{margin-right:12px}
+.missing{border-left:3px solid var(--warn);background:var(--warn-soft);border-radius:0 8px 8px 0;padding:10px 14px}
+.missing .eyebrow{color:var(--warn)}
+.checks{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.check{font-size:.8rem;border-radius:999px;padding:3px 10px 3px 8px;display:inline-flex;gap:6px;align-items:center;background:var(--sunk);color:var(--muted)}
+.check i{font-style:normal;font-family:var(--mono);font-weight:500}
+.check.yes{background:var(--good-soft);color:var(--good)}
+.check.no{background:var(--bad-soft);color:var(--bad)}
+.check.unclear{background:var(--warn-soft);color:var(--warn)}
+.legend{font-size:.78rem;color:var(--muted);margin:6px 0 0}
+
+.links{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 18px;font-size:.9rem}
+.links div{display:flex;gap:18px}
+.links a{font-weight:600}
+.links span{color:var(--muted);font-size:.82rem}
+
+.radar{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:8px 0 0}
+.radar h2{font-family:var(--display);font-size:1.15rem;margin:4px 0 8px}
+.radar h3{font-size:.92rem;margin:14px 0 4px}
+.radar ul{margin:0;padding-left:1.15rem;font-size:.93rem;max-width:70ch}
+.radar li+li{margin-top:6px}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:10px;padding:26px;text-align:center;color:var(--muted)}
+footer{padding:26px 0 48px;color:var(--muted);font-size:.84rem}
+footer p{max-width:70ch;margin:0 0 8px}
+@media (max-width:520px){
+  .pico dl{grid-template-columns:1fr;gap:2px 0}
+  .pico dd{margin-bottom:8px}
+  .card{padding:16px 15px 14px}
+}
+/* TW-CSS */
+#tw .tw-intro{font-size:.92rem;color:var(--muted);margin:0}
+#tw .trial{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px 14px;margin:12px 0 0;display:flex;flex-direction:column;gap:8px}
+#tw .trial h2{font-family:var(--display);font-size:1.12rem;line-height:1.3;margin:0;font-weight:600}
+#tw .trial h2 b{color:var(--accent)}
+#tw .trial .desc{margin:0;font-size:.95rem}
+#tw .badge.st-recruiting{background:var(--good);color:var(--surface);font-weight:500}
+#tw .badge.st-coming{background:var(--blue);color:var(--surface);font-weight:500}
+#tw .badge.st-closed{background:var(--sunk);color:var(--muted);border:1px solid var(--line)}
+#tw .badge.setting{background:var(--accent-soft);color:var(--accent)}
+#tw .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:6px 16px;margin:0;font-size:.86rem}
+#tw .facts div{display:flex;flex-direction:column}
+#tw .facts dt{font-family:var(--mono);font-size:.66rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+#tw .facts dd{margin:0}
+#tw details.sites summary{cursor:pointer;font-size:.88rem;color:var(--accent)}
+#tw details.sites p{margin:6px 0 0;font-size:.88rem;color:var(--muted)}
+#tw .reg{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.88rem;align-items:baseline}
+#tw .reg span{color:var(--muted);font-size:.8rem;margin-left:auto}
+#tw .tw-note{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:14px 0 0;font-size:.88rem;color:var(--muted)}
+#tw .tw-note h2{font-size:1rem;color:var(--ink);margin:0 0 6px}
+#tw .tw-note p{margin:6px 0 0}
+#tw .demo{background:var(--warn-soft);color:var(--warn);border-radius:8px;padding:8px 12px;font-size:.88rem;margin:0 0 10px}
+/* /TW-CSS */
+</style>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <p class="eyebrow">Head and neck and thyroid cancer</p>
+    <h1 id="view-title">Literature Watch</h1>
+    <p class="lede" id="view-lede"></p>
+    <p class="meta" id="stamp"></p>
+  </header>
+
+  <nav class="tabs" aria-label="Sections">
+    <a href="#latest" data-tab="latest">Literature Watch</a>
+    <a href="#sentinel-head-neck" data-tab="sentinel-head-neck">Sentinel Papers - Head and Neck</a>
+    <a href="#sentinel-thyroid" data-tab="sentinel-thyroid">Sentinel Papers - Thyroid</a>
+    <a href="#trial-watch" data-tab="trial-watch">Trial Watch</a>
+  </nav>
+
+  <section class="panel" id="panel" aria-label="Filters">
+    <label class="eyebrow" for="q">Search</label>
+    <input class="search" id="q" type="search" placeholder="Search titles, findings, drugs, authors" autocomplete="off">
+    <div class="fgroup"><p class="eyebrow">Tumour site</p><div class="chips" id="f-site"></div></div>
+    <div class="fgroup"><p class="eyebrow">Discipline</p><div class="chips" id="f-discipline"></div></div>
+    <div class="fgroup"><p class="eyebrow">Study type</p><div class="chips" id="f-type"></div></div>
+    <div class="panel-foot">
+      <div><strong id="count">0</strong> <span id="count-label">papers</span> <button class="clear" id="clear" type="button" hidden>Clear filters</button></div>
+      <div>Group by <span class="seg" role="group" aria-label="Group by"><button type="button" id="g-site" aria-pressed="true">Tumour site</button><button type="button" id="g-date" aria-pressed="false">Date</button></span></div>
+    </div>
+  </section>
+
+  <main id="list" aria-live="polite"></main>
+  <!-- TW-HTML --><div id="tw" hidden>
+    <p class="demo">Demonstration version. The list is built from ClinicalTrials.gov and ISRCTN and has not yet been checked against the NIHR portfolio.</p>
+    <section class="panel" aria-label="Trial filters">
+      <label class="eyebrow" for="tw-q">Search</label>
+      <input class="search" id="tw-q" type="search" placeholder="Search trial names, drugs, sponsors, hospitals" autocomplete="off">
+      <div class="fgroup"><p class="eyebrow">Status</p><div class="chips" id="tw-f-status"></div></div>
+      <div class="fgroup"><p class="eyebrow">Tumour site</p><div class="chips" id="tw-f-site"></div></div>
+      <div class="fgroup"><p class="eyebrow">Setting</p><div class="chips" id="tw-f-setting"></div></div>
+      <div class="fgroup"><p class="eyebrow">UK region</p><div class="chips" id="tw-f-region"></div></div>
+      <div class="fgroup"><p class="eyebrow">Design and sponsor</p><div class="chips" id="tw-f-kind"></div></div>
+      <div class="panel-foot">
+        <div><strong id="tw-count">0</strong> <span id="tw-count-label">trials</span> <button class="clear" id="tw-clear" type="button" hidden>Clear filters</button></div>
+        <div>Group by <span class="seg" role="group" aria-label="Group trials by"><button type="button" id="tw-g-status" aria-pressed="true">Status</button><button type="button" id="tw-g-site" aria-pressed="false">Tumour site</button></span></div>
+      </div>
+    </section>
+    <div id="tw-list" aria-live="polite"></div>
+    <section class="tw-note" aria-labelledby="tw-about">
+      <h2 id="tw-about">About this list</h2>
+      <p>Trial Watch lists head and neck and thyroid cancer studies with at least one UK site that are recruiting, opening soon, or closed to recruitment in the last six months. It is built from the public trial registries ClinicalTrials.gov and ISRCTN, matched across registries by their cross-reference numbers. The WHO ICTRP imports its UK records from these two registries, and the EU CTIS register does not cover UK sites, so neither adds UK trials.</p>
+      <p>Status is taken from the UK sites listed on ClinicalTrials.gov where available, and otherwise from the ISRCTN recruitment dates. Tumour site, setting, UK region and the one-line summaries are added by the editor to help browsing; they are not registry fields. Studies across several tumour types are included only when head and neck or thyroid cancer makes up a large part of the study, such as a dedicated cohort or several of the study arms.</p>
+      <p>Registries are not always up to date, and some NIHR portfolio studies are not registered on either. Always check the registry record and the local research team before discussing a study with a patient.</p>
+    </section>
+  </div><!-- /TW-HTML -->
+
+  <section class="radar" data-tab="latest" aria-labelledby="radar-h">
+    <p class="eyebrow">Also on the radar</p>
+    <h2 id="radar-h">Selected this month, appraisal to follow</h2>
+    <h3>Awaiting full text</h3>
+    <ul>
+      <li><b>SwallPEG.</b> Phase III trial of prophylactic versus reactive gastrostomy during chemoradiotherapy for head and neck cancer, closed early at 57 patients. Dragan T et al. Radiother Oncol, 28 Oct 2026. <a href="https://doi.org/10.1016/j.radonc.2026.111835">DOI</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42951256/">PubMed</a></li>
+      <li><b>Prophylactic central neck dissection for papillary thyroid carcinoma.</b> Long-term follow-up of a randomised trial of total thyroidectomy with or without dissection in 57 patients. Finn CB et al. Surgery, online 2 Sep 2026. <a href="https://doi.org/10.1016/j.surg.2026.110598">DOI</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42971900/">PubMed</a></li>
+      <li><b>Short-course dabrafenib plus trametinib redifferentiation before radioiodine.</b> Phase II trial in 14 patients with BRAF or RAS-mutant radioiodine-refractory thyroid cancer, using I-124 PET dosimetry at 2 weeks. Yang SP et al. Clin Cancer Res, 9 Nov 2026. <a href="https://doi.org/10.1158/1078-0432.CCR-26-2415">DOI</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/43002139/">PubMed</a></li>
+    </ul>
+    <h3>Published, not yet appraised</h3>
+    <ul>
+      <li><b>UPSTREAM (EORTC-HNCG-1559).</b> Biomarker-driven umbrella trial in platinum-refractory recurrent or metastatic head and neck SCC. Only the afatinib cohort for EGFR/HER2-altered or high-PTEN tumours met its endpoint, and activity was modest throughout. Galot R et al. Eur J Cancer, 30 Oct 2026. <a href="https://doi.org/10.1016/j.ejca.2026.117791">DOI</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42976409/">PubMed</a></li>
+      <li><b>De-escalated 30 Gy elective nodal irradiation in HPV-associated oropharyngeal cancer.</b> Long-term outcomes, research letter. Safavi AH et al. JAMA Oncol, 22 Oct 2026. <a href="https://doi.org/10.1001/jamaoncol.2026.4014">DOI</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42911605/">PubMed</a></li>
+    </ul>
+    <h3>Presented or announced, no paper yet</h3>
+    <ul>
+      <li><b>LiGeR-HN1.</b> Petosemtamab plus pembrolizumab versus pembrolizumab, first-line PD-L1-positive recurrent or metastatic HNSCC, 699 patients. Company topline at first interim analysis: overall survival HR 0.50 (95% CI 0.37 to 0.67). Announced 28 Oct 2026. Appraise when the full data are published.</li>
+      <li><b>LIBRETTO-531 overall survival.</b> Selpercatinib versus multikinase inhibitors, first-line RET-mutant medullary thyroid cancer. Estimated 4-year overall survival 87.1% versus 66.8%, presented at ESMO 2026.</li>
+    </ul>
+  </section>
+
+  <section class="radar" data-tab="sentinel-head-neck" aria-labelledby="shn-h" hidden>
+    <p class="eyebrow">Also on the radar</p>
+    <h2 id="shn-h">Related papers awaiting full text</h2>
+    <p class="note">All ten agreed sentinel papers are now appraised from the full text. Later reports from the same trials are listed here until their full text has been read.</p>
+    <h3>Awaiting full text</h3>
+    <ul>
+      <li><b>ORATOR final results.</b> Radiotherapy versus transoral robotic surgery for oropharyngeal squamous cell carcinoma: final results of the ORATOR randomized trial. Nichols AC et al. J Clin Oncol, 2024. A separate analysis of the ORATOR trial with 5 years of follow-up. <a href="https://doi.org/10.1200/JCO.24.00119">DOI</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/39303189/">PubMed</a></li>
+    </ul>
+  </section>
+
+  <section class="radar" data-tab="sentinel-thyroid" aria-labelledby="sth-h" hidden>
+    <p class="eyebrow">Also on the radar</p>
+    <h2 id="sth-h">Sentinel thyroid papers still to come</h2>
+    <p class="note">Ten papers that changed thyroid cancer practice up to 2025 have been agreed. All ten are appraised above.</p>
+        <h3>Later analyses awaiting full text</h3>
+    <ul>
+      <li><b>HiLo long-term recurrence.</b> Dehbi HM et al. Lancet Diabetes Endocrinol, 2019. Shown as a separate analysis on the HiLo card. <a href="https://doi.org/10.1016/S2213-8587(18)30306-1">DOI</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/30501974/">PubMed</a></li>
+      <li><b>ESTIMABL2 5-year results.</b> Leboulleux S et al. Lancet Diabetes Endocrinol, 2025. Shown as a separate analysis on the ESTIMABL2 card. <a href="https://doi.org/10.1016/S2213-8587(24)00276-6">DOI</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/39586309/">PubMed</a></li>
+    </ul>
+    <h3>Special card to follow</h3>
+    <ul>
+      <li><b>ATA guidelines for differentiated thyroid cancer, 2015 and 2025.</b> To be added later as a dedicated guideline card rather than a standard appraisal.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Summaries and appraisals are written for clinicians and follow a fixed journal-club framework: question, authors, design, methods, results, interpretation and clinical context. Every appraisal is written from the full paper. Papers whose full text has not yet been obtained are listed under Awaiting full text and are not appraised.</p>
+    <p>This page is an educational reading aid. It is not clinical guidance and does not replace reading the paper.</p>
+    <p>It is intended for healthcare professionals and does not constitute medical advice.</p>
+  </footer>
+</div>
+
+<script type="application/json" id="papers">/*DATA:latest*/</script>
+<script type="application/json" id="papers-sentinel-head-neck">/*DATA:sentinel-head-neck*/</script>
+<script type="application/json" id="papers-sentinel-thyroid">/*DATA:sentinel-thyroid*/</script>
+<script>
+(function(){
+  var TABS = {
+    'latest': {data:'papers', title:'Literature Watch',
+      lede:'New papers most likely to matter to head and neck and thyroid cancer practice, across surgery and oncology. Each card gives the PICO and a one-paragraph bottom line. Open the appraisal for the methods, the numbers and what the abstract leaves out. Every appraisal is written from the full paper.'},
+    'sentinel-head-neck': {data:'papers-sentinel-head-neck', title:'Literature Watch - Sentinel Papers - Head and Neck',
+      lede:'The papers that changed head and neck cancer practice over the last ten years, appraised from the full text in the same format as the current literature.'},
+    'sentinel-thyroid': {data:'papers-sentinel-thyroid', title:'Literature Watch - Sentinel Papers - Thyroid',
+      lede:'The papers that changed thyroid cancer practice, appraised in the same format as the current literature.'}
+  };
+  var papers = [];
+  var state = {q:'', site:[], discipline:[], type:[], group:'site', tab:'latest'};
+  var MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  function fmt(d){ var p=d.split('-'); return parseInt(p[2],10)+' '+MONTHS[parseInt(p[1],10)-1]+' '+p[0]; }
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function uniq(a){ return a.filter(function(v,i){return a.indexOf(v)===i;}); }
+
+  function buildChips(elId, key, values){
+    var el = document.getElementById(elId);
+    el.innerHTML = '';
+    el.parentNode.hidden = !values.length;
+    values.forEach(function(v){
+      var b = document.createElement('button');
+      b.type='button'; b.className='chip'; b.textContent=v; b.setAttribute('aria-pressed','false');
+      b.addEventListener('click', function(){
+        var i = state[key].indexOf(v);
+        if(i>-1) state[key].splice(i,1); else state[key].push(v);
+        b.setAttribute('aria-pressed', i>-1 ? 'false':'true');
+        render();
+      });
+      el.appendChild(b);
+    });
+  }
+  function showTab(name){
+    if(name==='trial-watch') return;
+    if(!TABS[name]) name='latest';
+    var t = TABS[name];
+    state.tab=name; state.q=''; state.site=[]; state.discipline=[]; state.type=[];
+    papers = JSON.parse(document.getElementById(t.data).textContent);
+    document.getElementById('q').value='';
+    document.getElementById('view-title').textContent = t.title;
+    document.getElementById('view-lede').textContent = t.lede;
+    [].forEach.call(document.querySelectorAll('.tabs a'), function(a){
+      if(a.getAttribute('data-tab')===name) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');
+    });
+    [].forEach.call(document.querySelectorAll('.radar[data-tab]'), function(s){ s.hidden = s.getAttribute('data-tab')!==name; });
+    document.getElementById('panel').hidden = !papers.length;
+    document.getElementById('list').hidden = !papers.length;
+    if(papers.length){
+      var latest = papers.map(function(p){return p.added;}).sort().pop();
+      var nrev = papers.filter(function(p){return p.reviewed;}).length;
+      document.getElementById('stamp').textContent = 'Last updated '+fmt(latest)+' · '+papers.length+' papers appraised from the full paper · '+nrev+' clinician reviewed';
+    } else {
+      document.getElementById('stamp').textContent = 'No papers appraised yet';
+    }
+    buildChips('f-site','site', uniq(papers.map(function(p){return p.site;})));
+    buildChips('f-discipline','discipline', uniq([].concat.apply([], papers.map(function(p){return p.discipline;}))));
+    buildChips('f-type','type', uniq(papers.map(function(p){return p.type;})));
+    render();
+  }
+
+  document.getElementById('q').addEventListener('input', function(e){ state.q=e.target.value.toLowerCase().trim(); render(); });
+  document.getElementById('clear').addEventListener('click', function(){
+    state.q=''; state.site=[]; state.discipline=[]; state.type=[];
+    document.getElementById('q').value='';
+    [].forEach.call(document.querySelectorAll('.chip'), function(c){ c.setAttribute('aria-pressed','false'); });
+    render();
+  });
+  ['site','date'].forEach(function(g){
+    document.getElementById('g-'+g).addEventListener('click', function(){
+      state.group=g;
+      document.getElementById('g-site').setAttribute('aria-pressed', g==='site');
+      document.getElementById('g-date').setAttribute('aria-pressed', g==='date');
+      render();
+    });
+  });
+
+  function matches(p){
+    if(state.site.length && state.site.indexOf(p.site)<0) return false;
+    if(state.type.length && state.type.indexOf(p.type)<0) return false;
+    if(state.discipline.length && !p.discipline.some(function(d){return state.discipline.indexOf(d)>-1;})) return false;
+    if(state.q && JSON.stringify(p).toLowerCase().indexOf(state.q)<0) return false;
+    return true;
+  }
+
+  var MARK = {yes:'✓', no:'✕', unclear:'?'};
+  function related(p){
+    if(!p.related || !p.related.length) return '';
+    return p.related.map(function(r){
+      return '<section class="related"><p class="eyebrow">'+esc(r.label||'Related study')+'</p>'+
+        '<p class="rt">'+esc(r.title)+'</p>'+
+        '<p class="rm">'+esc(r.journal)+(r.date?' · '+esc(r.date):'')+' · DOI '+esc(r.doi)+'</p>'+
+        (r.note?'<p>'+esc(r.note)+'</p>':'')+
+        '<p class="rl"><a href="https://doi.org/'+esc(r.doi)+'">Full paper (DOI)</a>'+(r.pmid?'<a href="https://pubmed.ncbi.nlm.nih.gov/'+esc(r.pmid)+'/">PubMed</a>':'')+'</p></section>';
+    }).join('');
+  }
+  function card(p){
+    var pico = Object.keys(p.pico).map(function(k){ return '<dt>'+esc(k)+'</dt><dd>'+esc(p.pico[k])+'</dd>'; }).join('');
+    var sections = Object.keys(p.appraisal).map(function(k){
+      var v = p.appraisal[k];
+      var body = Array.isArray(v) ? '<ul>'+v.map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul>' : '<p>'+esc(v)+'</p>';
+      var cls = k.indexOf('abstract does not')>-1 ? ' class="missing"' : '';
+      return '<section'+cls+'><p class="eyebrow">'+esc(k)+'</p>'+body+'</section>';
+    }).join('');
+    var checks = p.checks.map(function(c){ return '<span class="check '+c[1]+'"><i aria-hidden="true">'+MARK[c[1]]+'</i>'+esc(c[0])+'<span style="position:absolute;left:-9999px">: '+c[1]+'</span></span>'; }).join('');
+    var depth = p.depth==='full' ? 'Appraised from full paper' : 'Appraised from abstract only';
+    return '<article class="card" data-depth="'+p.depth+'" id="'+esc(p.id)+'">'+
+      '<div class="badges"><span class="badge site">'+esc(p.site)+'</span><span class="badge type">'+esc(p.type)+'</span><span class="badge '+p.depth+'">'+depth+'</span><span class="badge">Added '+fmt(p.added)+'</span>'+
+        p.discipline.map(function(d){return '<span class="badge">'+esc(d)+'</span>';}).join('')+
+        (p.reviewed ? '<span class="badge reviewed on">✓ Clinician reviewed'+(p.reviewedBy?' · '+esc(p.reviewedBy):'')+'</span>' : '<span class="badge reviewed">✓ Clinician review pending</span>')+'</div>'+
+      '<p class="cite"><b>'+esc(p.journal)+'</b> · '+fmt(p.date)+'</p>'+
+      '<h2 class="title">'+esc(p.title)+'</h2>'+
+      '<p class="authors">'+esc(p.authors)+'</p>'+
+      (p.flag ? '<p class="flag">'+esc(p.flag)+'</p>' : '')+
+      '<div class="pico"><p class="eyebrow">PICO</p><dl>'+pico+'</dl></div>'+
+      '<div class="bottom"><p class="eyebrow">Bottom line</p><p>'+esc(p.bottom)+'</p></div>'+
+      '<details class="appraisal"><summary><span class="when-closed">Read the full appraisal</span><span class="when-open">Hide the appraisal</span></summary>'+
+        '<div class="appraisal-body"><section><p class="eyebrow">At a glance</p><div class="checks">'+checks+'</div><p class="legend">✓ met · ✕ not met · ? not clear from the main paper</p></section>'+sections+related(p)+'</div></details>'+
+      '<div class="links"><div><a href="https://doi.org/'+esc(p.doi)+'">Full paper (DOI)</a><a href="https://pubmed.ncbi.nlm.nih.gov/'+esc(p.pmid)+'/">PubMed</a></div><span>Read from: '+(p.depth==='full'?'full text':'PubMed abstract')+'</span></div>'+
+    '</article>';
+  }
+
+  function render(){
+    var list = papers.filter(matches).sort(function(a,b){ return a.date<b.date ? 1 : -1; });
+    var html='';
+    if(!list.length){
+      html='<div class="empty">No papers match these filters. Clear a filter or change the search.</div>';
+    } else if(state.group==='site'){
+      uniq(list.map(function(p){return p.site;})).forEach(function(s){
+        var g=list.filter(function(p){return p.site===s;});
+        html+='<h2 class="group-head">'+esc(s)+' <span>'+g.length+'</span></h2>'+g.map(card).join('');
+      });
+    } else {
+      html=list.map(card).join('');
+    }
+    document.getElementById('list').innerHTML=html;
+    document.getElementById('count').textContent=list.length;
+    document.getElementById('count-label').textContent = list.length===1 ? 'paper' : 'papers';
+    document.getElementById('clear').hidden = !(state.q||state.site.length||state.discipline.length||state.type.length);
+  }
+  window.addEventListener('hashchange', function(){ showTab(location.hash.replace('#','')); });
+  showTab(location.hash.replace('#','') || 'latest');
+})();
+</script>
+<!-- TW-DATA --><script type="application/json" id="trials">/*DATA:trials*/</script><!-- /TW-DATA -->
+<!-- TW-JS --><script>
+(function TW(){
+  var T = JSON.parse(document.getElementById('trials').textContent);
+  var ORDER = ['Recruiting','Coming soon','Recently closed'];
+  var REGIONS = ['London','South East','South West','East of England','Midlands','North West','North East and Yorkshire','Scotland','Wales','Northern Ireland'];
+  var st = {q:'', status:[], site:[], setting:[], region:[], kind:[], group:'status'};
+  function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function uniq(a){ return a.filter(function(v,i){return a.indexOf(v)===i;}); }
+  var MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function md(d){ if(!d) return ''; var p=d.split('-'); return (p[2]?parseInt(p[2],10)+' ':'')+MONTHS[parseInt(p[1],10)-1]+' '+p[0]; }
+  function kinds(t){ return [t.design, t.sponsorType]; }
+  function chips(id, key, vals){
+    var el=document.getElementById(id); el.innerHTML='';
+    vals.forEach(function(v){
+      var b=document.createElement('button'); b.type='button'; b.className='chip'; b.textContent=v; b.setAttribute('aria-pressed','false');
+      b.addEventListener('click', function(){ var i=st[key].indexOf(v); if(i>-1) st[key].splice(i,1); else st[key].push(v); b.setAttribute('aria-pressed', i>-1?'false':'true'); draw(); });
+      el.appendChild(b);
+    });
+  }
+  function ok(t){
+    if(st.status.length && st.status.indexOf(t.status)<0) return false;
+    if(st.site.length && st.site.indexOf(t.site)<0) return false;
+    if(st.setting.length && st.setting.indexOf(t.setting)<0) return false;
+    if(st.region.length && !t.regions.some(function(r){return st.region.indexOf(r)>-1;})) return false;
+    if(st.kind.length && !st.kind.every(function(k){return kinds(t).indexOf(k)>-1;})) return false;
+    if(st.q && JSON.stringify(t).toLowerCase().indexOf(st.q)<0) return false;
+    return true;
+  }
+  function cls(s){ return s==='Recruiting'?'st-recruiting':(s==='Coming soon'?'st-coming':'st-closed'); }
+  function card(t){
+    var name = t.acronym ? '<b>'+esc(t.acronym)+'</b> · '+esc(t.title) : esc(t.title);
+    var links=[];
+    if(t.nct) links.push('<a href="https://clinicaltrials.gov/study/'+esc(t.nct)+'">ClinicalTrials.gov '+esc(t.nct)+'</a>');
+    if(t.isrctn) links.push('<a href="https://www.isrctn.com/ISRCTN'+esc(t.isrctn)+'">ISRCTN'+esc(t.isrctn)+'</a>');
+    if(t.euct) links.push('<a href="https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT='+esc(t.euct)+'">EU CT '+esc(t.euct)+'</a>');
+    var facts=[['Design', t.design+(t.phase?' · '+t.phase:'')],['Sponsor', t.sponsor+' ('+t.sponsorType+')'],['Target size', t.target?t.target.toLocaleString('en-GB')+' participants':'Not stated'],['Dates', (t.start?'Opened '+md(t.start):'')+(t.end?' · '+t.endLabel+' '+md(t.end):'')],['UK regions', t.regions.join(', ')||'Not listed']];
+    return '<article class="trial" id="tw-'+esc(t.id)+'">'+
+      '<div class="badges"><span class="badge '+cls(t.status)+'">'+esc(t.status)+'</span><span class="badge site">'+esc(t.site)+'</span><span class="badge setting">'+esc(t.setting)+'</span></div>'+
+      '<h2>'+name+'</h2><p class="desc">'+esc(t.desc)+'</p>'+
+      t.flags.map(function(f){return '<p class="flag">'+esc(f)+'</p>';}).join('')+
+      '<dl class="facts">'+facts.map(function(f){return '<div><dt>'+f[0]+'</dt><dd>'+esc(f[1])+'</dd></div>';}).join('')+'</dl>'+
+      (t.cities.length?'<details class="sites"><summary>'+t.ukSites+' UK site'+(t.ukSites===1?'':'s')+' listed</summary><p>'+esc(t.cities.join(', '))+'</p></details>':'')+
+      '<div class="reg">'+links.join('')+'<span>Source: '+esc(t.source)+(t.updated?' · record updated '+md(t.updated):'')+'</span></div>'+
+    '</article>';
+  }
+  function draw(){
+    var L=T.filter(ok), html='';
+    var key = st.group==='status' ? 'status' : 'site';
+    var groups = key==='status' ? ORDER : uniq(T.map(function(t){return t.site;}));
+    groups.forEach(function(g){ var a=L.filter(function(t){return t[key]===g;}); if(a.length) html+='<h2 class="group-head">'+esc(g)+' <span>'+a.length+'</span></h2>'+a.map(card).join(''); });
+    document.getElementById('tw-list').innerHTML = html || '<div class="empty">No trials match these filters. Clear a filter or change the search.</div>';
+    document.getElementById('tw-count').textContent=L.length;
+    document.getElementById('tw-count-label').textContent=L.length===1?'trial':'trials';
+    document.getElementById('tw-clear').hidden=!(st.q||st.status.length||st.site.length||st.setting.length||st.region.length||st.kind.length);
+  }
+  chips('tw-f-status','status',ORDER.filter(function(s){return T.some(function(t){return t.status===s;});}));
+  chips('tw-f-site','site',uniq(T.map(function(t){return t.site;})));
+  chips('tw-f-setting','setting',uniq(T.map(function(t){return t.setting;})));
+  chips('tw-f-region','region',REGIONS.filter(function(r){return T.some(function(t){return t.regions.indexOf(r)>-1;});}));
+  chips('tw-f-kind','kind',['Interventional','Observational','Academic or NHS','Industry']);
+  document.getElementById('tw-q').addEventListener('input',function(e){ st.q=e.target.value.toLowerCase().trim(); draw(); });
+  document.getElementById('tw-clear').addEventListener('click',function(){ st.q=''; st.status=[]; st.site=[]; st.setting=[]; st.region=[]; st.kind=[]; document.getElementById('tw-q').value=''; [].forEach.call(document.querySelectorAll('#tw .chip'),function(c){c.setAttribute('aria-pressed','false');}); draw(); });
+  ['status','site'].forEach(function(g){ document.getElementById('tw-g-'+g).addEventListener('click',function(){ st.group=g; document.getElementById('tw-g-status').setAttribute('aria-pressed',g==='status'); document.getElementById('tw-g-site').setAttribute('aria-pressed',g==='site'); draw(); }); });
+  var LEDE='Head and neck and thyroid cancer trials open in the UK, opening soon, or recently closed, drawn from the public trial registries. Use it to find a study for a patient or to see what is running near you.';
+  var UPDATED='2026-11-20';
+  function sync(){
+    var on = location.hash==='#trial-watch';
+    document.getElementById('tw').hidden=!on;
+    if(!on) return;
+    document.getElementById('panel').hidden=true; document.getElementById('list').hidden=true;
+    [].forEach.call(document.querySelectorAll('.radar[data-tab]'),function(s){s.hidden=true;});
+    [].forEach.call(document.querySelectorAll('.tabs a'),function(a){ if(a.getAttribute('data-tab')==='trial-watch') a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
+    document.getElementById('view-title').textContent='Trial Watch';
+    document.getElementById('view-lede').textContent=LEDE;
+    var n=function(s){return T.filter(function(t){return t.status===s;}).length;};
+    document.getElementById('stamp').textContent='Registries checked '+md(UPDATED)+' · '+n('Recruiting')+' recruiting · '+n('Coming soon')+' opening soon · '+n('Recently closed')+' recently closed';
+    draw();
+  }
+  addEventListener('hashchange', sync);
+  sync();
+})();
+</script><!-- /TW-JS -->
+<script>
+if (window.netlifyIdentity) { netlifyIdentity.on("init", function(u){ if(!u){ netlifyIdentity.on("login", function(){ document.location.href = "/admin/"; }); } }); }
+</script>
+</body>
+</html>

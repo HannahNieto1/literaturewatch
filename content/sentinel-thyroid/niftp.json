@@ -1,0 +1,111 @@
+{
+  "id": "niftp",
+  "title": "Nomenclature Revision for Encapsulated Follicular Variant of Papillary Thyroid Carcinoma: A Paradigm Shift to Reduce Overtreatment of Indolent Tumors (NIFTP)",
+  "authors": "Nikiforov YE, Seethala RR, Tallini G, Baloch ZW, et al.",
+  "journal": "JAMA Oncol",
+  "date": "2016-08-01",
+  "added": "2026-11-20",
+  "doi": "10.1001/jamaoncol.2016.0386",
+  "pmid": "27078145",
+  "site": "Thyroid",
+  "discipline": [
+    "Staging and prognosis",
+    "Surgery"
+  ],
+  "type": "Cohort",
+  "depth": "full",
+  "reviewed": false,
+  "order": 9,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "268 tumours diagnosed as encapsulated follicular variant of papillary thyroid carcinoma (EFVPTC), contributed by 13 institutions in 5 countries and reviewed on digital slides by 24 thyroid pathologists from 7 countries. After consensus review: 109 non-invasive tumours with at least 10 years of follow-up and no radioiodine (group 1) and 101 invasive tumours with at least 1 year of follow-up (group 2)."
+    },
+    {
+      "label": "Intervention",
+      "text": "Exposure: non-invasive encapsulated tumour (no capsular or vascular invasion), diagnosed by consensus criteria."
+    },
+    {
+      "label": "Comparator",
+      "text": "Invasive EFVPTC (capsular and/or vascular invasion)."
+    },
+    {
+      "label": "Outcome",
+      "text": "Adverse outcomes: death from disease, distant or locoregional metastasis, structural or biochemical recurrence. Secondary: a reproducible nuclear scoring scheme, validated against molecular findings, and new nomenclature."
+    }
+  ],
+  "bottom": "None of 109 patients with non-invasive encapsulated follicular variant tumours had any adverse outcome over a median of 13 years (67 treated by lobectomy alone, none with radioiodine), against 12% of 101 invasive tumours (5 distant metastases, 2 deaths), so the panel renamed the non-invasive tumour NIFTP and removed the word 'cancer'. The full paper shows a retrospective, curated case series in which cases were submitted by the authors, a quarter of the initial non-invasive cases were excluded on review, and zero events in 109 patients still leaves an upper risk estimate of about 3%. A landmark reclassification that reduced overtreatment, built on a modest evidence base and later tightened criteria.",
+  "checks": [
+    {
+      "label": "Prospective data",
+      "answer": "no"
+    },
+    {
+      "label": "Long follow-up",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded review",
+      "answer": "yes"
+    },
+    {
+      "label": "Consecutive unselected cohort",
+      "answer": "no"
+    },
+    {
+      "label": "Independent validation",
+      "answer": "yes"
+    },
+    {
+      "label": "Disease-specific endpoint",
+      "answer": "yes"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "The encapsulated follicular variant of papillary carcinoma made up 10% to 20% of thyroid cancers in Europe and North America and was rising, yet the diagnosis rested on subjective nuclear features with poor agreement between pathologists, and evidence suggested non-invasive tumours behave almost benignly. Patients were nevertheless treated as having thyroid cancer, with total thyroidectomy and radioiodine. An Endocrine Pathology Society working group asked whether outcomes justified renaming the non-invasive form."
+    },
+    {
+      "heading": "Who and where",
+      "text": "An international working group of 24 thyroid pathologists with endocrinologists, a surgeon, a psychiatrist, a biostatistician, a molecular pathologist and a patient advocate, led from Pittsburgh and published in JAMA Oncology. Supported by the University of Pittsburgh Cancer Institute; the consensus conference was funded by an education grant from CBLPath. The lead author declares consultancy for Quest Diagnostics and another author for Veracyte, both companies in thyroid molecular testing. Funders had no role in design or analysis."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Retrospective study of cases submitted by working group pathologists. Group 1 required non-invasive tumours with at least 10 years of follow-up and no radioiodine; group 2 invasive tumours with at least 1 year. Slides were digitised and reviewed independently and blinded to outcome, then discordant cases were discussed at weekly teleconferences and a face-to-face conference to agree criteria and nomenclature. Molecular analysis (ThyroSeq v2) was done on 37 group 1 cases. A 3-point nuclear score was derived in 13 cases and validated in 26 new cases, with molecular results as the reference standard and each pathologist's reading treated as independent."
+    },
+    {
+      "heading": "Results",
+      "text": "Initial review of 138 proposed non-invasive cases: 105 (76%) called EFVPTC by at least half the pathologists, and 28 were excluded after re-review (insufficient nuclear features 14, invasion 6, papillae 4, solid growth 4). All 109 group 1 patients were alive without disease at a median of 13 years (range 10 to 26); 67 had lobectomy only. Of 101 invasive tumours (85 given radioiodine), 12 (12%) had adverse events, including 5 distant metastases and 2 deaths, over a median of 3.5 years. Clonal mutations, mostly RAS, were found in 78% of group 1 tumours analysed. The nuclear score (2 or 3 of size and shape, membrane irregularity and chromatin features) had a sensitivity of 98.6%, specificity of 90.1% and accuracy of 94.3% in validation."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "International, multidisciplinary consensus with blinded independent slide review before discussion.",
+        "Very long follow-up for the non-invasive group (median 13 years), many treated by lobectomy alone.",
+        "A clear invasive comparison group showing that invasion, not nuclear features, determines behaviour.",
+        "Produced explicit, reproducible diagnostic criteria and a simple nuclear score, with molecular support for a clonal neoplasm.",
+        "Included a patient advocate and a psychiatrist, reflecting the harm of an unnecessary cancer label."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "Retrospective and curated: cases were selected by the authors, and the requirement for 10 years of follow-up without radioiodine may select favourable cases.",
+        "With 0 events in 109 patients, the upper 95% limit of risk is about 3%, so 'very low' is not 'zero'.",
+        "A quarter of initially submitted non-invasive cases were reclassified on expert review; the result depends on meticulous capsule sampling that may not be reproduced in routine practice.",
+        "Follow-up in the invasive group was much shorter (median 3.5 years), and most received radioiodine, so the groups are not comparable in treatment.",
+        "The nuclear score was derived and validated in small samples (13 and 26 cases), with pathologist readings pooled as independent, which narrows confidence intervals.",
+        "Several authors have links to companies selling molecular tests; consensus conferences are prone to group-think."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That 28 of 138 proposed non-invasive cases were removed after consensus review, 6 because invasion was found. That group 1 required at least 10 years of follow-up and no radioiodine, which shapes who was included. That the invasive group was followed for a median of only 3.5 years. That the conference was funded by a commercial pathology laboratory. Figure 1 shows the gross and microscopic features and Figure 2 a proposed RAS-driven sequence from NIFTP to invasive tumour; both were viewed. The supplementary eTables and nuclear scoring guide were not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "NIFTP was adopted by the ATA, the WHO classification and pathology societies worldwide, reducing the number of thyroid cancer diagnoses, and lobectomy without radioiodine became the accepted treatment. Criteria were later tightened to exclude tumours with any true papillae, after later reports that some cases with papillae behaved less benignly. For a UK MDT today, a NIFTP diagnosis after lobectomy usually means no completion thyroidectomy, no radioiodine and light follow-up, provided the capsule has been fully examined."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "ion",
+  "title": "Thyroidectomy with or without postoperative radioiodine for patients with low-risk differentiated thyroid cancer in the UK (IoN)",
+  "authors": "Mallick U, Newbold K, Beasley M, Garcez K, et al.",
+  "journal": "Lancet",
+  "date": "2025-07-05",
+  "added": "2026-11-20",
+  "doi": "10.1016/S0140-6736(25)00629-4",
+  "pmid": "40543520",
+  "site": "Thyroid",
+  "discipline": [
+    "Radiotherapy and supportive care",
+    "Surgery"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 4,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "504 patients aged 17 to 80 at 33 UK cancer centres (2012 to 2020) after total thyroidectomy with R0 resection for low-risk differentiated thyroid cancer: pT1, pT2, pT3 (TNM7) or pT3a (TNM8; follicular cancers over 4 cm excluded), N0, Nx or N1a, no aggressive features. 79% papillary; 47% pT1, 44% pT2, 9% pT3 or pT3a; 9% N1a; 23% Nx."
+    },
+    {
+      "label": "Intervention",
+      "text": "No radioiodine ablation (n = 251)."
+    },
+    {
+      "label": "Comparator",
+      "text": "Radioiodine ablation, preferred activity 1.1 GBq, prepared with recombinant human TSH (82%) or thyroid hormone withdrawal (n = 253)."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: 5-year recurrence-free survival (no structural locoregional or distant disease and no thyroid cancer death), non-inferiority margin 5 percentage points. Secondary: adverse events, quality of life (EORTC QLQ-C30), contact restrictions, biochemical and ultrasound findings, second cancers, cost."
+    }
+  ],
+  "bottom": "In low-risk differentiated thyroid cancer after total thyroidectomy, omitting radioiodine was non-inferior to 1.1 GBq ablation: 97.9% versus 96.3% were recurrence-free at 5 years (difference 0.5 points, 90% CI -1.8 to 2.7). The full paper shows only 17 recurrences in total, a margin as large as the whole expected recurrence rate, a per-protocol non-inferiority p value of 0.093 against a design of 5% one-sided, and 4 late recurrences (4 to 7 years) all in the no-ablation arm. The authors make no recommendation for pT3, pT3a or N1a disease. For pT1 and pT2, N0 or Nx tumours without adverse features, IoN with ESTIMABL2 supports omitting radioiodine.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "no"
+    },
+    {
+      "label": "Intention to treat",
+      "answer": "yes"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Arms balanced at baseline",
+      "answer": "yes"
+    },
+    {
+      "label": "Follow-up adequate",
+      "answer": "yes"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "yes"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "HiLo and ESTIMABL1 had shown that 1.1 GBq was as good as 3.7 GBq. The next question was whether low-risk patients need radioiodine at all. ESTIMABL2 answered this for pT1 N0 or Nx disease with a largely biochemical composite endpoint at 3 years. IoN, designed in parallel by the HiLo investigators, asked the same question in a wider group (pT2, pT3 and N1a included) with structural recurrence as the endpoint and at least 5 years of follow-up."
+    },
+    {
+      "heading": "Who and where",
+      "text": "A UK national trial at 33 NHS cancer centres, run by the Cancer Research UK and UCL Cancer Trials Centre and led from Newcastle and the Royal Marsden. Funded by Cancer Research UK with support from the UCL/UCLH Biomedical Research Centre; the funder had no role. Two authors declare speaker honoraria from Eisai. A patient with lived experience sat on the trial management group."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Open-label, phase 3 non-inferiority trial. Randomisation 1:1 by central minimisation, stratified by centre, age group, T stage and nodal status, at a median of about 2 months after thyroidectomy. All patients had stimulated thyroglobulin and neck ultrasound at about 8 weeks, then clinical review and thyroid blood tests 6-monthly and neck ultrasound yearly for 5 years. TSH was suppressed below 0.1 mIU/L throughout. Recurrence needed structural confirmation, with ultrasound criteria pre-specified. The sample size (at least 450) assumed 95% recurrence-free at 5 years with ablation, 80% power and 5% one-sided significance for a 6-point margin, with a target of excluding 5 points; the difference was reported with a two-sided 90% CI. Analysis was intention-to-treat and per-protocol, with data to July 2024."
+    },
+    {
+      "heading": "Results",
+      "text": "504 randomised (251 no ablation, 253 ablation). 22 (9%) assigned ablation declined it and 2 assigned no ablation had it; 230 of 231 who were ablated received about 1.1 GBq. Median follow-up 6.7 years; 388 (77%) had at least 5 years. 17 recurrences: 8 without ablation and 9 with it. 5-year recurrence-free survival 97.9% versus 96.3% (intention-to-treat; difference 0.5 points, 90% CI -1.8 to 2.7; HR 0.84, 90% CI 0.38 to 1.87; non-inferiority p = 0.033) and 97.9% versus 96.9% (per-protocol; difference -0.1 points, 90% CI -2.2 to 2.0; HR 1.03; p = 0.093). No thyroid cancer deaths; 8 deaths in total, 4 per arm. Crude recurrence was higher with pT3 or pT3a (4 of 46, 9%) and N1a (6 of 47, 13%) but not higher without ablation in these groups. Postoperative unstimulated thyroglobulin of 2 ng/mL or more was strongly associated with recurrence (HR 12.75, 95% CI 3.67 to 44.28). Adverse events (fatigue 25% versus 28%) and quality of life did not differ. Ablated patients avoided close contact with children for a median of 4 days; ablation cost about £213,000 per 100 patients."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "A clinical, structural recurrence endpoint, rather than the biochemical composite used in ESTIMABL2.",
+        "Long follow-up (median 6.7 years, 77% with at least 5 years), which matters in a disease where recurrences come late.",
+        "Wider eligibility than ESTIMABL2, including pT2 tumours, and recruitment across 33 NHS centres, so the results reflect routine UK practice.",
+        "The same surveillance schedule in both arms, and intention-to-treat and per-protocol estimates that point the same way.",
+        "Academic funding with no industry role and patient involvement throughout."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "Only 17 recurrences. With an expected recurrence rate of about 5%, a margin of 5 percentage points would have allowed the risk of recurrence to roughly double and still count as non-inferior. The upper 90% limit of the hazard ratio, 1.87 (2.42 per-protocol), is compatible with that.",
+        "The methods specify 5% one-sided significance, but the results judge non-inferiority against a threshold of p = 0.10. The intention-to-treat p value (0.033) meets either, but the per-protocol p value (0.093) only meets the looser one.",
+        "9% of the ablation arm declined ablation, which tends to bias an intention-to-treat analysis towards non-inferiority. The per-protocol analysis is reassuring on direction but has the weaker p value.",
+        "Open label, and the clinicians who enrolled patients could also be assessing them at follow-up. Structural confirmation limits this, but only 10 of the 17 recurrences were confirmed by cytology or biopsy.",
+        "pT3, pT3a and N1a groups were small (about 46 patients each), so the trial cannot answer the question for them, and 1.1 GBq may be too low an activity to act as adjuvant treatment there.",
+        "TSH suppression was used throughout, which is no longer standard for low-risk disease and could affect both recurrence and thyroglobulin monitoring.",
+        "Eligibility screening was not recorded, molecular markers were not collected, and the central pathology review is not yet reported."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That the trial was designed at 5% one-sided significance but the per-protocol result (p = 0.093) passes only against a 0.10 threshold. That all 9 recurrences in the ablation arm happened within 3 years, while 4 of the 8 without ablation happened between 4 and 7 years, including the only distant metastasis (lung, at 82 months, in a pT1 N0 patient with normal thyroglobulin). In the Kaplan-Meier curves (figure 2) the ablation curve drops early and then stays flat, while the no-ablation curve keeps stepping down after 5 years. By 10 years only 66 and 63 patients remain at risk, so the late tail is uncertain. The figure also shows more early censoring in the ablation arm (14 versus 3 by 20 months), which the authors say narrowed with later data. The CONSORT diagram shows that the number of patients screened was not collected. More patients without ablation had a biopsy or cytology for suspected recurrence (17 versus 11, not significant). Postoperative thyroglobulin of 2 ng/mL or more picked up only about half of the recurrences, with an 11% false positive rate. Appendices 1 to 3 (eligibility criteria, ultrasound and biochemical findings, subgroups, adverse events, quality of life and the protocol) were not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "With ESTIMABL2, IoN gives randomised evidence that radioiodine can be omitted after total thyroidectomy for low-risk pT1 and pT2, N0 or Nx differentiated thyroid cancer without adverse features. This extends the ESTIMABL2 evidence from pT1 to pT2 tumours, roughly doubling the number of patients who could avoid it. The authors leave pT3, pT3a and N1a disease to current practice, and note that NICE had been waiting for IoN to confirm the ESTIMABL2 findings, particularly for pT2 tumours. The linked UK HoT trial is now comparing hemithyroidectomy with total thyroidectomy."
+    }
+  ]
+}

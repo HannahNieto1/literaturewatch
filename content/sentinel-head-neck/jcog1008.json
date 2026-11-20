@@ -1,0 +1,117 @@
+{
+  "id": "jcog1008",
+  "title": "Weekly Cisplatin Plus Radiation for Postoperative Head and Neck Cancer (JCOG1008): A Multicenter, Noninferiority, Phase II/III Randomized Controlled Trial",
+  "authors": "Kiyota N, Tahara M, Mizusawa J, Kodaira T, et al.",
+  "journal": "J Clin Oncol",
+  "date": "2022-06-20",
+  "added": "2026-11-20",
+  "doi": "10.1200/JCO.21.01293",
+  "pmid": "35230884",
+  "site": "Head and neck",
+  "discipline": [
+    "Systemic therapy",
+    "Radiotherapy and supportive care"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 8,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "261 adults aged 20 to 75 at 28 Japanese centres (2012 to 2018) after resection of stage III to IVB squamous-cell carcinoma of the oral cavity, oropharynx, hypopharynx or larynx with high-risk pathology (extranodal extension in 85%, positive or close margin under 5 mm in 35%), ECOG 0 to 1, starting within 56 days of surgery. 46% oral cavity, 31% hypopharynx, 14% oropharynx."
+    },
+    {
+      "label": "Intervention",
+      "text": "Postoperative radiotherapy 66 Gy in 33 fractions with weekly cisplatin 40 mg/m2 for seven cycles (n = 129)."
+    },
+    {
+      "label": "Comparator",
+      "text": "The same radiotherapy with 3-weekly cisplatin 100 mg/m2 for three cycles (n = 132)."
+    },
+    {
+      "label": "Outcome",
+      "text": "Phase II: treatment completion. Phase III: overall survival, non-inferiority margin HR 1.32 (equivalent to 10% at 5 years). Secondary: relapse-free and local relapse-free survival, adverse events."
+    }
+  ],
+  "bottom": "In high-risk resected head and neck cancer, weekly cisplatin 40 mg/m2 with postoperative radiotherapy was non-inferior to 3-weekly 100 mg/m2 for overall survival (HR 0.69, 99.1% CI 0.37 to 1.27; 3-year survival 71.6% versus 59.1%), with less grade 3 or worse neutropenia, infection, hearing loss and renal impairment. The full paper shows that the decision came at the third interim analysis with 76 of 161 planned deaths, under a generous margin and only 75% power, and that the weekly arm received less cisplatin overall (median 239 versus 280 mg/m2). A well-run academic trial that made weekly cisplatin an evidence-based option after surgery, though the evidence comes from a mainly HPV-negative Japanese population.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "no"
+    },
+    {
+      "label": "Intention to treat",
+      "answer": "yes"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Non-inferiority margin justified",
+      "answer": "unclear"
+    },
+    {
+      "label": "Follow-up adequate",
+      "answer": "no"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "yes"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Since RTOG 9501 and EORTC 22931, postoperative chemoradiotherapy with 3-weekly cisplatin 100 mg/m2 has been the standard for resected cancers with extranodal extension or positive margins. Only about 60% of patients complete all three cycles because of toxicity, and weekly 40 mg/m2 was widely used instead without direct evidence. An Indian trial of weekly 30 mg/m2 had found worse locoregional control. JCOG1008 asked whether weekly 40 mg/m2 is non-inferior after surgery."
+    },
+    {
+      "heading": "Who and where",
+      "text": "The Japan Clinical Oncology Group Head and Neck Cancer Study Group, across 28 Japanese centres, published in the Journal of Clinical Oncology. Funded by Japanese government grants (National Cancer Center, Ministry of Health and AMED), with no industry funding. The JCOG data centre performed the analysis and an independent data and safety monitoring committee reviewed the interim analyses. Registered as jRCTs031180135."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Open-label phase II/III trial with 1:1 minimisation by high-risk factor and centre. Phase II checked treatment completion (5 of 7 weekly or 2 of 3 three-weekly cycles and radiotherapy within 66 days). Phase III aimed for 260 patients and 161 deaths at one-sided alpha 0.05 with 75% power, a margin of HR 1.32, and a hybrid design expecting 5-year survival of 49% versus 52%. Three interim analyses used O'Brien-Fleming alpha spending; at the third, after full accrual, the information fraction was 47.2% (76 of 161 deaths) and the boundary was P < 0.0043. Radiotherapy plans were checked for every patient; 3D conformal or IMRT was at the centre's discretion."
+    },
+    {
+      "heading": "Results",
+      "text": "Both arms passed the phase II completion threshold. Completion 93.2% versus 86.8%; cumulative cisplatin median 280 versus 239 mg/m2, with about 75% of weekly patients reaching 200 mg/m2. At the third interim analysis (median follow-up 2.2 years) there were 44 deaths (33%) with 3-weekly and 32 (25%) with weekly cisplatin: HR 0.69 (99.1% CI 0.37 to 1.27), one-sided P = 0.0027 for non-inferiority. Two- and 3-year survival 74.2% and 59.1% versus 77.7% and 71.6%. Relapse-free survival HR 0.71 (95% CI 0.48 to 1.06). With 3.5 years' follow-up the HR was 0.75 (0.50 to 1.13). Grade 3 or worse neutropenia 49% versus 35% and infection 12% versus 7%; any hearing impairment 17% versus 7%, tinnitus 25% versus 5%, renal impairment 40% versus 30%; grade 4 events 18.6% versus 8.2%. Thrombocytopenia was commoner with weekly cisplatin, and there were two treatment-related deaths in the weekly arm and none in the 3-weekly arm."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "Randomised phase III design with overall survival as the endpoint and intention-to-treat analysis.",
+        "A clearly defined high-risk postoperative population, mainly extranodal extension.",
+        "Prespecified adverse events of interest, with a consistent toxicity advantage for weekly dosing.",
+        "Radiotherapy quality assurance for all patients and good treatment delivery in both arms.",
+        "Independent academic funding and monitoring; non-inferiority held with longer follow-up."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "Non-inferiority was declared early, with under half the planned events. Interim results tend to be unstable, although the updated analysis was consistent.",
+        "The margin is wide (a 32% relative increase in risk of death, about 10% absolute at 5 years) and power was only 75%, at one-sided alpha 0.05.",
+        "The 3-weekly arm did worse than expected (3-year survival 59.1%), which makes the weekly arm look better and could flatter a non-inferiority result.",
+        "Five patients in the weekly arm recurred before treatment started, against one in the 3-weekly arm, showing how quickly these cancers can progress after surgery.",
+        "Only 14% oropharyngeal, with p16 status collected late; results may not apply to HPV-positive disease or to non-Japanese populations.",
+        "Late toxicity and quality of life are not in the main paper.",
+        "The weekly arm had a lower total dose, so it is unclear whether the safety benefit comes from the schedule or simply less cisplatin. Two treatment-related deaths occurred with weekly dosing."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That non-inferiority was declared at an interim analysis with 47% of the planned deaths, with a one-sided alpha of 0.05 and 75% power. That the control arm underperformed the 49% 5-year survival assumed. That weekly patients received about 40 mg/m2 less cisplatin overall. That the hazards may not have been proportional, as the authors note. In the updated analysis the survival curves separate after about a year but come back together at around 7 years, when only 12 patients per arm remain at risk. The subgroup with both extranodal extension and a positive margin had an HR of 1.32 (6 of 23 versus 6 of 22 deaths). The protocol, per-protocol survival, cause of death, late toxicities and p16 results are in the data supplement, which was not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "JCOG1008 provided the first phase III evidence for weekly cisplatin 40 mg/m2 with postoperative radiotherapy, and guidelines including NCCN now list it as an acceptable alternative to 3-weekly dosing after surgery. In the UK, where many centres already used weekly dosing for fitness reasons, it gave that practice an evidence base. It does not cover the definitive (non-surgical) setting, where the question remains open, and the weekly dose should be 40 mg/m2, not 30 mg/m2."
+    }
+  ],
+  "flag": "Non-inferiority declared at an interim analysis with under half the planned deaths."
+}

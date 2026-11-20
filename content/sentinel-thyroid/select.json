@@ -1,0 +1,113 @@
+{
+  "id": "select",
+  "title": "Lenvatinib versus Placebo in Radioiodine-Refractory Thyroid Cancer (SELECT)",
+  "authors": "Schlumberger M, Tahara M, Wirth LJ, Robinson B, et al.",
+  "journal": "N Engl J Med",
+  "date": "2015-02-12",
+  "added": "2026-11-20",
+  "doi": "10.1056/NEJMoa1406470",
+  "pmid": "25671254",
+  "site": "Thyroid",
+  "discipline": [
+    "Systemic therapy"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 1,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "392 adults in 21 countries (2011 to 2012) with measurable radioiodine-refractory differentiated thyroid cancer and independently confirmed progression within the previous 13 months. 51% papillary, 12% poorly differentiated, 19% follicular, 18% Hürthle cell; 24% had received one previous tyrosine kinase inhibitor."
+    },
+    {
+      "label": "Intervention",
+      "text": "Lenvatinib 24 mg once daily in 28-day cycles (n = 261), with dose reductions to 20, 14 or 10 mg for toxicity."
+    },
+    {
+      "label": "Comparator",
+      "text": "Placebo (n = 131), with open-label lenvatinib allowed after centrally confirmed progression."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: progression-free survival by blinded independent radiological review. Secondary: response rate, overall survival and safety."
+    }
+  ],
+  "bottom": "Lenvatinib extended median progression-free survival from 3.6 to 18.3 months in progressive radioiodine-refractory disease (HR 0.21, 99% CI 0.14 to 0.31), with responses in 64.8%, across all histologies and whether or not a previous kinase inhibitor had been used. The full paper shows a heavy toxicity burden: 75.9% had grade 3 or worse treatment-related events, two-thirds needed dose reductions, and 6 deaths were judged drug-related. Overall survival was not improved (HR 0.73), as almost all placebo patients crossed over. Strong evidence of disease control in patients with progressive disease, but not a reason to start treatment in stable, asymptomatic disease.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "yes"
+    },
+    {
+      "label": "Intention to treat",
+      "answer": "yes"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Arms balanced at baseline",
+      "answer": "yes"
+    },
+    {
+      "label": "Hard primary endpoint",
+      "answer": "no"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "no"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Radioiodine-refractory differentiated thyroid cancer has a 10-year survival of about 10% from detection of metastases, and until 2013 there was no effective systemic treatment. Sorafenib (DECISION) had improved progression-free survival by about 5 months. Lenvatinib inhibits VEGF receptors and also FGF receptors, RET, KIT and PDGFR, and had shown activity in phase 2. SELECT tested it against placebo."
+    },
+    {
+      "heading": "Who and where",
+      "text": "An international collaboration led from Gustave Roussy, published in the New England Journal of Medicine. Funded by Eisai, which designed the study with the principal investigators; data were managed by a contract research organisation, Eisai statisticians did the analysis and Eisai-funded medical writers helped draft the paper. Registered as NCT01321554."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Double-blind phase 3 trial with 2:1 central block randomisation, stratified by age, region and previous kinase inhibitor. Progression had to be confirmed by independent review before entry, which is unusual and strengthens the population definition. Progression-free survival was assessed by blinded central review every 8 weeks. Powered (90%, two-sided alpha 0.01) for an HR of 0.57, assuming medians of 14 versus 8 months, needing 214 events. Overall survival was analysed unadjusted and with a rank-preserving structural failure time model to correct for crossover."
+    },
+    {
+      "heading": "Results",
+      "text": "Median follow-up about 17 months. Events 220. Median progression-free survival 18.3 months (95% CI 15.1 to not estimable) versus 3.6 months (2.2 to 3.7); HR 0.21 (99% CI 0.14 to 0.31). Progression-free at 12 months 63.0% versus 10.5%. Benefit held in every prespecified subgroup, including previous kinase inhibitor (median 15.1 months) and all histologies, and regardless of BRAF or RAS status. Response 64.8% (4 complete) versus 1.5%; median time to response 2.0 months. Overall survival HR 0.73 (95% CI 0.50 to 1.07, P = 0.10); crossover-adjusted HR 0.62 (0.40 to 1.00). 109 of 114 placebo patients with progression (95.6%) crossed over. Treatment-related grade 3 or worse adverse events 75.9% versus 9.9%: hypertension 41.8% grade 3 or worse, proteinuria 10.0%. Dose reductions 67.8%, interruptions 82.4%, mean daily dose 17.2 mg. Fatal adverse events 20 (7.7%) versus 6 (4.6%), of which 6 on lenvatinib were judged treatment-related."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "Double-blind and placebo-controlled, with blinded independent review of progression.",
+        "Entry required independently confirmed progression, so the population had genuinely active disease.",
+        "A very large effect, consistent across histology, mutation status and previous treatment, and robust in sensitivity analyses.",
+        "Prespecified crossover-adjusted survival analysis."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "Progression-free survival, not overall survival, is the primary endpoint. Survival was not significantly improved, though crossover makes this hard to interpret.",
+        "The placebo arm progressed much faster than assumed (3.6 versus 8 months), which inflates the hazard ratio compared with what might be seen in less aggressive disease.",
+        "Substantial toxicity: most patients needed dose reductions and the mean dose was 17.2 mg, so 24 mg is a starting dose few patients sustain.",
+        "Blinding is likely to have been compromised by hypertension, proteinuria and other on-target effects.",
+        "No quality-of-life data in the main paper.",
+        "Sponsor ran the statistics and funded writing support; the sponsor-designed protocol was shared with the principal investigators."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That the placebo arm did far worse than the trial assumed. That two-thirds needed dose reductions and the average dose was 17.2 mg. That 7.7% died of adverse events during treatment, 6 judged drug-related. That nearly all placebo patients crossed over, so the trial cannot answer whether lenvatinib prolongs life. The Kaplan-Meier plot shows half the placebo arm progressing within about 4 months, confirming how aggressive the disease was. Bone metastasis progression, the subgroup forest plots, adverse event management and the crossover model are in the supplementary appendix, which was not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "SELECT made lenvatinib the first-line systemic standard for progressive, symptomatic radioiodine-refractory differentiated thyroid cancer, and NICE recommended it in the UK. It reinforced the principle that kinase inhibitors are started for progressive or threatening disease, not for stable low-volume disease, because toxicity is significant. Later work examined lower starting doses, and selective inhibitors for RET-, NTRK- or BRAF-altered tumours now sit alongside it. For an MDT today it underpins referral of radioiodine-refractory progressive disease to thyroid oncology for a lenvatinib discussion."
+    }
+  ]
+}

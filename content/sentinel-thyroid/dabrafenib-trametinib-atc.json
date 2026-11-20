@@ -1,0 +1,110 @@
+{
+  "id": "dabrafenib-trametinib-atc",
+  "title": "Dabrafenib and Trametinib Treatment in Patients With Locally Advanced or Metastatic BRAF V600-Mutant Anaplastic Thyroid Cancer (ROAR)",
+  "authors": "Subbiah V, Kreitman RJ, Wainberg ZA, Cho JY, et al.",
+  "journal": "J Clin Oncol",
+  "date": "2018-01-01",
+  "added": "2026-11-20",
+  "doi": "10.1200/JCO.2017.73.6785",
+  "pmid": "29072975",
+  "site": "Thyroid",
+  "discipline": [
+    "Systemic therapy"
+  ],
+  "type": "Single-arm trial",
+  "depth": "full",
+  "reviewed": false,
+  "order": 10,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "16 patients with locally advanced or metastatic BRAF V600E-mutant anaplastic thyroid cancer and no standard treatment options, within a 100-patient basket trial of rare BRAF V600E cancers at 47 centres (2014 to 2016). Median age 72; 63% of Asian heritage; all had previous surgery or radiotherapy and 6 previous systemic therapy. BRAF V600E centrally confirmed in 15."
+    },
+    {
+      "label": "Intervention",
+      "text": "Dabrafenib 150 mg twice daily plus trametinib 2 mg once daily until progression or unacceptable toxicity."
+    },
+    {
+      "label": "Comparator",
+      "text": "None (single arm), compared against a historical response rate of 15%."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: investigator-assessed confirmed overall response (RECIST 1.1). Secondary: duration of response, progression-free survival, overall survival and safety."
+    }
+  ],
+  "bottom": "In 16 patients with BRAF V600E-mutant anaplastic thyroid cancer, dabrafenib plus trametinib produced confirmed responses in 69% (11 of 16; 95% CI 41% to 89%), most at the first scan, with 12-month estimates of 80% for overall survival in a disease where 1-year survival is usually 20% to 40%. The full paper shows that independent review found no complete responses, the anaplastic histology was not centrally confirmed, only 5 patients were treated beyond a year, and the 12-month survival estimates rest on very few patients. Small and uncontrolled, but the effect is large enough in this lethal disease to have changed practice.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "no"
+    },
+    {
+      "label": "Independent response review",
+      "answer": "yes"
+    },
+    {
+      "label": "Central pathology review",
+      "answer": "no"
+    },
+    {
+      "label": "Prespecified efficacy boundary",
+      "answer": "yes"
+    },
+    {
+      "label": "Follow-up adequate",
+      "answer": "no"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "no"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Anaplastic thyroid cancer is among the most lethal cancers, with median survival of 5 to 12 months and response rates under 15% to chemotherapy. Between 20% and 50% carry a BRAF V600E mutation, and combined BRAF and MEK inhibition had transformed BRAF-mutant melanoma and lung cancer and outperformed BRAF inhibition alone in mouse models of anaplastic cancer. This basket trial asked whether the combination is active in BRAF V600E-mutant anaplastic cancer."
+    },
+    {
+      "heading": "Who and where",
+      "text": "An international phase 2 basket trial (ROAR) at 47 centres, led from MD Anderson and Seoul, published in the Journal of Clinical Oncology. Designed, conducted and analysed by Novartis with a steering committee, with Novartis employees among the authors and sponsor-funded editorial support. The anaplastic patients were treated at centres with specialist head and neck or endocrine pathology. Registered as NCT02034110."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Open-label, non-randomised basket trial across nine BRAF V600E histologies, using an adaptive Bayesian hierarchical model that borrowed information between cohorts, with quarterly futility and efficacy analyses. Each primary cohort was capped at 25. The anaplastic cohort met the efficacy stopping rule in November 2015 (posterior probability of exceeding a 15% historical response rate effectively 100%), and an expansion cohort opened. BRAF status was tested locally or centrally and confirmed retrospectively. Response was assessed by investigators every 8 weeks, with independent radiology review. This is an interim analysis (data cut-off August 2016)."
+    },
+    {
+      "heading": "Results",
+      "text": "28 screened, 16 enrolled (15 primary, 1 expansion). Median follow-up 47 weeks (range 4 to 120). Investigator-assessed confirmed response 69% (1 complete, 10 partial; 95% CI 41.3% to 89.0%); 73% in centrally confirmed BRAF V600E. Independent review: 63% (10 partial, no complete responses). Bayesian estimate 69% (95% credible interval 46.9% to 86.9%). Seven of 11 responses ongoing; 12-month duration of response 90%, progression-free survival 79% and overall survival 80%, with medians not reached. Across all 100 basket patients, 42% had grade 3 or 4 events, mainly fatigue, pyrexia and nausea; in the anaplastic cohort 3 had treatment-related serious events and anaemia was the commonest grade 3 to 4 event (13%)."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "A large, rapid effect in a disease with no effective systemic therapy, with responses confirmed by independent radiology review.",
+        "BRAF status confirmed centrally in all but one patient.",
+        "A prespecified Bayesian efficacy rule, met consistently across interim analyses.",
+        "Biologically plausible, building on BRAF and MEK experience in other cancers and mouse models."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "Only 16 patients, no control arm, and an interim analysis; the 95% confidence interval for response runs from 41% to 89%.",
+        "The anaplastic diagnosis was not independently confirmed, the authors acknowledge, and some tumours may have been poorly differentiated rather than anaplastic.",
+        "Highly selected patients: ECOG 0 to 1 in all, enrolled at specialist centres, and 12 of 28 screened were excluded.",
+        "Survival estimates at 12 months rest on very few patients; only 5 were treated beyond a year.",
+        "Primary endpoint by investigator assessment; independent review found no complete responses.",
+        "Sponsor designed, ran and analysed the study, with company employees as authors."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That pathology was not centrally reviewed. That independent review recorded no complete responses. That 63% of patients were of Asian heritage and most were in their seventies with good performance status. The baseline and response tables and both figures were viewed: the waterfall plot shows two partial responses only just beyond the 30% threshold and one patient progressing in the brain in the first week, and the swimmer plot shows most responses at the first 8-week scan but only 5 patients still on treatment after 52 weeks. The basket design, cohort statistics and safety tables by histology are in the data supplement, which was not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "This study led to FDA approval of dabrafenib plus trametinib for BRAF V600E-mutant anaplastic thyroid cancer in 2018, and it made urgent BRAF testing at diagnosis of anaplastic cancer a standard of care. It also opened the neoadjuvant approach, in which BRAF and MEK inhibition shrinks previously unresectable tumours to allow surgery. For a UK MDT today, every suspected anaplastic cancer needs rapid BRAF V600E testing, ideally by immunohistochemistry, so that targeted therapy can start within days."
+    }
+  ],
+  "flag": "16 patients in a single-arm basket trial; interim analysis."
+}

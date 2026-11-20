@@ -1,0 +1,115 @@
+{
+  "id": "mtc-staging",
+  "title": "International Initiative on a Refined Staging System for Medullary Thyroid Cancer: A Multinational Multicenter Study",
+  "authors": "Shi X, Liu Q, Xu B, Li D, et al.",
+  "journal": "J Clin Oncol",
+  "date": "2026-11-04",
+  "added": "2026-11-16",
+  "doi": "10.1200/JCO-26-01146",
+  "pmid": "42981561",
+  "site": "Thyroid",
+  "discipline": [
+    "Staging and prognosis"
+  ],
+  "type": "Cohort",
+  "depth": "full",
+  "reviewed": false,
+  "order": 2,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "2,573 patients with medullary thyroid carcinoma who had surgery with lymph node dissection at 43 centres in 15 countries between 1977 and 2025. Median follow-up 76.3 months, 233 disease-specific deaths. 44% came from 19 Chinese centres. External cohort: 1,909 SEER patients diagnosed 2004 to 2015."
+    },
+    {
+      "label": "Index system",
+      "text": "A proposed staging system. Level VII nodes move from N1a to a new N1c category, and the T and N combinations for M0 disease are regrouped into stages I to IVB. M1 stays stage IVC."
+    },
+    {
+      "label": "Comparator",
+      "text": "AJCC TNM 8th edition."
+    },
+    {
+      "label": "Outcome",
+      "text": "Disease-specific survival, reported at 10 years. Discrimination judged by adjusted hazard ratios across stages and Harrell's C-index."
+    }
+  ],
+  "bottom": "The proposed system mainly down-stages. Lateral neck nodes no longer mean stage IV, so stage IV falls from 42.4% to 20.2% of patients and stage I rises from 31.0% to 50.1%. Discrimination improved in the cohort that built it (C-index 0.856 to 0.892), but in the external SEER cohort the gain was 0.007 and not significant (P = .28). A reasonable proposal that is not yet validated.",
+  "checks": [
+    {
+      "label": "Large multinational cohort",
+      "answer": "yes"
+    },
+    {
+      "label": "Prospective data",
+      "answer": "no"
+    },
+    {
+      "label": "External validation done",
+      "answer": "yes"
+    },
+    {
+      "label": "Validation confirmed gain",
+      "answer": "no"
+    },
+    {
+      "label": "Correction for overfitting",
+      "answer": "unclear"
+    },
+    {
+      "label": "Biomarkers included",
+      "answer": "no"
+    },
+    {
+      "label": "Disease-specific endpoint",
+      "answer": "yes"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Under TNM-8 any lateral neck node makes medullary thyroid cancer stage IV, which puts more than 30% of patients in stage IV even though many do well after surgery. TNM-8 also moved level VII nodes down to N1a. Earlier work, including a 2017 National Cancer Database study, proposed regrouping. This study tests a regrouping on a larger international dataset."
+    },
+    {
+      "heading": "Who and where",
+      "text": "The International Medullary Thyroid Cancer Staging Consortium, led from Fudan University Shanghai Cancer Center with senior authors from Memorial Sloan Kettering and Royal North Shore. Fudan alone contributed 533 patients. Published open access in the Journal of Clinical Oncology."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Retrospective cohort. Of 2,909 patients, 336 were excluded, 252 of them because they had no lymph node dissection. Variables were harmonised with a shared data dictionary. N category came from surgical pathology, or from biopsy or imaging consensus when nodes were unresectable. All 116,284 clinically ordered groupings of T and modified N into five M0 stages were fitted in Cox models adjusted for age, sex, region, extent of surgery, heredity and year of diagnosis, and the grouping with the lowest Akaike information criterion was chosen. C-index differences used 5,000 bootstrap resamples. Sensitivity analyses left out each large centre in turn."
+    },
+    {
+      "heading": "Results",
+      "text": "Ten-year disease-specific survival by modified N category was 98.3% for N0, 94.2% for N1a, 81.4% for N1b and 68.4% for N1c. In the consortium cohort TNM-8 gave 99.2%, 98.6%, 95.9% and 77.1% for stages I to IV. The proposed system gave 99.5%, 94.3%, 86.4% and 60.6%, with 73.3%, 55.0% and 41.5% for IVA, IVB and IVC. C-index 0.892 versus 0.856 (difference 0.035, 95% CI 0.022 to 0.048). In SEER the proposed stages gave 97.5%, 89.6%, 81.4% and 55.6%, and the C-index was 0.860 versus 0.852 (difference 0.007; P = .28)."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "The largest staging dataset assembled for this cancer, with long follow-up and 233 disease-specific deaths.",
+        "Disease-specific survival is the right endpoint for a cancer with long survival and competing causes of death.",
+        "A transparent, reproducible rule for choosing the grouping, constrained so that stages stay clinically ordered.",
+        "External validation attempted and reported honestly, with leave-one-centre-out sensitivity analyses.",
+        "It fixes a real problem. TNM-8 stage IVA had better 10-year survival (83.5%) than its position implies."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "The external validation did not confirm the gain in discrimination. In SEER, TNM-8 already separated stages I to III, and the proposed stages IVA and IVB were not distinguishable (P = .26).",
+        "The best of 116,284 groupings will look good in the data that selected it. The main text describes no correction for that optimism.",
+        "Only surgically treated patients with a node dissection were included, so the most advanced disease is under-represented.",
+        "Level VII status depends on preoperative CT and on how far the surgeon dissects. CT of the upper mediastinum is routine in the Chinese centres that supplied 44% of patients, and the authors accept some misclassification at the level VI and VII boundary.",
+        "Anatomy only. Calcitonin could not be pooled because assays differed, and tumour grade and somatic RET or RAS status were unavailable.",
+        "The cohort runs from 1977 to 2025, across large changes in imaging, surgery and systemic therapy.",
+        "Heredity was unknown for 387 patients."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "The direction of change: this is a down-staging system, halving stage IV. That the SEER validation showed no significant improvement in the C-index. The printed confidence interval for that SEER difference (-0.090 to 0.020) looks like a misprint. That 252 patients without node dissection were excluded. That nearly half the cohort is from China. That calcitonin, grade and molecular data are absent. The Kaplan-Meier curves show that in the external SEER cohort the proposed stages IVA and IVB are not separated (P = 0.26), and the N1c group in SEER is only 85 patients. The data supplement, which holds the adjusted hazard ratio tables and sensitivity analyses, was not available for this appraisal."
+    },
+    {
+      "heading": "Will it change practice?",
+      "text": "Not formally. Staging stays TNM-8 until AJCC and UICC change it. It is useful now in clinic: a patient with lateral neck nodes and a small primary is labelled stage IVA today, and these data support telling them their outlook is closer to stage II or III. It also argues for reporting level VI and level VII nodes separately in operation notes and pathology reports."
+    }
+  ]
+}

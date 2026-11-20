@@ -1,0 +1,115 @@
+{
+  "id": "dcruz-end",
+  "title": "Elective versus Therapeutic Neck Dissection in Node-Negative Oral Cancer",
+  "authors": "D'Cruz AK, Vaish R, Kapre N, Dandekar M, et al.",
+  "journal": "N Engl J Med",
+  "date": "2015-08-06",
+  "added": "2026-11-20",
+  "doi": "10.1056/NEJMoa1506007",
+  "pmid": "26027881",
+  "site": "Head and neck",
+  "discipline": [
+    "Surgery"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 4,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "Adults aged 18 to 75 at the Tata Memorial Centre, Mumbai, with untreated, lateralised T1 or T2 (under 4 cm) squamous-cell carcinoma of the oral tongue, floor of mouth or buccal mucosa, clinically node-negative and suitable for transoral excision. 596 randomised from 2004 to 2014; this report analyses 496 (243 elective, 253 therapeutic) of the first 500. 85.3% were tongue primaries."
+    },
+    {
+      "label": "Intervention",
+      "text": "Wide local excision (margin of at least 5 mm) plus ipsilateral selective neck dissection of levels I to III at the same operation, extended to levels I to V if nodes were found at surgery."
+    },
+    {
+      "label": "Comparator",
+      "text": "The same excision, then watchful waiting with a modified neck dissection (levels I to V) only at nodal relapse. Follow-up was every 4 weeks for the first 6 months."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: overall survival. Secondary: disease-free survival. A second randomisation compared clinical examination with or without neck ultrasound during follow-up (not reported here)."
+    }
+  ],
+  "bottom": "Elective neck dissection improved 3-year overall survival from 67.5% to 80.0% (HR 0.64, 95% CI 0.45 to 0.92) and disease-free survival from 45.9% to 69.5% in early, node-negative oral cancer, with about eight patients treated to prevent one death. The full paper shows this was an early-stopped, single-centre analysis of 496 patients, with relapses in the observation arm presenting at a more advanced nodal stage despite very close follow-up. The survival effect is large and biologically plausible, and the paper settled the debate for tongue cancer in most guidelines.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "no"
+    },
+    {
+      "label": "Intention to treat",
+      "answer": "no"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Arms balanced at baseline",
+      "answer": "yes"
+    },
+    {
+      "label": "Follow-up adequate",
+      "answer": "yes"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "yes"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "For a small, clinically node-negative oral cancer, surgeons had argued for five decades over whether to dissect the neck at the time of the primary excision or to watch and operate only on nodal relapse. Watching spares the 70% or so who never develop nodes; dissecting treats occult disease early. Four earlier randomised trials were small and conflicting, and a 2011 meta-analysis suggested benefit but left equipoise. This trial set out to settle the survival question."
+    },
+    {
+      "heading": "Who and where",
+      "text": "The Head and Neck Disease Management Group at the Tata Memorial Centre, Mumbai, a single high-volume centre. Funded by an institutional research grant, with no industry involvement. Designed and analysed by the academic investigators and monitored by the institutional data and safety monitoring committee. Registered as NCT00193765."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Single-centre, open-label phase 3 trial with 1:1 computerised block randomisation, stratified by tumour site, T stage, sex and baseline neck ultrasound. Adjuvant radiotherapy was given for positive nodes, depth of invasion of 10 mm or more, or a positive margin, and was individualised otherwise. The trial was powered on 5-year overall survival of 60% versus 70% (80% power, alpha 0.05, 710 patients). An unplanned interim analysis in 2011 (43 deaths) did not stop the trial. In June 2014 the monitoring committee requested a second interim analysis, which used an O'Brien-Fleming boundary (nominal alpha 0.027) on the first 500 patients with at least 9 months of follow-up. Analysis is described as intention to treat, but four randomised patients were excluded (withdrawal, previous chemotherapy, midline lesions)."
+    },
+    {
+      "heading": "Results",
+      "text": "Median follow-up was 39 months. In the elective arm 174 had a selective and 60 a modified neck dissection; 14 patients overall did not have the allocated surgery at the centre. Deaths: 50 (20.6%) elective versus 79 (31.2%) therapeutic. Three-year overall survival 80.0% (95% CI 74.1 to 85.8) versus 67.5% (61.0 to 73.9); HR 0.64 (0.45 to 0.92), P = 0.01; adjusted HR 0.63. Recurrences 81 (33.3%) versus 146 (57.7%); 3-year disease-free survival 69.5% versus 45.9%, HR 0.45 (0.34 to 0.59). Of the 114 nodal relapses in the observation arm, 60 (52.6%) died of disease, and relapses presented with more advanced nodal stage and more extracapsular spread. Pathological node positivity in the elective arm was 29.6% against 45.1% nodal relapse under observation. Adverse events 6.6% versus 3.6%."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "Randomised, with overall survival as the primary endpoint and well-balanced arms.",
+        "Large for a surgical trial, and many times larger than the earlier trials combined.",
+        "Uniform surgery and pathology in one centre, with very intensive follow-up that gave the watch-and-wait arm its best chance.",
+        "Formal stopping boundary crossed, and the effect held on multivariable adjustment and across subgroups.",
+        "No industry funding."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "Stopped early, with 129 deaths rather than the planned number. Early-stopped trials tend to overestimate effect size.",
+        "Single centre in India with 85% tongue primaries. Buccal cancers, the commonest subsite locally, were mostly unsuitable for transoral excision. Generalisability to other subsites and settings is inferred.",
+        "Not strictly intention to treat: 100 randomised patients are outside this report and four were excluded after randomisation.",
+        "More patients in the elective arm had node-directed adjuvant radiotherapy, and its contribution to the survival gain cannot be separated out.",
+        "Shoulder function and quality of life were not measured, so the harms of the elective approach are under-reported.",
+        "No sentinel node biopsy arm. The trial compares two extremes, not the de-escalation strategy now used in many UK centres.",
+        "The depth of invasion analysis (no benefit at 3 mm or less) is post hoc and based on 71 patients."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "The abstract reports 500 patients (245 and 255) but the analysis tables use 496 (243 and 253). The interim analysis was requested by the monitoring committee, after an earlier unplanned look in 2011. About 1 in 10 in each arm was lost to follow-up. Nodal relapse under observation (45.1%) was higher than pathological node positivity after elective dissection (29.6%), which the authors attribute to missed micrometastases or progression of occult disease. Observation patients were reviewed every 4 weeks for 6 months, more often than most UK follow-up. The Kaplan-Meier curves show disease-free survival separating within the first year as nodal relapses occur, and overall survival from about 6 to 12 months; by 5 years only 67 and 74 patients remained at risk. The forest plot shows no apparent benefit in buccal mucosa cancers (8 of 33 versus 9 of 35 deaths) or in tumours 3 mm deep or less, although neither interaction was significant. Adjuvant radiotherapy details, the ultrasound randomisation, adverse events (Table S5) and the adjusted models are in the supplementary appendix, which was not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "This trial ended watchful waiting of the clinically N0 neck as a default for early oral cancer. Guidelines now recommend elective neck dissection or sentinel lymph node biopsy for most T1 and T2 oral cancers, with depth of invasion used to identify the small group in whom observation may still be reasonable. Later work on sentinel lymph node biopsy asked whether the benefit can be kept with less surgery. For a UK MDT today it is the reference trial behind treating the neck in early oral cancer."
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "camoral",
+  "title": "Perioperative Camrelizumab Plus Chemotherapy in Locally Advanced Head and Neck Squamous Cell Carcinoma: A Randomized Clinical Trial (CAMORAL)",
+  "authors": "Liu F, Zhang Y, Ma H, Zhang W, et al.",
+  "journal": "JAMA Oncol",
+  "date": "2026-11-12",
+  "added": "2026-11-16",
+  "doi": "10.1001/jamaoncol.2026.4642",
+  "pmid": "43018983",
+  "site": "Head and neck",
+  "discipline": [
+    "Surgery",
+    "Systemic therapy"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 1,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "125 adults aged 18 to 75 with untreated, resectable stage III to IVB head and neck SCC (nasopharynx excluded), ECOG 0 to 1, at 4 academic hospitals in China, October 2020 to March 2024. 82.4% oral cavity, 16.8% oropharynx, 96% HPV negative, 76.8% stage IV."
+    },
+    {
+      "label": "Intervention",
+      "text": "Two 21-day cycles of camrelizumab 200 mg with nab-paclitaxel (100 mg/m² days 1, 8, 15) and carboplatin AUC 5 or cisplatin 75 mg/m², surgery 3 to 6 weeks later, radiotherapy unless there was a pathological complete response, then camrelizumab every 3 weeks for up to 15 cycles (n = 63)."
+    },
+    {
+      "label": "Comparator",
+      "text": "Upfront surgery, then radiotherapy according to adverse pathological features, with concurrent cisplatin for extranodal extension or positive margins (n = 62)."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: 2-year event-free survival, counting progression that precluded surgery, recurrence, second primary cancer or death. Secondary: major and complete pathological response, overall survival, distant metastasis-free and locoregional recurrence-free survival, safety."
+    }
+  ],
+  "bottom": "Chemo-immunotherapy around surgery raised 2-year event-free survival from 46.1% to 77.8% (HR 0.34) without reducing the number of patients reaching surgery. The full paper weakens the headline: the control arm did far worse than the trial itself assumed, the arms were unbalanced for age and PD-L1 in the experimental arm's favour, and the manufacturer helped design, analyse and write the study. Promising, and not ready to change practice.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "no"
+    },
+    {
+      "label": "Intention to treat",
+      "answer": "yes"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Arms balanced at baseline",
+      "answer": "no"
+    },
+    {
+      "label": "Follow-up adequate",
+      "answer": "no"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "no"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Recurrence after surgery for locally advanced HNSCC remains common. KEYNOTE-689 showed an event-free survival benefit from perioperative pembrolizumab without neoadjuvant chemotherapy, with modest pathological response rates. CAMORAL asks whether chemo-immunotherapy induction before surgery, followed by PD-1 maintenance, improves on surgery-first care."
+    },
+    {
+      "heading": "Who and where",
+      "text": "Led from the oral maxillofacial and head and neck oncology unit at Shanghai Ninth People's Hospital, with three other Chinese centres. Public grant funding. Jiangsu Hengrui, which makes camrelizumab, supplied drug and had a role in the design, the analysis and interpretation of data, and preparation of the manuscript. One author is a company employee, and company staff provided statistical support and medical writing."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Open-label phase 2 trial with 1:1 stratified block randomisation (ECOG status and stage III versus IV) using sealed opaque envelopes. The sample size assumed 2-year event-free survival of 63% in the control arm and 83% with treatment, needing 39 events for 80% power at a two-sided 5% level. Analysis was by intention to treat, and patients who did not have surgery counted as pathological non-responders. Pathological response was reviewed centrally. Refusing surgery was not an event, and patients who started non-protocol anticancer treatment before an event were censored. Overall survival, distant metastasis-free and locoregional recurrence-free survival were descriptive, with nominal P values."
+    },
+    {
+      "heading": "Results",
+      "text": "59 of 63 patients completed both neoadjuvant cycles. Surgery was done in 58 (92.1%) versus 57 (91.9%), with delays in 10 of 58 experimental-arm patients, 7 of them related to COVID-19. There were 13 events versus 29: locoregional 12 versus 13, distant metastasis 1 versus 10, second primary cancer 0 versus 4, death 0 versus 2. Two-year event-free survival was 77.8% (95% CI 63.6 to 87.0) versus 46.1% (31.3 to 59.6); HR 0.34 (0.17 to 0.68; P = .001). Major pathological response 47.6%, complete response 25.4%. Two-year overall survival 92.0% versus 69.1% (HR 0.25, 0.10 to 0.64). Distant metastasis-free survival HR 0.15 (0.03 to 0.68). Locoregional recurrence-free survival HR 0.61 (0.28 to 1.30). Grade 3 or worse adverse events 79.4% versus 56.5%, mainly lymphopenia (46.0%), neutropenia (27.0%) and oral mucositis (23.8%). Serious adverse events 27.0% versus 19.4%. Camrelizumab was stopped for toxicity in 17.5%."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "The planned number of events was reached (42 against 39 required), so the primary analysis is the one that was powered.",
+        "Neoadjuvant treatment did not cost resections: the same proportion reached surgery in both arms.",
+        "Intention-to-treat analysis with a conservative rule for pathological response, and central pathology review.",
+        "The event definition is explicit and counts progression that prevents surgery.",
+        "An oral cavity population, where surgery is the default and the question is most relevant."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "The control arm reached 46.1% event-free survival at 2 years against the 63% the investigators assumed. Much of the apparent benefit depends on a control arm that underperformed.",
+        "Baseline imbalance favoured the experimental arm: 14.3% versus 37.1% were aged 65 or over, and PD-L1 CPS of 20 or more was present in 38.1% versus 27.4%. Neither was a stratification factor.",
+        "The difference is almost entirely in distant metastases (1 versus 10) and second primaries (0 versus 4). Locoregional events were equal at 12 versus 13. A treatment effect on second primaries within 2 years is implausible, and without them the count is 13 versus 25.",
+        "Five control patients refused surgery and had radiotherapy alone, and six refused adjuvant radiotherapy, which may have depressed control outcomes.",
+        "Censoring at the start of non-protocol treatment can bias event-free survival, and censoring was heavy: only 25 and 14 patients remained at risk at 24 months.",
+        "The survival comparison is hard to read. Only 17.7% of control patients received a PD-1 inhibitor after relapse, and overall survival was not formally tested.",
+        "The adjuvant phase was barely delivered. Two thirds started maintenance camrelizumab and 4 patients completed 15 cycles, so its contribution is unknown.",
+        "Open label, sealed-envelope allocation and manufacturer involvement in analysis and writing."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That the control arm fell 17 points short of the trial's own assumption. That the arms differed in age and PD-L1 expression. That locoregional control was not improved. That second primary cancers counted as events and all four fell in the control arm. That only 4 patients finished adjuvant camrelizumab. That 13 patients with a complete pathological response were spared radiotherapy, an untested de-escalation built into the protocol. That the manufacturer had a hand in the design, analysis and manuscript. The event-free survival curve for the control arm falls steeply in the first 9 months and the two-year rates rest on 25 and 20 patients still at risk; the locoregional recurrence-free curves come together after about 30 months (HR 0.61, not significant). The footnote to the CONSORT diagram defines 'PCR' as polymerase chain reaction, which looks like a misprint for pathological complete response. Surgical complications and margin status are in the supplement, which was not available for this appraisal."
+    },
+    {
+      "heading": "Will it change practice?",
+      "text": "No. Camrelizumab is not in routine UK use, the comparator predates perioperative pembrolizumab, and the size of the effect is not credible at face value given the control arm and the imbalances. Two findings are useful for an MDT. A short chemo-immunotherapy induction gave a complete pathological response in a quarter of patients without losing resections. And the pattern of benefit, distant and not locoregional, matches KEYNOTE-689. A phase 3 trial against perioperative PD-1 blockade alone, stratified for PD-L1, is the next step."
+    }
+  ]
+}

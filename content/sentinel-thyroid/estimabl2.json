@@ -1,0 +1,124 @@
+{
+  "id": "estimabl2",
+  "title": "Thyroidectomy without Radioiodine in Patients with Low-Risk Thyroid Cancer (ESTIMABL2)",
+  "authors": "Leboulleux S, Bournaud C, Chougnet CN, Zerdoud S, et al.",
+  "journal": "N Engl J Med",
+  "date": "2022-03-10",
+  "added": "2026-11-20",
+  "doi": "10.1056/NEJMoa2111953",
+  "pmid": "35263518",
+  "site": "Thyroid",
+  "discipline": [
+    "Radiotherapy and supportive care",
+    "Surgery"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 3,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "776 adults at 35 French centres (2013 to 2017), 2 to 5 months after total thyroidectomy for low-risk differentiated thyroid cancer: multifocal pT1a or pT1b, N0 or Nx, no extrathyroidal extension, no aggressive subtype, normal postoperative neck ultrasound. 96% papillary; 81% pT1b; 56% Nx (no neck dissection)."
+    },
+    {
+      "label": "Intervention",
+      "text": "Follow-up without postoperative radioiodine (n = 387)."
+    },
+    {
+      "label": "Comparator",
+      "text": "Radioiodine ablation 1.1 GBq after recombinant human TSH (n = 389)."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: proportion without a functional, structural or biochemical event at 3 years (non-inferiority margin 5 percentage points). Secondary: quality of life, salivary and lacrimal function, prognostic factors, molecular profile."
+    }
+  ],
+  "bottom": "In low-risk pT1 differentiated thyroid cancer after total thyroidectomy, omitting radioiodine was non-inferior to 1.1 GBq ablation: 95.6% versus 95.9% were event-free at 3 years (difference -0.3 points, 90% CI -2.7 to 2.2). The full paper shows that events were few (31 in total, only 8 structural or functional), were defined differently in the two arms, and were mostly thyroglobulin rises, and that follow-up was only 3 years. A clear, well-conducted trial that supports omitting ablation for small low-risk cancers, later confirmed at 5 years.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "no"
+    },
+    {
+      "label": "Intention to treat",
+      "answer": "yes"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Arms balanced at baseline",
+      "answer": "yes"
+    },
+    {
+      "label": "Follow-up adequate",
+      "answer": "no"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "yes"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Radioiodine was avoided by consensus for unifocal microcarcinoma, but most other low-risk cancers still received ablation, largely because no prospective trial had shown it could be safely omitted. HiLo and ESTIMABL had already reduced the dose to 1.1 GBq. ESTIMABL2 asked whether, for pT1 N0 or Nx tumours, ablation is needed at all."
+    },
+    {
+      "heading": "Who and where",
+      "text": "The French TUTHYREF network at 35 centres, led from Gustave Roussy and published in the New England Journal of Medicine. Funded by the French Ministry of Health through the National Cancer Institute, with no industry role. Data were analysed by the first and last authors. Registered as NCT01837745."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Open-label non-inferiority trial, randomised and stratified by site and nodal status (N0 or Nx). Follow-up followed French standard care: thyroglobulin and antibodies at 10 months and yearly, neck ultrasound at 10 months and 3 years, measured locally and centrally. The composite event differed by arm: in the radioiodine arm it included uptake outside the thyroid bed needing treatment and stimulated thyroglobulin above set thresholds; in the no-radioiodine arm it used unstimulated thyroglobulin above 5 ng/ml, or above 2 ng/ml twice. Antibody appearance or a 50% rise counted in both. 750 patients gave 90% power for a 5-point margin assuming 95% event-free with radioiodine, one-sided alpha 0.05. The primary analysis was per protocol, with intention-to-treat and adjusted analyses as sensitivity checks."
+    },
+    {
+      "heading": "Results",
+      "text": "730 of 776 were evaluable at 3 years (45 not evaluable, 1 ineligible). Event-free 351 of 367 (95.6%) without radioiodine versus 348 of 363 (95.9%) with it; difference -0.3 points (90% CI -2.7 to 2.2). Results were the same in intention-to-treat and adjusted analyses. Events: 3 abnormal uptakes needing treatment (radioiodine arm only), 2 versus 3 abnormal lymph nodes, and the rest thyroglobulin or antibody rises. Further treatment was given to 10 patients with radioiodine and 4 without. Excellent response at 3 years 73.0% versus 74.1%. Events were commoner with postoperative thyroglobulin above 1 ng/ml (14.6% versus 3.2%). Quality of life and anxiety were similar; lacrimal discomfort was commoner after radioiodine at 2 months. No treatment-related adverse events and no thyroid cancer deaths."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "The first randomised trial of radioiodine versus none in low-risk disease, and well powered for its margin.",
+        "Per-protocol and intention-to-treat analyses agree, which is reassuring for a non-inferiority design.",
+        "Strict eligibility with negative postoperative ultrasound, central laboratory measurement and low loss to follow-up (under 6%).",
+        "Academic funding and a population typical of the commonest thyroid cancers seen in clinic."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "Events were rare, and most were biochemical rather than structural, so the trial has little power to detect differences in true recurrence.",
+        "The composite endpoint is defined differently in each arm (stimulated versus unstimulated thyroglobulin, and scan-detected uptake only possible after ablation). This is unavoidable but makes the arms not strictly comparable.",
+        "Three years is short for a disease whose recurrences can occur late.",
+        "Limited to pT1 tumours of 2 cm or less without extrathyroidal extension; 56% had no nodal assessment (Nx).",
+        "Open label, and the decision to treat further after an event was clinical."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That only 8 of 31 events were structural or functional, and 3 of those could only occur in the ablation arm. That the thyroglobulin thresholds differ between arms. That more patients in the ablation arm went on to further treatment (10 versus 4). That a postoperative thyroglobulin above 1 ng/ml was the strongest predictor of events. Quality-of-life tables, adverse events and the molecular case-control analysis are in the supplementary appendix, which was not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "ESTIMABL2 provided the first randomised evidence that radioiodine can be omitted after total thyroidectomy for low-risk pT1 cancers, and it has fed into guideline recommendations for selective rather than routine radioiodine. Combined with lobectomy for many low-risk cancers, it has made radioiodine a selective rather than routine treatment. IoN later extended the evidence to pT2 tumours. The 5-year results, published separately, are shown below."
+    }
+  ],
+  "related": [
+    {
+      "label": "Separate later analysis",
+      "title": "Thyroidectomy without radioiodine in patients with low-risk thyroid cancer: 5 years of follow-up of the prospective randomised ESTIMABL2 trial",
+      "journal": "Lancet Diabetes Endocrinol",
+      "date": "2025-01",
+      "doi": "10.1016/S2213-8587(24)00276-6",
+      "pmid": "39586309",
+      "note": "Prespecified 5-year analysis of the same trial, published separately. Full text not yet read, so it is not appraised here. Summary to follow once the full text is available."
+    }
+  ]
+}

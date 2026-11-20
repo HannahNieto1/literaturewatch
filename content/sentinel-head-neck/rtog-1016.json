@@ -1,0 +1,116 @@
+{
+  "id": "rtog-1016",
+  "title": "Radiotherapy plus cetuximab or cisplatin in human papillomavirus-positive oropharyngeal cancer (NRG Oncology RTOG 1016): a randomised, multicentre, non-inferiority trial",
+  "authors": "Gillison ML, Trotti AM, Harris J, Eisbruch A, et al.",
+  "journal": "Lancet",
+  "date": "2019-01-05",
+  "added": "2026-11-16",
+  "doi": "10.1016/S0140-6736(18)32779-X",
+  "pmid": "30449625",
+  "site": "Head and neck",
+  "discipline": [
+    "Systemic therapy",
+    "Radiotherapy and supportive care"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 3,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "849 patients randomised at 182 centres in the USA and Canada, June 2011 to July 2014, of whom 805 were eligible and analysed. p16-positive oropharyngeal carcinoma, T1 to T2 N2a to N3 or T3 to T4 N0 to N3 (AJCC 7), Zubrod 0 to 1. Median age 58, 90% men, 38% with more than 10 pack-years."
+    },
+    {
+      "label": "Intervention",
+      "text": "Cetuximab 400 mg/m² loading dose then 250 mg/m² weekly for seven doses, with accelerated intensity-modulated radiotherapy to 70 Gy in 35 fractions over 6 weeks (n = 399)."
+    },
+    {
+      "label": "Comparator",
+      "text": "Cisplatin 100 mg/m² on days 1 and 22 with the same radiotherapy (n = 406)."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: overall survival, with non-inferiority declared if the one-sided 95% upper bound of the hazard ratio was below 1.45. Secondary: progression-free survival, locoregional failure, distant metastasis, acute and late toxicity, quality of life."
+    }
+  ],
+  "bottom": "Cetuximab failed non-inferiority and was inferior to cisplatin: HR for death 1.45 (one-sided upper bound 1.94), with 5-year overall survival of 77.9% versus 84.6% and locoregional failure of 17.3% versus 9.9%. Severe acute toxicity was similar (77.4% versus 81.7%). A large, publicly funded trial with survival as its primary endpoint and 4.5 years of follow-up. Its radiotherapy schedule and two-cycle cisplatin differ from UK practice.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "no"
+    },
+    {
+      "label": "Full intention-to-treat analysis",
+      "answer": "no"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Non-inferiority margin justified",
+      "answer": "yes"
+    },
+    {
+      "label": "Follow-up adequate",
+      "answer": "yes"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "yes"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Patients with HPV-positive oropharyngeal cancer do well with cisplatin and radiotherapy, which raised concern about treatment toxicity in people who are young at diagnosis. In the USA cetuximab was already being substituted for cisplatin in low-risk, older or less fit patients. This trial tested whether that substitution preserved survival."
+    },
+    {
+      "heading": "Who and where",
+      "text": "An NRG Oncology cooperative group trial designed by the first authors and published in the Lancet. Funded by the US National Cancer Institute, with support from Eli Lilly and the Oral Cancer Foundation. Industry sponsors had no role in design, analysis or writing."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Non-inferiority trial with 1:1 permuted-block randomisation, stratified by T category, N category, performance status and smoking history. The margin was originally a hazard ratio of 1.40. In December 2013, before any interim analysis, it was changed to 1.45 after newer data showed higher survival, which made the allowed absolute difference at 5 years smaller (7.6%). The design needed 800 eligible patients and 180 deaths for 80% power at a one-sided alpha of 0.05. The primary analysis was modified intention to treat, restricted to eligible patients, with sensitivity analyses per protocol and in all randomised patients. After the third interim analysis the point estimate exceeded the margin without crossing a formal boundary, and the data monitoring committee recommended release."
+    },
+    {
+      "heading": "Results",
+      "text": "After a median 4.5 years there were 78 deaths with cetuximab and 55 with cisplatin. HR 1.45, one-sided 95% upper bound 1.94 (p = 0.5056 for non-inferiority); two-sided 95% CI 1.03 to 2.05 (p = 0.0163). Five-year overall survival 77.9% (73.4 to 82.5) versus 84.6% (80.6 to 88.6). Progression-free survival HR 1.72 (1.29 to 2.29), with 5-year rates of 67.3% versus 78.4%. Locoregional failure HR 2.05 (1.35 to 3.10), 17.3% versus 9.9%. Distant metastasis HR 1.49 (0.94 to 2.36). Grade 3 to 4 acute adverse events 77.4% versus 81.7% (p = 0.16), with more rash on cetuximab and more myelosuppression, nausea, kidney injury and hearing impairment on cisplatin. Early deaths 1.5% in each arm. Both cisplatin cycles were given to 93%, and at least seven cetuximab doses to 85%."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "Large, with overall survival as the primary endpoint and enough deaths to answer it.",
+        "A contemporaneous control arm that outperformed historical cisplatin results.",
+        "High treatment delivery in both arms.",
+        "Sensitivity analyses per protocol (HR 1.40) and in all randomised patients (HR 1.45) match the primary analysis.",
+        "Public funding, and agreement with De-ESCALaTE HPV."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "The primary analysis excluded 5% of randomised patients judged ineligible after randomisation.",
+        "The non-inferiority margin was changed during the trial. The change was made before any interim look and tightened the absolute difference allowed.",
+        "Results were released on the committee's judgement, without a prespecified stopping boundary being crossed.",
+        "The test for superiority of cisplatin was not prespecified.",
+        "Accelerated radiotherapy over 6 weeks with two cisplatin cycles is not the usual UK schedule.",
+        "Open label with investigator-assessed progression. Quality of life was collected in a subset.",
+        "The larger effect in performance status 1 patients (HR 2.66) is an exploratory subgroup finding that lost significance after adjustment."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That the margin was redesigned mid-trial and why. That the analysis population was eligible patients only. That the excess failure was locoregional, with distant metastasis not significantly different. That cetuximab was worse in both low-risk and intermediate-risk groups. The figures show the progression-free survival and locoregional failure curves separating within the first year. The toxicity plots show grade 3 to 4 adverse events and feeding tube rates overlapping at every time point, so cetuximab did not deliver the reduced toxicity it was meant to. Late toxicity, dental and swallowing outcomes are in tables and the supplement that were not read in full for this appraisal."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "With De-ESCALaTE HPV it established cisplatin with radiotherapy as the standard of care in HPV-positive oropharyngeal cancer and stopped cetuximab substitution in patients fit for cisplatin. It is the reason later de-intensification trials use non-inferiority designs against 70 Gy with cisplatin, and why cetuximab is now reserved for patients who cannot have platinum."
+    }
+  ]
+}

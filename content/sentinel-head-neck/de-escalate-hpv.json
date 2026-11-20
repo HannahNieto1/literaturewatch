@@ -1,0 +1,115 @@
+{
+  "id": "de-escalate-hpv",
+  "title": "Radiotherapy plus cisplatin or cetuximab in low-risk human papillomavirus-positive oropharyngeal cancer (De-ESCALaTE HPV): an open-label randomised controlled phase 3 trial",
+  "authors": "Mehanna H, Robinson M, Hartley A, Kong A, et al.",
+  "journal": "Lancet",
+  "date": "2019-01-05",
+  "added": "2026-11-16",
+  "doi": "10.1016/S0140-6736(18)32752-1",
+  "pmid": "30449623",
+  "site": "Head and neck",
+  "discipline": [
+    "Systemic therapy",
+    "Radiotherapy and supportive care"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 2,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "334 adults with p16-positive oropharyngeal squamous cell carcinoma, T3N0 to T4N0 or T1N1 to T4N3 (TNM 7), who were non-smokers or had smoked less than 10 pack-years, ECOG 0 to 1 and fit for cisplatin. 32 centres in the UK, Ireland and the Netherlands, November 2012 to October 2016. Mean age 57, 80% men."
+    },
+    {
+      "label": "Intervention",
+      "text": "Cetuximab 400 mg/m² loading dose then seven weekly doses of 250 mg/m², with intensity-modulated radiotherapy to 70 Gy in 35 fractions (n = 168)."
+    },
+    {
+      "label": "Comparator",
+      "text": "Cisplatin 100 mg/m² on days 1, 22 and 43 with the same radiotherapy (n = 166)."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: overall severe (grade 3 to 5) acute and late toxicity events per patient up to 24 months. Secondary: overall survival, time to recurrence, quality of life, swallowing, and acute and late toxicity separately."
+    }
+  ],
+  "bottom": "Swapping cisplatin for cetuximab did not reduce toxicity (4.8 severe events per patient in both arms) and made outcomes worse: 2-year overall survival was 89.4% versus 97.5% (HR 5.0, 95% CI 1.7 to 14.7) and 2-year recurrence 16.1% versus 6.0%. The survival result rests on 26 deaths in a trial not powered for it, so the size of the harm is uncertain, but its direction was confirmed by RTOG 1016.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "no"
+    },
+    {
+      "label": "Intention to treat",
+      "answer": "yes"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Powered for survival",
+      "answer": "no"
+    },
+    {
+      "label": "Follow-up adequate",
+      "answer": "unclear"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "yes"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "HPV-positive oropharyngeal cancer affects younger patients who survive long enough to live with the late effects of cisplatin chemoradiotherapy. Cetuximab with radiotherapy had improved survival over radiotherapy alone and was thought to be gentler, so it was widely proposed as a way to de-escalate. No randomised trial had compared it with cisplatin in this group."
+    },
+    {
+      "heading": "Who and where",
+      "text": "A UK-led academic trial designed by the first and last authors and the Trial Management Group, coordinated by Warwick Clinical Trials Unit, with central p16 testing. Funded by Cancer Research UK, which had no role in design, analysis or writing. Published in the Lancet alongside RTOG 1016."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Open-label phase 3 trial with central computer-generated allocation by minimisation (centre, T stage, N stage, radiotherapy laterality and planned gastrostomy). All centres passed radiotherapy quality assurance. The sample of 304, increased by 30, gave more than 90% power to detect a 25% reduction in severe toxicity events, assuming 2.5 events per patient. Toxicity was graded by clinicians with CTCAE version 4 and counted per patient using the TAME method. Analysis was by intention to treat, with a per-protocol sensitivity analysis. Survival was a secondary outcome and the authors state the trial was not powered to show non-inferiority."
+    },
+    {
+      "heading": "Results",
+      "text": "Median follow-up 25.9 months. Severe toxicity events per patient were 4.8 (95% CI 4.2 to 5.4) with cisplatin and 4.8 (4.2 to 5.4) with cetuximab (p = 0.98). All-grade events were 29.2 versus 30.1 (p = 0.49). Two-year overall survival was 97.5% with cisplatin and 89.4% with cetuximab (HR 5.0, 1.7 to 14.7; p = 0.0012), with 6 deaths versus 20. Two-year recurrence was 6.0% versus 16.1% (HR 3.4, 1.6 to 7.2), with more locoregional recurrence (3% versus 12%) and more distant metastasis (3% versus 9%) on cetuximab. The number needed to harm was 12 at 2 years. Global quality of life and swallowing did not differ. In the cisplatin arm 38% received all three cycles and 51% received two. In the cetuximab arm 79% received all eight doses."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "Randomised, pragmatic and run in routine UK head and neck centres with radiotherapy quality assurance.",
+        "Publicly funded, with no manufacturer involvement.",
+        "Almost complete delivery of radiotherapy in both arms, so the comparison isolates the systemic agent.",
+        "Intention-to-treat and per-protocol analyses agree.",
+        "The finding was replicated by an independent trial published at the same time."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "Survival and recurrence were secondary outcomes. With 26 deaths the confidence interval runs from 1.7 to 14.7.",
+        "Median follow-up of about 2 years is short for a disease with late recurrences and late toxicity.",
+        "Counting toxicity events treats a rash and permanent hearing loss alike. The profiles differed: more ear, renal and haematological toxicity with cisplatin, more skin and infusion reactions with cetuximab.",
+        "Toxicity grading and recurrence assessment were unblinded.",
+        "Only low-risk patients were included, so the result does not directly cover those who smoke or who are unfit for cisplatin.",
+        "Quality-of-life comparisons were made at several time points without adjustment."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That only 38% of the cisplatin arm received all three cycles, yet cisplatin was still clearly better. That the trial was not powered for survival. That both locoregional and distant failure were more common with cetuximab. That in the 58 patients with TNM 8 stage III disease, 2-year survival was 67.1% with cetuximab against 93.3% with cisplatin, in a post-hoc analysis. That late severe ear toxicity affected 13% of the cisplatin arm. The overall survival curves stay together for about the first 6 months before separating, the recurrence curves separate within the first year, and the global quality-of-life curves overlap at every time point. The appendix was not read for this appraisal."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "Together with RTOG 1016 it ended the use of cetuximab as a de-escalation strategy in HPV-positive disease and fixed cisplatin with radiotherapy as the standard for patients fit to receive it. It also changed how the field approaches de-escalation: a treatment that looks kinder in phase 2 can cost lives, so reductions in treatment now need phase 3 evidence against full-dose chemoradiotherapy."
+    }
+  ]
+}

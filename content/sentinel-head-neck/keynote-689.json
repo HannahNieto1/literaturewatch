@@ -1,0 +1,118 @@
+{
+  "id": "keynote-689",
+  "title": "Neoadjuvant and Adjuvant Pembrolizumab in Locally Advanced Head and Neck Cancer (KEYNOTE-689)",
+  "authors": "Uppaluri R, Haddad RI, Tao Y, Le Tourneau C, et al.",
+  "journal": "N Engl J Med",
+  "date": "2025-07-03",
+  "added": "2026-11-20",
+  "doi": "10.1056/NEJMoa2415434",
+  "pmid": "40532178",
+  "site": "Head and neck",
+  "discipline": [
+    "Systemic therapy",
+    "Surgery"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 10,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "714 adults at 192 sites (2018 to 2023) with resectable stage III to IVA squamous-cell carcinoma of the oral cavity (60%), larynx (22%), hypopharynx (8%) or oropharynx (10%; p16-positive only if T4), ECOG 0 to 1. 96% HPV-negative; 65% had PD-L1 CPS of 10 or more and 96% CPS of 1 or more."
+    },
+    {
+      "label": "Intervention",
+      "text": "Pembrolizumab 200 mg every 3 weeks: two neoadjuvant cycles, surgery, then three cycles with postoperative radiotherapy or chemoradiotherapy and 12 further adjuvant cycles (n = 363)."
+    },
+    {
+      "label": "Comparator",
+      "text": "Standard care: surgery, then radiotherapy 60 Gy, or 66 Gy with 3-weekly cisplatin 100 mg/m2 for positive margins or extranodal extension (n = 351)."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: event-free survival by blinded central review, tested in sequence in CPS 10 or more, CPS 1 or more and all patients. Key secondary: major pathological response (10% or less viable tumour) and overall survival."
+    }
+  ],
+  "bottom": "Adding perioperative pembrolizumab to surgery and adjuvant (chemo)radiotherapy improved 3-year event-free survival from 45.9% to 59.8% in CPS 10 or more (HR 0.66, 95% CI 0.49 to 0.88), with consistent results in CPS 1 or more (HR 0.70) and all patients (HR 0.73), and without reducing the proportion who reached surgery. The full paper shows this is a first interim analysis, overall survival has not yet met its significance boundary, only 9.4% had a major pathological response, and the design cannot tell whether the benefit comes from the neoadjuvant or the year of adjuvant treatment. The first positive phase 3 trial of immunotherapy in resectable head and neck cancer, and a change in standard for HPV-negative disease, but the size of any survival gain and the role of each phase remain open.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "no"
+    },
+    {
+      "label": "Intention to treat",
+      "answer": "yes"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Arms balanced at baseline",
+      "answer": "yes"
+    },
+    {
+      "label": "Follow-up adequate",
+      "answer": "unclear"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "no"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Resectable locally advanced head and neck cancer had seen no new systemic treatment for two decades: about a third of patients relapse within a year of surgery and adjuvant therapy, and fewer than half survive 5 years. Adding PD-1 or PD-L1 blockade to definitive chemoradiotherapy had failed in KEYNOTE-412, JAVELIN 100 and others. Phase 2 window studies suggested pembrolizumab before surgery causes pathological responses. KEYNOTE-689 asked whether adding pembrolizumab before and after surgery improves event-free survival."
+    },
+    {
+      "heading": "Who and where",
+      "text": "An international trial at 192 sites in North America, the European Union and elsewhere, published in the New England Journal of Medicine. Designed by academic advisers with Merck employees, funded by Merck, with sponsor employees among the authors and a sponsor-employed medical writer for the first draft. An independent committee reviewed interim analyses. Registered as NCT03765918."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Open-label phase 3 trial, 1:1, stratified by site, stage and tumour PD-L1 (TPS 50% or more). Surgery was due within 6 weeks of randomisation in the pembrolizumab arm and 4 weeks in the control arm. Postoperative therapy followed central and local pathology, with cisplatin for positive margins (under 1 mm) or extranodal extension, but dose and cisplatin use were at the investigator's discretion. Events included progression preventing surgery, local or distant recurrence and death. Type 1 error was controlled across populations and endpoints with a graphical method, testing event-free survival in CPS 10 or more, then CPS 1 or more, then all patients. This report is the first interim analysis (207 events in CPS 10 or more planned), with a P value boundary of 0.0138 one-sided for the first population. The trial was powered on a hazard ratio of 0.62."
+    },
+    {
+      "heading": "Results",
+      "text": "Surgery was completed in 88.4% versus 87.7%; surgery was delayed in 38 patients after neoadjuvant pembrolizumab and in 10 controls. Postoperative therapy started in 73.6% versus 76.1%. Central pathology found high-risk features in 32.5% versus 44.4%, and fewer pembrolizumab patients received cisplatin (38.9% versus 50.5%). Median follow-up 38.3 months. CPS 10 or more: events 36.3% versus 46.3%, median event-free survival 59.7 versus 26.9 months, 3-year 59.8% versus 45.9%, HR 0.66 (0.49 to 0.88). CPS 1 or more: HR 0.70 (0.55 to 0.89). All patients: HR 0.73 (0.58 to 0.92), 3-year 57.6% versus 46.4%. Major pathological response 9.4% and complete response 3.0% in all patients, with none in CPS below 1. Overall survival in CPS 10 or more: 3-year 68.2% versus 59.2%, HR 0.72 (0.52 to 0.98), not significant against the interim boundary. Grade 3 or worse treatment-related adverse events 44.6% versus 42.9%; treatment-related serious events 19.1% versus 10.5%; grade 3 or worse immune-mediated events 10.0%; treatment-related deaths 1.1% versus 0.3%."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "Large, international, randomised phase 3 trial in a population with no recent advances.",
+        "Event-free survival assessed by blinded central review, with strong control of type 1 error across populations.",
+        "Neoadjuvant treatment did not reduce the proportion reaching surgery.",
+        "Results consistent across PD-L1 groups, and in the predominant HPV-negative oral cavity population.",
+        "The curves separate early and stay apart through follow-up."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "A first interim analysis, with event-free survival rather than overall survival as the primary endpoint. The survival trend is encouraging but not yet formally significant.",
+        "The design bundles neoadjuvant, concurrent and a year of adjuvant pembrolizumab, so the contribution of each part, and whether the neoadjuvant doses matter, is unknown.",
+        "Neoadjuvant treatment changed postoperative pathology, so fewer pembrolizumab patients had cisplatin. Postoperative treatment therefore differed between arms after randomisation.",
+        "Of controls who started adjuvant therapy, only about a third did so within 6 weeks of surgery, and about a quarter of controls never started it. This may be weaker than best standard care.",
+        "Open label, and the pembrolizumab arm was treated three times longer (9.1 versus 2.9 months), with a longer window for recording adverse events.",
+        "Sponsor involvement in design, analysis and drafting.",
+        "Very few HPV-positive or CPS below 1 patients; results cannot be applied to HPV-positive oropharyngeal cancer.",
+        "Event types show the benefit is mainly fewer distant recurrences, while deaths without recurrence were similar or higher with pembrolizumab, which needs longer follow-up."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That fewer pembrolizumab patients had high-risk pathology (32.5% versus 44.4%) and so fewer received cisplatin, which makes the treatment strategies, not just the drug, the comparison. That timely adjuvant therapy was uncommon in both arms. That pathological response was rare (9.4%), so the event-free survival gain is not explained by tumour shrinkage before surgery. That overall survival was tested at a stricter interim boundary and not met. That pembrolizumab doubled treatment-related serious adverse events. The event-free survival curves separate within the first 6 to 12 months and then run roughly parallel; beyond 4 years few patients remain at risk and the total-population curves come close together. Subgroup analyses, reasons for not starting adjuvant therapy, immune-mediated adverse events and the protocol are in the supplementary appendix, which was not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "KEYNOTE-689 led to FDA approval in June 2025 of perioperative pembrolizumab for resectable locally advanced head and neck cancer with PD-L1 CPS of 1 or more, and it has become a standard option in US guidelines. UK adoption depends on licensing and NICE appraisal. For a UK MDT today it makes PD-L1 testing at diagnosis relevant for resectable HPV-negative cancers and raises questions about surgical timing, and about whether a year of adjuvant immunotherapy is needed. Mature overall survival data and trials that separate the neoadjuvant and adjuvant phases are awaited."
+    }
+  ],
+  "flag": "First interim analysis. Overall survival not yet formally significant."
+}

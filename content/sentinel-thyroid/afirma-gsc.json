@@ -1,0 +1,110 @@
+{
+  "id": "afirma-gsc",
+  "title": "Performance of a Genomic Sequencing Classifier for the Preoperative Diagnosis of Cytologically Indeterminate Thyroid Nodules (Afirma GSC)",
+  "authors": "Patel KN, Angell TE, Babiarz J, Barth NM, et al.",
+  "journal": "JAMA Surg",
+  "date": "2018-09-01",
+  "added": "2026-11-20",
+  "doi": "10.1001/jamasurg.2018.1153",
+  "pmid": "29799911",
+  "site": "Thyroid",
+  "discipline": [
+    "Staging and prognosis",
+    "Surgery"
+  ],
+  "type": "Cohort",
+  "depth": "full",
+  "reviewed": false,
+  "order": 6,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "191 Bethesda III or IV fine-needle aspirates (183 patients, nodules 1 cm or larger) from 49 US academic and community centres, collected prospectively in 2009 to 2010 for the earlier gene expression classifier (GEC) validation. All patients had surgery without genomic information. Cancer prevalence 24%."
+    },
+    {
+      "label": "Intervention",
+      "text": "Index test: Afirma Genomic Sequencing Classifier, an RNA-sequencing machine-learning ensemble with additional modules (BRAF V600E, RET/PTC, medullary, parathyroid and Hürthle classifiers)."
+    },
+    {
+      "label": "Comparator",
+      "text": "Reference standard: surgical histopathology by an expert panel blinded to all genomic and cytology data. Also compared with the previous GEC on the same samples."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: sensitivity, specificity, negative and positive predictive value in Bethesda III and IV nodules. Secondary: performance in Bethesda II, V and VI samples."
+    }
+  ],
+  "bottom": "In 190 indeterminate nodules, the GSC had a sensitivity of 91.1% and specificity of 68.3%, giving a negative predictive value of 96.1% and positive predictive value of 47.1% at 24% cancer prevalence, and it improved specificity over its predecessor from 50% to 68% without losing sensitivity. The full paper shows this was a re-use of stored samples from 2009 to 2010, with no NIFTP category, a developer-led algorithm, and wide confidence intervals in the Hürthle subgroup. A solid validation that supported avoiding diagnostic surgery for GSC-benign nodules, though predictive values depend on local cancer prevalence.",
+  "checks": [
+    {
+      "label": "Prospective data",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded reference standard",
+      "answer": "yes"
+    },
+    {
+      "label": "Independent validation set",
+      "answer": "yes"
+    },
+    {
+      "label": "Consecutive unselected cohort",
+      "answer": "no"
+    },
+    {
+      "label": "Adequate sample size",
+      "answer": "unclear"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "no"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "About a fifth to a third of thyroid fine-needle aspirates are indeterminate (Bethesda III or IV), with malignancy in roughly 15% to 30%, so most of these patients had diagnostic lobectomies that turned out benign. The first Afirma test (GEC) had high sensitivity but specificity of only about 52%, so it spared relatively few operations. This study asked whether an RNA-sequencing classifier could identify more benign nodules while keeping sensitivity."
+    },
+    {
+      "heading": "Who and where",
+      "text": "A US multicentre validation published in JAMA Surgery, with the algorithm developed by the test manufacturer (Veracyte) and many authors from its staff, alongside academic endocrinologists, surgeons and pathologists. Funding and conflict of interest statements sit in the author notes, which were not read. The samples came from the 2012 GEC validation cohort."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Blinded diagnostic accuracy study. The classifier (12-model ensemble using 10,196 genes, plus specific modules) was trained on 634 separate samples with nested cross-validation and a locked threshold chosen for at least 90% sensitivity. It was then tested once on the independent stored validation set, with a documented blinding protocol keeping clinical labels hidden from algorithm developers. Of 210 eligible indeterminate samples, 191 (91%) had enough RNA. All patients had surgery regardless, so there is no verification bias. Histology was by a blinded expert panel. Reporting follows STARD."
+    },
+    {
+      "heading": "Results",
+      "text": "One sample had inadequate follicular content, leaving 190. Malignant: 45 (23.7%). GSC suspicious in 41 of 45 cancers and benign in 99 of 145 benign nodules: sensitivity 91.1% (95% CI 79 to 98), specificity 68.3% (60 to 76), NPV 96.1% (90 to 99), PPV 47.1% (36 to 58). Similar in Bethesda III (NPV 96.8%) and IV (NPV 95.0%). The four false negatives were two papillary cancers, one follicular variant and one Hürthle cell carcinoma with vascular invasion. Hürthle lesions (26): sensitivity 88.9%, specificity 58.8%, against 11.8% specificity for the GEC. Against the GEC on the same samples, sensitivity was unchanged (91% versus 89%) and specificity improved (68% versus 50%, P < 0.001). Modelled NPV ranged from 95% to 98% across 11% to 29% prevalence."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "All patients had surgery and blinded expert histology, which removes verification bias, a common flaw in molecular test studies.",
+        "A locked algorithm tested once on an independent, prespecified validation set, with documented blinding.",
+        "Multicentre samples including community practices, with a direct head-to-head comparison against the previous test on the same samples.",
+        "STARD reporting and a clear account of false negatives."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "Samples were collected in 2009 to 2010, before NIFTP was defined; NIFTP was trained as 'suspicious', so real-world PPV will differ.",
+        "The validation set had been used before for the GEC; reusing it is efficient but not a fresh prospective cohort.",
+        "Small numbers: 45 cancers, so the sensitivity confidence interval runs from 79% to 98%, and the Hürthle subgroup is very small.",
+        "Predictive values depend on cancer prevalence, which varies between centres and countries.",
+        "Developed and evaluated by the manufacturer, with commercial interest.",
+        "No children, and no data on repeat biopsies or non-standard sampling."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That the samples are over 15 years old and were already used to validate the previous test. That NIFTP did not exist when they were classified, and the test was trained to call NIFTP suspicious. That a positive result carries only about a 47% chance of cancer, so surgery after a suspicious result is still diagnostic for half of patients. That the Hürthle results rest on 26 nodules. The figure models NPV and PPV across cancer prevalence as single lines without confidence intervals: NPV stays above about 90% up to roughly 40% prevalence and then falls steeply, while PPV is only around a quarter at 11% prevalence. The training cohort, blinding protocol, gene lists and STARD flow diagram are in the supplement, which was not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "Afirma GSC and ThyroSeq v3 became the two main molecular tests for indeterminate nodules in the US, and guidelines now support molecular testing for Bethesda III and IV nodules to help avoid diagnostic surgery. In the UK these tests are not routinely available on the NHS, so practice still relies on repeat cytology, ultrasound risk scoring and diagnostic lobectomy, but the evidence frames discussions with patients and future NHS evaluation. For an MDT the key message is that a benign GSC result supports surveillance, while a suspicious result still carries roughly even odds of benign disease."
+    }
+  ]
+}

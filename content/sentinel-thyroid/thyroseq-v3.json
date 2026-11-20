@@ -1,0 +1,111 @@
+{
+  "id": "thyroseq-v3",
+  "title": "Performance of a Multigene Genomic Classifier in Thyroid Nodules With Indeterminate Cytology: A Prospective Blinded Multicenter Study (ThyroSeq v3)",
+  "authors": "Steward DL, Carty SE, Sippel RS, Yang SP, et al.",
+  "journal": "JAMA Oncol",
+  "date": "2019-02-01",
+  "added": "2026-11-20",
+  "doi": "10.1001/jamaoncol.2018.4616",
+  "pmid": "30419129",
+  "site": "Thyroid",
+  "discipline": [
+    "Staging and prognosis",
+    "Surgery"
+  ],
+  "type": "Cohort",
+  "depth": "full",
+  "reviewed": false,
+  "order": 7,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "782 patients with 1013 nodules enrolled at 10 centres (9 US, 1 Singapore) in 2015 to 2016. Eligible: 286 Bethesda III, IV or V nodules in 256 patients who went on to surgery; 257 nodules (154 III, 93 IV, 10 V) had an informative test."
+    },
+    {
+      "label": "Intervention",
+      "text": "Index test: ThyroSeq v3 genomic classifier, a 112-gene targeted next-generation sequencing panel (mutations, fusions, copy number and expression alterations) scored as negative (0 or 1) or positive (2 or more)."
+    },
+    {
+      "label": "Comparator",
+      "text": "Reference standard: central expert histopathology review blinded to molecular results, with NIFTP grouped with cancer as disease needing surgery."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: sensitivity, specificity, NPV and PPV in Bethesda III and IV nodules. Secondary: cancer probability by molecular alteration group."
+    }
+  ],
+  "bottom": "In 247 Bethesda III and IV nodules, ThyroSeq v3 had a sensitivity of 94% and specificity of 82%, giving an NPV of 97% and PPV of 66% at 28% cancer or NIFTP prevalence, with 61% of nodules testing negative and all missed cancers low risk. The full paper shows that only patients who had surgery were included, prevalence varied from 9% to 60% between sites, NIFTP was counted as disease, and Hürthle cell adenomas were often called positive. A strong prospective validation that supports avoiding diagnostic surgery for most test-negative indeterminate nodules, with the bonus of a molecular profile when positive.",
+  "checks": [
+    {
+      "label": "Prospective data",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded reference standard",
+      "answer": "yes"
+    },
+    {
+      "label": "Independent validation set",
+      "answer": "yes"
+    },
+    {
+      "label": "Consecutive unselected cohort",
+      "answer": "no"
+    },
+    {
+      "label": "Adequate sample size",
+      "answer": "yes"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "unclear"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Around 20% of thyroid aspirates are indeterminate, and cancer rates in Bethesda III and IV vary widely between institutions, so many patients have diagnostic surgery for benign nodules. Earlier molecular tests either had poor negative predictive value (mutation panels) or poor specificity, especially for Hürthle cell lesions (gene expression classifier). ThyroSeq v3 was designed to combine high sensitivity and specificity and to report the specific alteration. This study validated it prospectively."
+    },
+    {
+      "heading": "Who and where",
+      "text": "A multicentre study led from the University of Pittsburgh, where the test was developed and is performed, with 9 US centres and 1 in Singapore, published in JAMA Oncology. Funding and conflict of interest statements are in the author notes, which were not read; the test is a commercial product of the developing group. Registered as NCT02352766."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Prospective double-blinded cohort: cytologists and pathologists did not see molecular results, and the laboratory did not see cytology or histology. Material was collected at routine aspiration, and only nodules with Bethesda III to V cytology that then had surgery were tested centrally. Central expert pathology was the reference standard, with NIFTP grouped with cancer. Sensitivity, specificity and predictive values were given with Wilson 95% confidence intervals, and NPV and PPV were modelled across disease prevalence. A GC score of 1 (low cancer probability) was counted as negative."
+    },
+    {
+      "heading": "Results",
+      "text": "Of 286 eligible nodules, 20 failed on low nucleic acid and 9 on low thyroid cell content, leaving 257 (90%). Histology: 72% benign, 24% malignant, 4% NIFTP; prevalence of cancer or NIFTP ranged from 9% to 60% across sites. Bethesda III and IV: sensitivity 94% (95% CI 86 to 98), specificity 82% (75 to 87), NPV 97% (93 to 99), PPV 66% (56 to 75); 61% tested negative. Bethesda III NPV 97%, Bethesda IV NPV 98%. Five false negatives (3%), all intrathyroidal T1 or T2 cancers without vascular invasion. All 10 Hürthle cell carcinomas were detected, but only 62% of Hürthle cell adenomas tested negative. BRAF V600E-like and TERT or TP53 alterations had 100% cancer probability; RAS-like alterations 62%; copy number alterations alone 59%. 32 of 34 false positives carried clonal alterations, consistent with neoplasms rather than hyperplasia."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "Prospective, multicentre and double-blinded, with central expert histology.",
+        "Larger than most validation studies, with results reported by Bethesda category and histological type.",
+        "Missed cancers were all low risk, and the test detected Hürthle cell carcinomas well.",
+        "Reports the specific alteration, which adds information for surgical planning.",
+        "Predictive values modelled across prevalence, so clinicians can apply them to their own population."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "Only nodules that went to surgery were included, which is necessary for a histological reference but selects patients and inflates prevalence compared with all indeterminate nodules.",
+        "Grouping NIFTP with cancer raises sensitivity and PPV; outcomes for NIFTP-positive patients are not long term.",
+        "Cancer prevalence varied widely by site (9% to 60%), so local predictive values will differ.",
+        "Ten per cent of samples were non-informative, mostly from low cellularity.",
+        "The test was developed and performed by the authors' institution, with commercial interests not detailed in the text read.",
+        "Bethesda V numbers were too small to validate, and the setting was moderate- to high-volume centres."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That only patients who had surgery were studied. That a score of 1 (low-probability alteration) is reported as negative, so some 'negative' nodules carry an alteration. That site prevalence ranged from 9% to 60%. That more than a third of Hürthle cell adenomas tested positive. That nearly all false positives were clonal neoplasms. The flow diagram shows 318 patients with indeterminate cytology, of whom 54 were excluded because they did not have surgery, the source of the selection described above. The predicted-value curves show that at the 10% to 20% prevalence typical of many centres, PPV for Bethesda III nodules falls to roughly 40% to 55%, with wide confidence bands. The central pathology method, site-level data, false negative details and the comparison with Afirma are in the supplement, which was not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "Alongside the Afirma GSC, ThyroSeq v3 made molecular testing an accepted step for Bethesda III and IV nodules in US guidelines, allowing many patients to avoid diagnostic lobectomy, and its alteration groups (BRAF-like, RAS-like, high-risk) are now used to plan the extent of surgery. In the UK these tests are not routinely funded on the NHS, so they mainly inform research and future service evaluation rather than everyday MDT decisions."
+    }
+  ]
+}

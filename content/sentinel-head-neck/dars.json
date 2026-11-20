@@ -1,0 +1,115 @@
+{
+  "id": "dars",
+  "title": "Dysphagia-optimised intensity-modulated radiotherapy versus standard intensity-modulated radiotherapy in patients with head and neck cancer (DARS): a phase 3, multicentre, randomised, controlled trial",
+  "authors": "Nutting C, Finneran L, Roe J, Sydenham MA, et al.",
+  "journal": "Lancet Oncol",
+  "date": "2023-08-01",
+  "added": "2026-11-20",
+  "doi": "10.1016/S1470-2045(23)00265-6",
+  "pmid": "37423227",
+  "site": "Head and neck",
+  "discipline": [
+    "Radiotherapy and supportive care"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 9,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "112 adults at 22 radiotherapy centres in the UK and Ireland (2016 to 2018) with T1 to T4, N0 to N3, M0 oropharyngeal or hypopharyngeal squamous-cell carcinoma needing bilateral neck radiotherapy, WHO performance status 0 to 1 and no pre-existing swallowing problems. 83% HPV-positive oropharyngeal; 89% had concurrent chemoradiotherapy (mainly cisplatin 100 mg/m2 on days 1 and 29)."
+    },
+    {
+      "label": "Intervention",
+      "text": "Dysphagia-optimised IMRT (n = 56): 65 Gy in 30 fractions to gross disease and 54 Gy to elective volumes, with a mandatory mean dose below 50 Gy to the pharyngeal constrictor muscles lying outside the high-dose volume."
+    },
+    {
+      "label": "Comparator",
+      "text": "Standard IMRT with the same doses and fractionation and no constraint on the constrictors (n = 56)."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: MD Anderson Dysphagia Inventory (MDADI) composite score 12 months after radiotherapy, in patients with a 12-month score. Secondary: MDADI to 24 months, UW-QOL, clinician-rated swallowing (PSS-HN), toxicity, feeding tube use, recurrence and survival."
+    }
+  ],
+  "bottom": "Sparing the pharyngeal constrictors improved patient-reported swallowing at 12 months (MDADI composite 77.7 versus 70.6; difference 7.2, 95% CI 0.4 to 13.9, P = 0.037; 9.8 points after adjustment), with fewer severe late dry mouth and dysphagia events and no excess recurrence. The full paper shows that more patients were missing from the standard arm at 12 months (20% versus 7%), that the difference is below the 10 points set as clinically meaningful, and that the MDADI subscales and feeding tube use did not differ. A pragmatic, low-cost change in planning supported by consistent secondary outcomes, though based on a modest effect in a small trial.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "yes"
+    },
+    {
+      "label": "Intention to treat",
+      "answer": "no"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Arms balanced at baseline",
+      "answer": "yes"
+    },
+    {
+      "label": "Follow-up adequate",
+      "answer": "yes"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "yes"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Long-term swallowing problems are among the most feared effects of chemoradiotherapy for pharyngeal cancer, and observational data link them to radiation dose to the pharyngeal constrictor muscles. Small single-arm studies suggested that keeping the constrictors below 50 Gy preserves swallowing without more recurrences. DARS, following the PARSPORT model for parotid sparing, asked whether dysphagia-optimised planning improves swallowing in a randomised comparison."
+    },
+    {
+      "heading": "Who and where",
+      "text": "A UK and Irish trial led from The Royal Marsden and run by the Institute of Cancer Research Clinical Trials and Statistics Unit, published open access in The Lancet Oncology. Funded by Cancer Research UK, which approved the design but had no role in analysis or writing. A patient advocate sat on the trial management group. The chief investigator declares stock options in a radiotherapy company. Registered as ISRCTN25458988."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Phase 3 trial with a two-stage process: target volumes were drawn after registration but before randomisation, to avoid contouring bias. Central 1:1 minimisation (80% random element) by centre, chemotherapy, tumour type and AJCC stage. Patients and the speech and language therapists who assessed swallowing were masked to allocation. All centres passed a national radiotherapy quality assurance programme. Assuming a standard IMRT MDADI of 72 (SD 13.8), 84 evaluable patients gave 90% power to detect a 10-point gain; 102 were planned to allow 20% loss. The primary analysis was a modified intention to treat restricted to patients with a 12-month MDADI, without imputation. Secondary endpoints were tested at 1% to allow for multiplicity."
+    },
+    {
+      "heading": "Results",
+      "text": "Median follow-up was 39.5 months; 110 of 112 completed radiotherapy as prescribed. Mean dose to the superior and middle constrictors outside the high-dose volume was 49.7 Gy with DO-IMRT versus 57.2 Gy with standard IMRT. The 12-month MDADI was completed by 52 (93%) and 45 (80%). MDADI composite 77.7 (SD 16.1) versus 70.6 (17.3), difference 7.2 (0.4 to 13.9), P = 0.037; adjusted difference 9.8 (3.5 to 16.0); at 24 months unadjusted 6.6 (P = 0.070), adjusted 11.1. MDADI subscales did not differ significantly at 12 months. UW-QOL swallowing was better with DO-IMRT at 12 months (81.3 versus 72.2). Late grade 3 or 4 dysphagia 5% versus 15% and dry mouth 5% versus 15%. Feeding tube use at 12 months did not differ. Local recurrences 2 versus 2; overall survival HR 0.79 (0.24 to 2.59). Eight patients, all in the standard arm, had surgery after radiotherapy."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "Randomised and multicentre across the NHS, with contouring done before randomisation.",
+        "Patients and swallowing assessors were masked, which is rare in radiotherapy trials and protects the patient-reported endpoint.",
+        "National radiotherapy quality assurance, with a clear dose separation achieved.",
+        "Patient-reported, clinician-rated and toxicity outcomes all point the same way.",
+        "Academic funding, open-access publication and a data-sharing plan."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "The primary analysis excludes patients without a 12-month score, and missing data were unequal (20% standard versus 7% DO-IMRT). If missing patients had worse swallowing, the bias would favour the standard arm, but the direction cannot be known.",
+        "The 7.2-point difference is below the 10 points the trial set as clinically meaningful. The adjusted 9.8 points is closer, but adjusted analyses were secondary.",
+        "Observed variability (SD about 17) was larger than assumed (13.8), reducing effective power.",
+        "A sensitivity analysis restricted to on-time 12-month assessments lost significance unadjusted (P = 0.056).",
+        "Mostly HPV-positive oropharyngeal cancer; only three hypopharyngeal cancers. Applicability to other sites is uncertain.",
+        "Too small to exclude a modest increase in recurrence near the spared muscles; locoregional safety rests on few events.",
+        "Objective measures (videofluoroscopy, water swallow test) are not yet reported."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That the primary analysis is a completers analysis with more missing data in the control arm. That the dose reduction to the upper constrictors was about 7.5 Gy, achieved by sparing a strip of the contralateral constrictor in tonsil cancers. That the MDADI subscales and feeding tube rates did not differ. That women were twice as common in the DO-IMRT arm (27% versus 13%), which was not a balancing factor. That eight patients in the standard arm, and none in the DO-IMRT arm, had surgery after radiotherapy, which is unexplained. The change-from-baseline plots show the DO-IMRT arm recovering towards baseline while the standard arm stays about 18 points below it, and the proportion with a clinically meaningful decline falls to roughly a third with DO-IMRT by 24 months but stays near two-thirds with standard IMRT. Dose-volume details, feeding tube data and the longitudinal analyses are in the appendix, which was not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "DARS led UK centres to adopt pharyngeal constrictor sparing as standard planning for oropharyngeal and hypopharyngeal radiotherapy, in the way PARSPORT established parotid sparing a decade earlier. It requires no new equipment, only contouring and planning constraints, so it was quick to implement across the NHS. For an MDT today it supports discussing swallowing-sparing radiotherapy with patients, while proton therapy and de-escalation trials ask whether further gains are possible."
+    }
+  ]
+}

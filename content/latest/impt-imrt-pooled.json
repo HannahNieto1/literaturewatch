@@ -1,0 +1,110 @@
+{
+  "id": "impt-imrt-pooled",
+  "title": "Comparison of intensity-modulated proton therapy (IMPT) and intensity-modulated radiotherapy (IMRT) for oropharyngeal cancer: efficacy and toxicity differ by outcome measure",
+  "authors": "You J, You J, Xu B, Zhou Z.",
+  "journal": "ESMO Open",
+  "date": "2026-10-20",
+  "added": "2026-11-16",
+  "doi": "10.1016/j.esmoop.2026.108602",
+  "pmid": "42901049",
+  "site": "Head and neck",
+  "discipline": [
+    "Radiotherapy and supportive care"
+  ],
+  "type": "Meta-analysis",
+  "depth": "full",
+  "reviewed": false,
+  "order": 4,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "Patients with oropharyngeal cancer in three published comparisons: the US multicentre phase III trial (Frank et al., Lancet 2026), the UK TORPEdO phase III trial (Thomson et al., Lancet 2026) and a 2016 MD Anderson matched cohort. Analysed as treated: 342 received protons and 303 received photons."
+    },
+    {
+      "label": "Intervention",
+      "text": "Intensity-modulated proton therapy."
+    },
+    {
+      "label": "Comparator",
+      "text": "Intensity-modulated photon radiotherapy."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: acute grade 3 dysphagia and acute grade 3 xerostomia or oral and pharyngeal dryness, from the two trials only. Secondary: overall survival, progression-free survival and locoregional recurrence. Exploratory: gastrostomy dependence and weight loss at 12 months."
+    }
+  ],
+  "bottom": "Pooling the two phase III trials, protons reduced acute grade 3 dysphagia (RR 0.65, 95% CI 0.51 to 0.84) and xerostomia (RR 0.72, 0.54 to 0.95), with no detectable difference in disease control or survival. This is a four-page secondary analysis of published aggregate data with no systematic search, no risk-of-bias assessment and as-treated denominators. It is a fair summary of direction, and the two Lancet trials should be read in its place for anything that matters.",
+  "checks": [
+    {
+      "label": "Randomised evidence for primary endpoints",
+      "answer": "yes"
+    },
+    {
+      "label": "Systematic search reported",
+      "answer": "no"
+    },
+    {
+      "label": "Protocol registration reported",
+      "answer": "no"
+    },
+    {
+      "label": "Risk-of-bias assessment",
+      "answer": "no"
+    },
+    {
+      "label": "Intention-to-treat data",
+      "answer": "no"
+    },
+    {
+      "label": "Trials agree in direction",
+      "answer": "yes"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Protons spare the oral cavity, constrictors and salivary glands on a treatment plan. Whether that turns into clinical benefit in oropharyngeal cancer has been argued since a 2016 matched cohort. In 2026 two phase III trials reported in the Lancet with apparently opposite messages: the US trial found less severe xerostomia and dysphagia, non-inferior progression-free survival and better overall survival with protons, and the UK TORPEdO trial found no meaningful difference in late patient-reported physical quality of life, locoregional control or survival. This paper asks which findings hold across both."
+    },
+    {
+      "heading": "Who and where",
+      "text": "Four authors from Fujian Medical University Union Hospital and Fujian Cancer Hospital, none of them investigators on the trials. Published as a short communication in ESMO Open. No funding and no conflicts declared."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "A pooled analysis of aggregate data extracted from three published studies. The paper describes no literature search, no protocol or registration, and no assessment of bias in the included studies. Randomised trials were the primary tier, and the matched cohort was added for some secondary and exploratory outcomes. Different outcomes draw on different pairs of studies: overall survival on the two trials, progression-free survival on the US trial plus the cohort, and locoregional recurrence on TORPEdO plus the cohort. Binary outcomes were pooled as risk ratios and time-to-event outcomes as hazard ratios, mostly with fixed-effect models. Published survival curves were digitised for a descriptive overlay."
+    },
+    {
+      "heading": "Results",
+      "text": "Acute grade 3 dysphagia: 54 of 160 versus 67 of 136 in the US trial (RR 0.69, 95% CI 0.52 to 0.90) and 16 of 132 versus 16 of 67 in TORPEdO (RR 0.51, 0.27 to 0.95), pooled RR 0.65 (0.51 to 0.84). Grade 3 xerostomia or dryness: 52 of 160 versus 61 of 136 in the US trial (RR 0.72, 0.54 to 0.97) and 6 of 132 versus 5 of 67 in TORPEdO (RR 0.61, 0.19 to 1.92), pooled RR 0.72 (0.54 to 0.95). Overall survival HR 0.79 (0.32 to 1.98, I² 47%). Progression-free survival HR 0.90 (0.61 to 1.33). Locoregional recurrence HR 1.37 (0.56 to 3.36). Gastrostomy dependence at 12 months RR 0.32 (0.08 to 1.28). Weight loss and composite nutritional outcomes were inconclusive with I² above 85%."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "It asks a useful question: which results reproduce across two trials that were reported as contradictory.",
+        "The primary toxicity analysis uses randomised trials only, and both trials point the same way.",
+        "The authors are frank that nutritional outcomes are too heterogeneous to interpret.",
+        "It names two real problems in the source trials: possible insurance-driven crossover in the US trial, and the way CTCAE grade 3 dry mouth overlaps with tube feeding for dysphagia."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "It is not a systematic review. With no search, protocol or bias assessment, there is no assurance that the evidence set is complete or was chosen in advance.",
+        "The analysis uses patients as treated. The US trial contributes 160 and 136 patients, and the authors themselves suggest that who actually received protons was influenced by insurance approval. That breaks randomisation for the outcome they call primary.",
+        "The headline percentages (24.0% versus 40.9% for dysphagia) are crude sums across trials. TORPEdO had about twice as many proton as photon patients and far lower toxicity rates, so it contributes 45% of proton patients and 33% of photon patients. That mix exaggerates the absolute gap. The risk ratios are the figures to use.",
+        "Absolute rates differ enormously between trials: grade 3 dysphagia 33.8% in the US proton arm against 12.1% in the UK proton arm, and xerostomia 32.5% against 4.5%. The trials were grading different things or treating different patients, and pooling hides that.",
+        "Acute grade 3 toxicity was clinician-graded in open-label trials. TORPEdO's own primary endpoint, late patient-reported physical quality of life, showed no difference.",
+        "Each survival outcome rests on two studies, one of them an observational cohort for progression and recurrence, with confidence intervals too wide to exclude benefit or harm.",
+        "The closing suggestion that carbon-ion therapy may be the better answer has no data behind it."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That the pooled patients are those who received each treatment, not those randomised to it. That no search strategy, registration or risk-of-bias assessment is reported. That the survival, progression and recurrence estimates each come from a different pair of studies. That TORPEdO alone shows no significant difference in xerostomia. That the two trials' absolute toxicity rates differ roughly three to sevenfold. The digitised survival curves are plotted on an axis starting at 90%, which magnifies small differences, and the IMPT and IMRT curves cross repeatedly; the forest plot shows very wide intervals for weight loss (RR 1.05, 0.12 to 9.38). Supplementary Table S1, which sets out how endpoints were matched across studies, was not available for this appraisal."
+    },
+    {
+      "heading": "Will it change practice?",
+      "text": "No. It adds no new patients and less rigour than the trials it summarises. For a UK MDT the relevant evidence is TORPEdO, run against well-optimised NHS photon radiotherapy, which did not show a late quality-of-life benefit. The fair reading is that protons probably reduce severe acute swallowing toxicity during treatment, without evidence so far that this lasts or that cancer outcomes improve. Read the two Lancet papers directly before using this in a discussion about proton referral."
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+# Decap CMS settings for the Literature Watch reviewer editing area (yoursite/admin)
+backend:
+  name: git-gateway
+  branch: main
+  squash_merges: true
+  commit_messages:
+    create: "Add {{collection}} paper: {{slug}}"
+    update: "Edit {{collection}} paper: {{slug}}"
+    delete: "Remove {{collection}} paper: {{slug}}"
+
+# Every edit is saved as a draft and only goes live when it is published
+publish_mode: editorial_workflow
+
+media_folder: "content/uploads"
+public_folder: "/uploads"
+locale: "en"
+
+collections:
+  - name: "latest"
+    label: "Literature Watch (current papers)"
+    label_singular: "paper"
+    folder: "content/latest"
+    format: "json"
+    extension: "json"
+    create: true
+    delete: false
+    identifier_field: "id"
+    slug: "{{slug}}"
+    summary: "{{title}} ({{journal}})"
+    sortable_fields: ["order", "date", "title"]
+    fields:
+      - {label: "Short ID (lowercase, no spaces; becomes the file name)", name: "id", widget: "string", pattern: ['^[a-z0-9-]+$', "Lowercase letters, numbers and hyphens only"]}
+      - {label: "Position on the page (1 = top)", name: "order", widget: "number", value_type: "int", required: false}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Authors", name: "authors", widget: "string", required: false}
+      - {label: "Journal", name: "journal", widget: "string"}
+      - {label: "Publication date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false}
+      - {label: "Date added to the site", name: "added", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false}
+      - {label: "DOI", name: "doi", widget: "string", required: false}
+      - {label: "PubMed ID", name: "pmid", widget: "string", required: false}
+      - {label: "Tumour site", name: "site", widget: "select", options: ["Head and neck", "Thyroid"]}
+      - {label: "Discipline", name: "discipline", widget: "select", multiple: true, options: ["Surgery", "Systemic therapy", "Radiotherapy and supportive care", "Staging and prognosis"]}
+      - {label: "Study type", name: "type", widget: "select", options: ["RCT", "Cohort", "Meta-analysis", "Single-arm trial", "Systematic review", "Case-control", "Laboratory study", "Guideline"]}
+      - {label: "Depth", name: "depth", widget: "hidden", default: "full"}
+      - {label: "Clinician reviewed (green tick) - only tick once Hannah has confirmed a full review", name: "reviewed", widget: "boolean", default: false}
+      - {label: "Warning flag (optional, shown in amber on the card)", name: "flag", widget: "string", required: false}
+      - label: "Related later papers (optional)"
+        name: "related"
+        widget: "list"
+        required: false
+        summary: "{{fields.label}}: {{fields.title}}"
+        fields:
+          - {label: "Label", name: "label", widget: "string", default: "Separate later analysis"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Journal", name: "journal", widget: "string", required: false}
+          - {label: "Date (YYYY-MM)", name: "date", widget: "string", required: false}
+          - {label: "DOI", name: "doi", widget: "string", required: false}
+          - {label: "PubMed ID", name: "pmid", widget: "string", required: false}
+          - {label: "Note", name: "note", widget: "text", required: false}
+      - label: "PICO"
+        name: "pico"
+        widget: "list"
+        summary: "{{fields.label}}"
+        fields:
+          - {label: "Heading", name: "label", widget: "string"}
+          - {label: "Text", name: "text", widget: "text"}
+      - {label: "Bottom line", name: "bottom", widget: "text"}
+      - label: "Quick checks"
+        name: "checks"
+        widget: "list"
+        summary: "{{fields.label}}: {{fields.answer}}"
+        fields:
+          - {label: "Check", name: "label", widget: "string"}
+          - {label: "Answer", name: "answer", widget: "select", options: ["yes", "no", "unclear"]}
+      - label: "Appraisal sections"
+        name: "appraisal"
+        widget: "list"
+        summary: "{{fields.heading}}"
+        fields:
+          - {label: "Section heading", name: "heading", widget: "string"}
+          - {label: "Text (use for paragraph sections)", name: "text", widget: "text", required: false}
+          - label: "Bullet points (use for Strengths / Weaknesses instead of Text)"
+            name: "points"
+            widget: "list"
+            required: false
+            field: {label: "Point", name: "point", widget: "text"}
+  - name: "sentinel-head-neck"
+    label: "Sentinel papers - Head and neck"
+    label_singular: "paper"
+    folder: "content/sentinel-head-neck"
+    format: "json"
+    extension: "json"
+    create: true
+    delete: false
+    identifier_field: "id"
+    slug: "{{slug}}"
+    summary: "{{title}} ({{journal}})"
+    sortable_fields: ["order", "date", "title"]
+    fields:
+      - {label: "Short ID (lowercase, no spaces; becomes the file name)", name: "id", widget: "string", pattern: ['^[a-z0-9-]+$', "Lowercase letters, numbers and hyphens only"]}
+      - {label: "Position on the page (1 = top)", name: "order", widget: "number", value_type: "int", required: false}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Authors", name: "authors", widget: "string", required: false}
+      - {label: "Journal", name: "journal", widget: "string"}
+      - {label: "Publication date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false}
+      - {label: "Date added to the site", name: "added", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false}
+      - {label: "DOI", name: "doi", widget: "string", required: false}
+      - {label: "PubMed ID", name: "pmid", widget: "string", required: false}
+      - {label: "Tumour site", name: "site", widget: "select", options: ["Head and neck", "Thyroid"]}
+      - {label: "Discipline", name: "discipline", widget: "select", multiple: true, options: ["Surgery", "Systemic therapy", "Radiotherapy and supportive care", "Staging and prognosis"]}
+      - {label: "Study type", name: "type", widget: "select", options: ["RCT", "Cohort", "Meta-analysis", "Single-arm trial", "Systematic review", "Case-control", "Laboratory study", "Guideline"]}
+      - {label: "Depth", name: "depth", widget: "hidden", default: "full"}
+      - {label: "Clinician reviewed (green tick) - only tick once Hannah has confirmed a full review", name: "reviewed", widget: "boolean", default: false}
+      - {label: "Warning flag (optional, shown in amber on the card)", name: "flag", widget: "string", required: false}
+      - label: "Related later papers (optional)"
+        name: "related"
+        widget: "list"
+        required: false
+        summary: "{{fields.label}}: {{fields.title}}"
+        fields:
+          - {label: "Label", name: "label", widget: "string", default: "Separate later analysis"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Journal", name: "journal", widget: "string", required: false}
+          - {label: "Date (YYYY-MM)", name: "date", widget: "string", required: false}
+          - {label: "DOI", name: "doi", widget: "string", required: false}
+          - {label: "PubMed ID", name: "pmid", widget: "string", required: false}
+          - {label: "Note", name: "note", widget: "text", required: false}
+      - label: "PICO"
+        name: "pico"
+        widget: "list"
+        summary: "{{fields.label}}"
+        fields:
+          - {label: "Heading", name: "label", widget: "string"}
+          - {label: "Text", name: "text", widget: "text"}
+      - {label: "Bottom line", name: "bottom", widget: "text"}
+      - label: "Quick checks"
+        name: "checks"
+        widget: "list"
+        summary: "{{fields.label}}: {{fields.answer}}"
+        fields:
+          - {label: "Check", name: "label", widget: "string"}
+          - {label: "Answer", name: "answer", widget: "select", options: ["yes", "no", "unclear"]}
+      - label: "Appraisal sections"
+        name: "appraisal"
+        widget: "list"
+        summary: "{{fields.heading}}"
+        fields:
+          - {label: "Section heading", name: "heading", widget: "string"}
+          - {label: "Text (use for paragraph sections)", name: "text", widget: "text", required: false}
+          - label: "Bullet points (use for Strengths / Weaknesses instead of Text)"
+            name: "points"
+            widget: "list"
+            required: false
+            field: {label: "Point", name: "point", widget: "text"}
+  - name: "sentinel-thyroid"
+    label: "Sentinel papers - Thyroid"
+    label_singular: "paper"
+    folder: "content/sentinel-thyroid"
+    format: "json"
+    extension: "json"
+    create: true
+    delete: false
+    identifier_field: "id"
+    slug: "{{slug}}"
+    summary: "{{title}} ({{journal}})"
+    sortable_fields: ["order", "date", "title"]
+    fields:
+      - {label: "Short ID (lowercase, no spaces; becomes the file name)", name: "id", widget: "string", pattern: ['^[a-z0-9-]+$', "Lowercase letters, numbers and hyphens only"]}
+      - {label: "Position on the page (1 = top)", name: "order", widget: "number", value_type: "int", required: false}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Authors", name: "authors", widget: "string", required: false}
+      - {label: "Journal", name: "journal", widget: "string"}
+      - {label: "Publication date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false}
+      - {label: "Date added to the site", name: "added", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false}
+      - {label: "DOI", name: "doi", widget: "string", required: false}
+      - {label: "PubMed ID", name: "pmid", widget: "string", required: false}
+      - {label: "Tumour site", name: "site", widget: "select", options: ["Head and neck", "Thyroid"]}
+      - {label: "Discipline", name: "discipline", widget: "select", multiple: true, options: ["Surgery", "Systemic therapy", "Radiotherapy and supportive care", "Staging and prognosis"]}
+      - {label: "Study type", name: "type", widget: "select", options: ["RCT", "Cohort", "Meta-analysis", "Single-arm trial", "Systematic review", "Case-control", "Laboratory study", "Guideline"]}
+      - {label: "Depth", name: "depth", widget: "hidden", default: "full"}
+      - {label: "Clinician reviewed (green tick) - only tick once Hannah has confirmed a full review", name: "reviewed", widget: "boolean", default: false}
+      - {label: "Warning flag (optional, shown in amber on the card)", name: "flag", widget: "string", required: false}
+      - label: "Related later papers (optional)"
+        name: "related"
+        widget: "list"
+        required: false
+        summary: "{{fields.label}}: {{fields.title}}"
+        fields:
+          - {label: "Label", name: "label", widget: "string", default: "Separate later analysis"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Journal", name: "journal", widget: "string", required: false}
+          - {label: "Date (YYYY-MM)", name: "date", widget: "string", required: false}
+          - {label: "DOI", name: "doi", widget: "string", required: false}
+          - {label: "PubMed ID", name: "pmid", widget: "string", required: false}
+          - {label: "Note", name: "note", widget: "text", required: false}
+      - label: "PICO"
+        name: "pico"
+        widget: "list"
+        summary: "{{fields.label}}"
+        fields:
+          - {label: "Heading", name: "label", widget: "string"}
+          - {label: "Text", name: "text", widget: "text"}
+      - {label: "Bottom line", name: "bottom", widget: "text"}
+      - label: "Quick checks"
+        name: "checks"
+        widget: "list"
+        summary: "{{fields.label}}: {{fields.answer}}"
+        fields:
+          - {label: "Check", name: "label", widget: "string"}
+          - {label: "Answer", name: "answer", widget: "select", options: ["yes", "no", "unclear"]}
+      - label: "Appraisal sections"
+        name: "appraisal"
+        widget: "list"
+        summary: "{{fields.heading}}"
+        fields:
+          - {label: "Section heading", name: "heading", widget: "string"}
+          - {label: "Text (use for paragraph sections)", name: "text", widget: "text", required: false}
+          - label: "Bullet points (use for Strengths / Weaknesses instead of Text)"
+            name: "points"
+            widget: "list"
+            required: false
+            field: {label: "Point", name: "point", widget: "text"}

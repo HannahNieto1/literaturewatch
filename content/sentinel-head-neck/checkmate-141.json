@@ -1,0 +1,115 @@
+{
+  "id": "checkmate-141",
+  "title": "Nivolumab for Recurrent Squamous-Cell Carcinoma of the Head and Neck (CheckMate 141)",
+  "authors": "Ferris RL, Blumenschein G Jr, Fayette J, Guigay J, et al.",
+  "journal": "N Engl J Med",
+  "date": "2016-11-10",
+  "added": "2026-11-16",
+  "doi": "10.1056/NEJMoa1602252",
+  "pmid": "27718784",
+  "site": "Head and neck",
+  "discipline": [
+    "Systemic therapy"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 1,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "361 adults with recurrent or metastatic squamous-cell carcinoma of the oral cavity, pharynx or larynx that had progressed within 6 months of platinum chemotherapy, ECOG 0 to 1. Recruited June 2014 to August 2015. 91.4% had previous radiotherapy and 54.5% had two or more previous lines of systemic therapy."
+    },
+    {
+      "label": "Intervention",
+      "text": "Nivolumab 3 mg/kg every 2 weeks until progression or unacceptable toxicity (n = 240)."
+    },
+    {
+      "label": "Comparator",
+      "text": "Investigator's choice of weekly single-agent methotrexate, docetaxel or cetuximab (n = 121; given to 46, 52 and 13 patients)."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: overall survival. Secondary: progression-free survival and objective response. Exploratory: outcomes by PD-L1 expression and p16 status, and patient-reported quality of life."
+    }
+  ],
+  "bottom": "In platinum-refractory disease, nivolumab extended median overall survival from 5.1 to 7.5 months (HR 0.70) and doubled 1-year survival from 16.6% to 36.0%, with fewer grade 3 or 4 treatment-related adverse events (13.1% versus 35.1%). The result comes from a planned interim analysis with a median follow-up of 5.1 months. Only 13.3% of patients responded and progression-free survival was not improved, so the benefit is concentrated in a minority.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "no"
+    },
+    {
+      "label": "Intention to treat",
+      "answer": "yes"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Follow-up adequate",
+      "answer": "no"
+    },
+    {
+      "label": "Hard primary endpoint",
+      "answer": "yes"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "no"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Patients whose head and neck cancer progresses within 6 months of platinum had a median survival of around 6 months and no treatment that prolonged life. Early-phase data suggested PD-1 blockade had activity. This trial asked whether nivolumab improves survival over the single agents then in use."
+    },
+    {
+      "heading": "Who and where",
+      "text": "An international academic and industry collaboration, published in the New England Journal of Medicine. Funded by Bristol-Myers Squibb, which designed the trial with the academic authors and paid for medical writing support."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Open-label phase 3 trial with 2:1 randomisation, stratified by previous cetuximab. The sample of 360 patients and 278 deaths gave 90% power to detect a hazard ratio of 0.667, with one interim analysis at 70% of events under an O'Brien-Fleming boundary. Efficacy was analysed by intention to treat, with response assessed by investigators. Progression-free survival and response were tested hierarchically only if survival was positive. PD-L1 and p16 analyses were exploratory and unadjusted for multiplicity. Nivolumab could be continued beyond progression."
+    },
+    {
+      "heading": "Results",
+      "text": "At the interim analysis there were 133 deaths (55.4%) with nivolumab and 85 (70.2%) with standard therapy. Median overall survival 7.5 months (95% CI 5.5 to 9.1) versus 5.1 months (4.0 to 6.0); HR 0.70 (97.73% CI 0.51 to 0.96; P = 0.01). One-year survival 36.0% versus 16.6%. Against each comparator the hazard ratio was 0.64 for methotrexate, 0.82 (0.53 to 1.28) for docetaxel and 0.47 (0.22 to 1.01) for cetuximab. Progression-free survival HR 0.89 (0.70 to 1.13), median 2.0 versus 2.3 months, with 6-month rates of 19.7% versus 9.9%. Response rate 13.3% versus 5.8%. Grade 3 or 4 treatment-related adverse events 13.1% versus 35.1%. Median treatment duration was 1.9 months in both arms."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "Overall survival as the primary endpoint in an open-label trial, which removes assessment bias from the main result.",
+        "A prespecified interim boundary that was crossed, with intention-to-treat analysis.",
+        "A comparator that reflected real practice at the time.",
+        "Less severe toxicity than chemotherapy, with quality of life maintained on nivolumab while it declined on standard therapy."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "Median follow-up was 5.1 months. The durable tail that defines immunotherapy could not be measured in this report.",
+        "The median gain is 2.4 months and 87% of patients did not respond. Most patients derive no benefit.",
+        "The survival curves separate late and the progression-free curves cross. The hazards are not proportional, so the hazard ratio is an average that hides early equivalence or harm.",
+        "The standard arm had more patients aged 65 or over and more never-smokers, and 10 of its 121 patients never received treatment.",
+        "The advantage over docetaxel alone is not statistically secure.",
+        "PD-L1 status was evaluable in only 72% of patients, and the biomarker analyses were exploratory.",
+        "Open label, with investigator-assessed response and patient-reported outcomes.",
+        "Sponsor involvement in design and writing. Eligibility was limited to ECOG 0 to 1."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That this is an interim analysis with a 97.73% confidence interval. That the hazards were non-proportional. That treatment lasted a median of under 2 months in both arms. That the comparison with docetaxel, the most active comparator, crosses 1. That PD-L1 could not be assessed in more than a quarter of patients. The Kaplan-Meier curves overlap for the first 3 months, and by 12 months only 24 nivolumab and 5 standard therapy patients remain at risk, so the 1-year survival rates rest on few patients; in PD-L1 below 1% the survival curves overlap throughout (HR 0.89). The quality-of-life plots come from the 129 patients who returned questionnaires. The subgroup hazard ratios by PD-L1 and p16 status are in Table 2 and the supplementary appendix and are not reproduced in this appraisal."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "This was the first trial to show a survival benefit after platinum failure in head and neck cancer. It led to the licensing of nivolumab for this indication and made PD-1 blockade the standard second-line treatment. It also set up the first-line question answered by KEYNOTE-048. For an MDT today its main relevance is for patients who relapse soon after platinum-based chemoradiotherapy and have not yet had immunotherapy."
+    }
+  ]
+}

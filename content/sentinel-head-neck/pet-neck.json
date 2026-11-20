@@ -1,0 +1,117 @@
+{
+  "id": "pet-neck",
+  "title": "PET-CT Surveillance versus Neck Dissection in Advanced Head and Neck Cancer (PET-NECK)",
+  "authors": "Mehanna H, Wong WL, McConkey CC, Rahman JK, et al.",
+  "journal": "N Engl J Med",
+  "date": "2016-04-14",
+  "added": "2026-11-20",
+  "doi": "10.1056/NEJMoa1514493",
+  "pmid": "27007578",
+  "site": "Head and neck",
+  "discipline": [
+    "Surgery",
+    "Radiotherapy and supportive care"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 5,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "564 adults from 37 UK centres (2007 to 2012) with N2 or N3, M0 squamous-cell carcinoma of the oropharynx, larynx, hypopharynx, oral cavity or unknown primary, treated with curative chemoradiotherapy. 84% oropharyngeal; 79% N2a or N2b; 75% of tested tumours p16-positive; 95% had concomitant platinum."
+    },
+    {
+      "label": "Intervention",
+      "text": "PET-CT surveillance (n = 282): PET-CT 12 weeks after chemoradiotherapy, with neck dissection only for an incomplete or equivocal nodal response."
+    },
+    {
+      "label": "Comparator",
+      "text": "Planned neck dissection (n = 282), either before chemoradiotherapy or 4 to 8 weeks after it, with timing declared per patient before randomisation."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: overall survival, non-inferiority margin HR 1.50. Secondary: neck dissections performed, locoregional control, surgical complications, quality of life (EORTC, MDADI) and cost-effectiveness."
+    }
+  ],
+  "bottom": "PET-CT surveillance after chemoradiotherapy for N2 or N3 disease was non-inferior to planned neck dissection for overall survival (2-year 84.9% versus 81.5%; HR 0.92, 95% CI 0.65 to 1.32) while cutting neck dissections from 221 to 54 and saving £1,492 per patient. The full paper shows that 22% of the planned-surgery arm never had their neck dissection, which narrows the real contrast between the arms, and that very few patients had N3 or non-oropharyngeal disease. For HPV-associated oropharyngeal cancer with N2 nodes it is strong, practice-defining evidence.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "no"
+    },
+    {
+      "label": "Intention to treat",
+      "answer": "yes"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Non-inferiority margin justified",
+      "answer": "unclear"
+    },
+    {
+      "label": "Follow-up adequate",
+      "answer": "yes"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "yes"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Retrospective series found residual tumour in up to 40% of neck dissections after chemoradiotherapy, so many centres operated on every N2 or N3 neck. Better imaging suggested that patients with a complete response rarely relapse in the neck, and single-centre PET-CT series reported negative predictive values of about 95%. No randomised trial had tested whether a response-guided approach is safe. PET-NECK asked whether PET-CT surveillance is non-inferior to planned dissection for survival."
+    },
+    {
+      "heading": "Who and where",
+      "text": "A UK multicentre trial led from the University of Birmingham, run by the Warwick Clinical Trials Unit, published in the New England Journal of Medicine. Funded by the NIHR Health Technology Assessment Programme and Cancer Research UK, with no commercial support. The first and last authors and trial management group designed it. Registered as ISRCTN13735240."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Unblinded, non-inferiority randomised trial with central 1:1 minimisation by centre, planned timing of dissection, chemotherapy schedule, site, T stage and N stage. PET-CT was read locally, with all scans reviewed centrally. Equivocal responses were treated as incomplete and went to surgery. The sample size of 560 gave 90% power at one-sided 5% to exclude a 10 percentage point fall from an assumed 75% 2-year survival (HR 1.50). Overall survival was analysed by intention to treat with a Cox model stratified by planned dissection timing; there were two interim analyses. Quality of life and costs were collected in a subgroup of patients and centres."
+    },
+    {
+      "heading": "Results",
+      "text": "In the surveillance arm 270 (96%) had PET-CT at a median of 11.1 weeks; 185 (69%) had a complete response at both sites. Of 47 with a complete primary response but incomplete or equivocal nodes, 36 had neck dissection. In the planned arm 61 (22%) did not have their dissection, half of them because they declined. Neck dissections: 54 versus 221. Median follow-up 36 months; 122 deaths (60 versus 62). Two-year overall survival 84.9% (95% CI 80.7 to 89.1) versus 81.5% (76.9 to 86.3); HR 0.92 (0.65 to 1.32), P = 0.004 for non-inferiority. Two-year locoregional control 91.9% versus 91.4%. HR by p16 status: 0.74 positive, 0.98 negative. Surgical complications 42% versus 38% of those operated on; serious adverse events 113 versus 169. Global quality of life favoured surveillance at 6 months (4.94 points) and was equal by 24 months. Surveillance saved £1,492 per person and gained 0.08 QALYs."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "The first randomised trial of this question, large and run across 37 UK centres, so it reflects NHS practice.",
+        "Overall survival as the primary endpoint, which is hard to bias in an open trial.",
+        "Central review of every PET-CT, with 97% agreement with local reports for nodal disease.",
+        "Effect consistent by p16 status and robust to adjustment for prognostic factors.",
+        "Patient-reported outcomes and a formal health economic analysis alongside survival.",
+        "Academic funding with no industry interest."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "22% of the planned-surgery arm did not have neck dissection. In a non-inferiority trial this makes the arms more alike and biases towards a finding of non-inferiority. No per-protocol analysis is reported in the main paper.",
+        "The margin of 10 percentage points (HR 1.50) is wide. Survival was higher than the 75% assumed, so the absolute difference the margin allowed was smaller than planned, but the clinical justification for the margin is not given.",
+        "Few patients with N3 (17), oral cavity (11) or hypopharyngeal (29) disease. The result cannot be extended to them with confidence.",
+        "T stage showed significant heterogeneity: HR 1.50 (0.84 to 2.68) in T1 to T2 disease against 0.70 in T3 to T4. Probably chance, but unexplained.",
+        "Withdrawals were commoner in the planned-surgery arm, which suggests patient reluctance to have planned surgery.",
+        "Imaging response was read qualitatively without standardised uptake values, and the response scan was at 12 weeks only.",
+        "Quality of life and costs come from a subgroup, with a 2-year time horizon."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That one in five patients allocated to planned surgery never had it, which matters for a non-inferiority design. That equivocal PET-CT responses were sent for surgery, so the result supports operating on equivocal necks, not watching them. That T stage subgroups were heterogeneous. Two figures look misprinted: the 95% CI for severe complications is printed as 0.15 to 0.41 (presumably 15% to 41%), and the hazard ratio for patients with unknown p16 status is printed as 0.76 with a CI of 0.34 to 0.70, which does not contain the estimate. The Kaplan-Meier curves overlap almost completely when surveillance is compared with neck dissection after chemoradiotherapy (HR 1.03), the comparison most relevant today; the slight overall advantage comes from the stratum with neck dissection before chemoradiotherapy, where early deaths occurred in the surgery-first arm. Beyond 3 years few patients remain at risk (32 and 33 at 48 months). The supplementary appendix (chemoradiotherapy regimens, reasons for not operating, adjusted analyses, serious adverse events) was not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "PET-NECK made PET-CT-guided surveillance at around 12 weeks the standard of care after chemoradiotherapy for N2 disease in the UK and much of the world. It is reflected in UK national guidance and NCCN guidelines, and planned neck dissection after a complete metabolic response is now rare. It also gave the field a model for academic, NHS-based trials that change practice. Open questions remain for equivocal scans in HPV-positive disease (later imaging may avoid surgery), for N3 disease and for non-oropharyngeal sites."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "libretto-531",
+  "title": "Phase 3 Trial of Selpercatinib in Advanced RET-Mutant Medullary Thyroid Cancer (LIBRETTO-531)",
+  "authors": "Hadoux J, Elisei R, Brose MS, Hoff AO, et al.",
+  "journal": "N Engl J Med",
+  "date": "2023-11-16",
+  "added": "2026-11-20",
+  "doi": "10.1056/NEJMoa2309719",
+  "pmid": "37870969",
+  "site": "Thyroid",
+  "discipline": [
+    "Systemic therapy"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 5,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "291 patients aged 12 and over at 176 centres in 19 countries (2020 to 2023) with unresectable locally advanced or metastatic medullary thyroid cancer, a pathogenic RET mutation (M918T in 62%), centrally confirmed radiological progression within 14 months, ECOG 0 to 2 and no previous kinase inhibitor."
+    },
+    {
+      "label": "Intervention",
+      "text": "Selpercatinib 160 mg twice daily (n = 193)."
+    },
+    {
+      "label": "Comparator",
+      "text": "Physician's choice of cabozantinib 140 mg daily (73 patients) or vandetanib 300 mg daily (25 patients) (n = 98), with crossover to selpercatinib on progression."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: progression-free survival by blinded independent central review. Key secondary (alpha-controlled): treatment failure-free survival, which also counts stopping for drug toxicity. Other: response, overall survival, safety."
+    }
+  ],
+  "bottom": "First-line selpercatinib roughly quartered the risk of progression compared with cabozantinib or vandetanib in RET-mutant medullary thyroid cancer (HR 0.28, 95% CI 0.16 to 0.48; 12-month progression-free survival 86.8% versus 65.7%), with responses in 69.4% versus 38.8% and far fewer dose reductions and discontinuations. The full paper shows this is an interim analysis at 12 months' follow-up, with an open-label design and immature survival data, and that the benefit over vandetanib alone was less certain. A clear win for a selective inhibitor over multikinase inhibitors in both efficacy and tolerability.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "no"
+    },
+    {
+      "label": "Intention to treat",
+      "answer": "yes"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Arms balanced at baseline",
+      "answer": "yes"
+    },
+    {
+      "label": "Follow-up adequate",
+      "answer": "no"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "no"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Vandetanib and cabozantinib were approved for advanced medullary thyroid cancer on the basis of placebo-controlled trials, but they inhibit RET weakly, cause substantial off-target toxicity and have long half-lives. Selpercatinib, a highly selective RET inhibitor, had shown high response rates in the single-arm LIBRETTO-001 study. LIBRETTO-531 compared it directly with the multikinase inhibitors as first-line treatment."
+    },
+    {
+      "heading": "Who and where",
+      "text": "An international trial at 176 centres, led from Gustave Roussy, Pisa and Massachusetts General Hospital, published in the New England Journal of Medicine. Funded by Loxo Oncology (Eli Lilly), which designed it with the investigators and collected, analysed and interpreted the data with them; writing assistance was sponsor-funded and several authors are company employees. The sponsor did not see aggregate data until the interim analysis. Registered as NCT04211337."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Open-label phase 3 trial with 2:1 randomisation, stratified by RET M918T and intended control drug. From November 2021 the control arm was limited to cabozantinib because vandetanib supply fluctuated. Progression and response were assessed by blinded independent central review. The study assumed an HR of 0.5 and needed 74 events for 80% power at two-sided 0.05; a planned interim analysis at 56 or more events (75% information) required P below 0.003. Treatment failure-free survival was tested only if progression-free survival was positive, with treatment-related discontinuations adjudicated by a blinded committee. Overall survival was descriptive."
+    },
+    {
+      "heading": "Results",
+      "text": "The interim analysis was run at 59 events. Median follow-up 12 months. Median progression-free survival not reached versus 16.8 months; HR 0.28 (95% CI 0.16 to 0.48), P < 0.001; 12-month 86.8% versus 65.7%, 24-month 76.4% versus 37.2%. Treatment failure-free survival HR 0.25 (0.15 to 0.42). Benefit in every subgroup; HR 0.22 against cabozantinib and 0.48 (0.20 to 1.16) against vandetanib. Response 69.4% (11.9% complete) versus 38.8%. Overall survival HR 0.37 (0.15 to 0.95) with only 18 deaths; 24 of 31 eligible controls crossed over. Grade 3 or worse adverse events 52.8% versus 76.3%. Dose reductions 38.9% versus 77.3%; discontinuation for adverse events 4.7% versus 26.8%. Hypertension (42.5%) and dry mouth were the commonest selpercatinib effects."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "The first randomised comparison of a selective RET inhibitor against active standard treatment, in a rare cancer.",
+        "Entry required centrally confirmed progression, and progression was judged by blinded central review.",
+        "The alpha-controlled treatment failure-free survival endpoint captures tolerability as well as efficacy, which matters for long-term oral therapy.",
+        "Large effect, consistent across subgroups and with investigator assessment.",
+        "Sponsor blinded to aggregate data until the interim analysis."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "Open label, with toxicity profiles that make allocation obvious; discontinuations and dose changes may be influenced by knowledge of the drug.",
+        "Interim analysis with short follow-up (12 months) and immature overall survival, confounded by crossover.",
+        "The control arm changed during the trial, and the comparison against vandetanib alone was small and its confidence interval crossed 1.",
+        "Control patients had a longer time since diagnosis and more men, which may reflect different disease biology.",
+        "Germline and somatic RET mutations were not distinguished.",
+        "Sponsor involvement in analysis and writing; quality-of-life data are not in this paper."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That this was an interim analysis triggered at 59 events with a median follow-up of 12 months. That vandetanib was dropped from the control arm partway through because of supply problems, and the benefit against vandetanib alone was not statistically certain. That most control patients needed dose reductions and a quarter stopped for toxicity, which drives the treatment failure-free survival result. That overall survival data are immature. The Kaplan-Meier plot shows that the control arm's progression-free survival beyond 18 months rests on 13 patients and the 24-month estimate on 7, and the overall survival curves overlap for the first 2 years, so the survival hazard ratio is driven by a few late control-arm events. The CONSORT diagram, investigator-assessed outcomes and full adverse event tables are in the supplementary appendix, which was not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "LIBRETTO-531 established selpercatinib as the first-line standard for advanced RET-mutant medullary thyroid cancer and led to full FDA approval in 2024. It made RET testing at diagnosis of advanced medullary cancer routine and moved multikinase inhibitors to later lines. For a UK MDT today it supports early genotyping and referral for selpercatinib when systemic therapy is indicated, while the general rule remains that systemic treatment is for progressive or symptomatic disease."
+    }
+  ],
+  "flag": "Interim analysis with 12 months' median follow-up."
+}

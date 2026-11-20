@@ -1,0 +1,128 @@
+{
+  "id": "orator",
+  "title": "Radiotherapy versus transoral robotic surgery and neck dissection for oropharyngeal squamous cell carcinoma (ORATOR): an open-label, phase 2, randomised trial",
+  "authors": "Nichols AC, Theurer J, Prisman E, Read N, et al.",
+  "journal": "Lancet Oncol",
+  "date": "2019-10-01",
+  "added": "2026-11-20",
+  "doi": "10.1016/S1470-2045(19)30410-3",
+  "pmid": "31416685",
+  "site": "Head and neck",
+  "discipline": [
+    "Surgery",
+    "Radiotherapy and supportive care"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 7,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "68 adults at six centres in Canada and Australia (2012 to 2017) with T1 to T2, N0 to N2 (nodes 4 cm or smaller, no radiological extranodal extension) oropharyngeal squamous-cell carcinoma, ECOG 0 to 2. 88% p16-positive; 74% tonsil, 26% base of tongue."
+    },
+    {
+      "label": "Intervention",
+      "text": "Transoral robotic surgery with 1 cm margins plus selective neck dissection (n = 34), with adjuvant radiotherapy (60 Gy) or chemoradiotherapy (64 Gy) by pathology."
+    },
+    {
+      "label": "Comparator",
+      "text": "Intensity-modulated radiotherapy 70 Gy in 35 fractions (n = 34), with concurrent chemotherapy (preferably 3-weekly cisplatin) if node-positive; salvage surgery for residual disease."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: MD Anderson Dysphagia Inventory (MDADI) total score at 1 year, powered to detect a 10-point advantage for surgery. Secondary: overall and progression-free survival, toxicity, other quality-of-life scales."
+    }
+  ],
+  "bottom": "In the first randomised comparison of primary radiotherapy with transoral robotic surgery for early oropharyngeal cancer, swallowing quality of life at 1 year was slightly better after radiotherapy (MDADI 86.9 versus 80.1, P = 0.042), the opposite of the hypothesis, although the 6.7-point difference was below the 10 points judged clinically meaningful. The full paper shows that 70% of the surgery arm needed adjuvant radiotherapy or chemoradiotherapy, a fifth of each arm had no 1-year score, and the result loses significance after adjustment for p16 status. It is a small phase 2 trial, but it removed the assumption that robotic surgery gives better function and made both options legitimate for shared decision-making.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "no"
+    },
+    {
+      "label": "Intention to treat",
+      "answer": "yes"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Arms balanced at baseline",
+      "answer": "yes"
+    },
+    {
+      "label": "Primary endpoint complete",
+      "answer": "no"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "yes"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Transoral robotic surgery had become the commonest treatment for early oropharyngeal cancer in the United States, rising from 56% to 82% of T1 to T2 cases between 2004 and 2013, on the assumption that it spares patients the long-term swallowing harm of radiotherapy. That assumption rested on non-randomised series with clear selection bias. ORATOR was designed to test it directly."
+    },
+    {
+      "heading": "Who and where",
+      "text": "An investigator-initiated trial from Western University, London, Ontario, with six centres in Canada and Australia, published in The Lancet Oncology. Funded by the Canadian Cancer Society Research Institute, the Ontario Institute for Cancer Research and a surgical research professorship; the funders had no role in design, analysis or writing. One author declares unrelated industry fees. Registered as NCT01590355."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Open-label phase 2 trial with 1:1 permuted-block randomisation (blocks of four) stratified by p16 status, with allocation concealed by a coordinator who held the list. All cases were discussed at a multidisciplinary tumour board before enrolment; staging imaging was not centrally reviewed. The sample of 68 gave 90% power at two-sided alpha 0.05 to detect a 10-point MDADI difference favouring surgery, assuming a standard deviation of 12 and 10% dropout. Missing quality-of-life data were not imputed. Recruitment was paused in 2013 after a bleeding death and the protocol was amended to recommend tracheostomy at surgery. A Haybittle-Peto interim analysis on survival was not triggered."
+    },
+    {
+      "heading": "Results",
+      "text": "Two patients in the radiotherapy arm withdrew before treatment; 23 of the remaining 32 (72%) had concurrent chemotherapy and four (12%) needed salvage surgery. In the surgery arm, 10 (29%) had surgery alone, 16 (47%) adjuvant radiotherapy and 8 (24%) adjuvant chemoradiotherapy; four margins were positive. One-year MDADI was available for 27 radiotherapy and 30 surgery patients: total 86.9 (SD 11.4) versus 80.1 (13.0), difference 6.7 (95% CI 0.2 to 13.2), P = 0.042; P = 0.054 after post hoc adjustment for p16. Clinically meaningful decline occurred in 26% versus 41% (P = 0.25). Median follow-up 27 months; survival did not differ (overall survival HR 0.83, 95% CI 0.21 to 8.35). Radiotherapy caused more hearing loss (38% versus 15%), tinnitus (35% versus 6%) and neutropenia; surgery caused more trismus (26% versus 3%) and pain, and one patient died of bleeding after surgery."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "The first randomised trial of surgery against radiotherapy in this setting, with concealed allocation.",
+        "A patient-centred, validated primary endpoint with a prespecified clinically meaningful difference.",
+        "Modern techniques in both arms (IMRT and robotic surgery) with radiotherapy peer review.",
+        "Academic funding, with no industry role.",
+        "Clear reporting of the different toxicity profiles, including the bleeding risk after surgery."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "Small (68 patients), so the survival results are uninformative and the confidence intervals wide.",
+        "One-year MDADI was missing for 7 of 34 radiotherapy and 4 of 34 surgery patients (21% and 12%), more than the 10% assumed. With about 30 per arm, a handful of patients could change the conclusion.",
+        "The difference is statistically significant but below the clinically meaningful threshold, and significance is lost after adjustment for the stratification factor (P = 0.054).",
+        "Open label, with a patient-reported primary endpoint.",
+        "70% of the surgery arm received adjuvant therapy, so the trial largely compared radiotherapy with trimodality treatment. That reflects real practice at the time but makes it a test of strategy, not of surgery alone.",
+        "Most radiotherapy patients had chemotherapy, and most patients were HPV-positive. Results may not apply to HPV-negative disease or to de-escalated regimens.",
+        "Surgical expertise and case volume at the six centres are not reported, and the protocol changed mid-trial after a bleeding death."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That the hypothesis was that surgery would be better, so the trial found the opposite of what it was powered to show. That the primary comparison rests on 57 patients, and the P value moves above 0.05 when adjusted for p16. That 24 of 34 surgical patients went on to adjuvant radiotherapy, eight with chemotherapy. That the lowest swallowing scores in the radiotherapy arm came from patients who also needed salvage surgery (mean MDADI 68.0). The longitudinal MDADI plots show the largest gap 6 months after treatment, narrowing by 2 to 3 years, when only 8 or 9 surveys per arm remained. The secondary quality-of-life scales and serious adverse events are in the appendix, which was not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "ORATOR ended the claim that transoral robotic surgery should be preferred for function, and supported presenting both surgery and radiotherapy to patients with early oropharyngeal cancer as reasonable choices with different toxicities. It shifted attention to avoiding trimodality treatment, which led to ORATOR2 and to trials of de-escalated adjuvant therapy after surgery such as ECOG 3311. For a UK MDT, the key messages are that most patients selected for surgery should be those unlikely to need adjuvant chemoradiotherapy, and that bleeding risk and hearing loss belong in the consent discussion."
+    }
+  ],
+  "flag": "Phase 2 trial with a quality-of-life primary endpoint; not powered for survival.",
+  "related": [
+    {
+      "label": "Separate later analysis",
+      "title": "Radiotherapy Versus Transoral Robotic Surgery for Oropharyngeal Squamous Cell Carcinoma: Final Results of the ORATOR Randomized Trial",
+      "journal": "J Clin Oncol",
+      "date": "2024-12",
+      "doi": "10.1200/JCO.24.00119",
+      "pmid": "39303189",
+      "note": "The final report, with a median follow-up of 5.1 years, published as a separate paper. Full text not yet read, so it is not appraised here. Summary to follow once the full text is available."
+    }
+  ]
+}

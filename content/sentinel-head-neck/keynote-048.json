@@ -1,0 +1,115 @@
+{
+  "id": "keynote-048",
+  "title": "Pembrolizumab alone or with chemotherapy versus cetuximab with chemotherapy for recurrent or metastatic squamous cell carcinoma of the head and neck (KEYNOTE-048): a randomised, open-label, phase 3 study",
+  "authors": "Burtness B, Harrington KJ, Greil R, Soulières D, et al.",
+  "journal": "Lancet",
+  "date": "2019-11-23",
+  "added": "2026-11-20",
+  "doi": "10.1016/S0140-6736(19)32591-7",
+  "pmid": "31679945",
+  "site": "Head and neck",
+  "discipline": [
+    "Systemic therapy"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 6,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "882 adults at 200 centres in 37 countries (2015 to 2017) with untreated recurrent or metastatic squamous-cell carcinoma of the oral cavity, oropharynx, hypopharynx or larynx not curable by local therapy, ECOG 0 to 1. Patients progressing within 6 months of curative systemic therapy were excluded. 85% had PD-L1 CPS of 1 or more and 43% CPS of 20 or more; 21% were p16-positive oropharyngeal."
+    },
+    {
+      "label": "Intervention",
+      "text": "Pembrolizumab 200 mg every 3 weeks alone (n = 301), or with carboplatin or cisplatin plus 5-fluorouracil for six cycles (n = 281). Pembrolizumab for up to 35 cycles."
+    },
+    {
+      "label": "Comparator",
+      "text": "The EXTREME regimen: cetuximab weekly plus carboplatin or cisplatin and 5-fluorouracil for six cycles, with maintenance cetuximab (n = 300)."
+    },
+    {
+      "label": "Outcome",
+      "text": "Co-primary: overall survival and progression-free survival (blinded central review), tested across 14 hypotheses in the CPS 20 or more, CPS 1 or more and total populations, including non-inferiority for overall survival (margin HR 1.2). Secondary: response, safety, quality of life."
+    }
+  ],
+  "bottom": "Pembrolizumab plus platinum and 5-fluorouracil improved overall survival over the EXTREME regimen in all patients (median 13.0 versus 10.7 months; HR 0.77, 95% CI 0.63 to 0.93), and pembrolizumab alone improved it in CPS 1 or more (HR 0.78) and CPS 20 or more (HR 0.61) with far less severe toxicity. The full paper shows that neither regimen improved progression-free survival or response rate, that pembrolizumab alone did worse than chemotherapy for the first 7 months or so, and that the trial was not designed to compare the two pembrolizumab regimens. It is a robust, practice-defining trial, with the choice between mono- and combination therapy left to PD-L1 score, disease burden and judgement.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "no"
+    },
+    {
+      "label": "Intention to treat",
+      "answer": "yes"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Arms balanced at baseline",
+      "answer": "yes"
+    },
+    {
+      "label": "Hard primary endpoint",
+      "answer": "yes"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "no"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Since 2008 the first-line standard for recurrent or metastatic head and neck cancer had been EXTREME (cetuximab, platinum and 5-fluorouracil), with a median survival of about 10 months and substantial toxicity. CheckMate 141 and KEYNOTE-040 had shown that PD-1 blockade prolongs survival after platinum failure, and PD-L1 expression predicted response. This trial asked whether pembrolizumab, alone or with chemotherapy, could replace cetuximab in the first-line setting."
+    },
+    {
+      "heading": "Who and where",
+      "text": "An international collaboration across 200 centres in 37 countries, published in The Lancet. Funded by Merck Sharp & Dohme, which took part in design, data collection, analysis, interpretation and writing; the statisticians and several authors were company employees. Most academic authors declare fees from the sponsor. Registered as NCT02358031."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Open-label phase 3 trial, 1:1:1 randomisation stratified by tumour PD-L1 (50% or more), p16 status and ECOG. PD-L1 CPS was measured centrally and masked from investigators and the sponsor. Progression and response were assessed by blinded central review. Overall survival was a secondary endpoint in the original protocol and was promoted to co-primary before any analysis. Fourteen primary hypotheses were controlled for type 1 error with a graphical method at one-sided alpha 0.025, across two interim analyses and a final analysis. Allocation to the combination arm was paused briefly after three early deaths, and control patients randomised during the pause were excluded from the combination comparison. Overall survival was powered on an assumed control median of 10 months."
+    },
+    {
+      "heading": "Results",
+      "text": "Median follow-up was 10.7 to 13.0 months. Control median survival was 10.7 months, as assumed. Pembrolizumab alone versus EXTREME: CPS 20 or more, median 14.9 versus 10.7 months, HR 0.61 (0.45 to 0.83); CPS 1 or more, 12.3 versus 10.3, HR 0.78 (0.64 to 0.96); total population non-inferior, HR 0.85 (0.71 to 1.03), and not superior at final analysis (HR 0.83, P = 0.0199 against the required boundary). Pembrolizumab with chemotherapy versus EXTREME: total, 13.0 versus 10.7 months, HR 0.77 (0.63 to 0.93); CPS 20 or more HR 0.60; CPS 1 or more HR 0.65. Progression-free survival was not improved by either regimen (pembrolizumab alone total population HR 1.34). Response rates: 17% pembrolizumab alone, 36% with chemotherapy, 36% EXTREME, with median response duration of 22.6, 6.7 and 4.5 months. Grade 3 or worse adverse events 55%, 85% and 83%. Subsequent PD-1 or PD-L1 therapy was given to 25% of the EXTREME arm."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "Large, international and randomised against the accepted standard of care, with a control arm that performed exactly as expected.",
+        "Overall survival as a primary endpoint, with blinded central review for progression and masking of PD-L1 results.",
+        "Rigorous multiplicity control across 14 hypotheses.",
+        "Biomarker-defined populations prespecified before analysis.",
+        "Clear safety advantage for pembrolizumab alone, including fewer treatment-related deaths."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "Open label. More patients in the EXTREME arm did not receive their allocated treatment.",
+        "Not powered to compare pembrolizumab alone with pembrolizumab plus chemotherapy, which is the choice clinicians face.",
+        "Non-proportional hazards. The Kaplan-Meier curves show pembrolizumab alone below EXTREME for roughly the first 8 to 10 months in the total population before they cross, so some patients do worse early with monotherapy.",
+        "Benefit in the total population for monotherapy rests on CPS 1 or more; the CPS below 1 subgroup is small and its results sit in the appendix.",
+        "Only a quarter of EXTREME patients received a later PD-1 or PD-L1 inhibitor, and access varied by country. Survival for the control arm may be lower than with modern sequencing.",
+        "Sponsor involvement throughout design, analysis and writing, with company statisticians.",
+        "Changing a secondary endpoint to primary, though done before analysis, needs noting. Quality of life results were not in this paper."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That overall survival began as a secondary endpoint. That pembrolizumab alone had worse progression-free survival (HR 1.34 in the total population) and half the response rate of EXTREME, and the curves cross, so its survival benefit comes from durable responses in a minority. That 41% to 53% of patients went on to further therapy, but only 25% of the control arm received a later immune checkpoint inhibitor. That the trial cannot tell you whether to add chemotherapy to pembrolizumab. The CONSORT detail for the PD-L1 populations, subgroup forest plots, the CPS below 1 results and the full protocol are in the appendix, which was not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "KEYNOTE-048 replaced EXTREME as the first-line standard for recurrent or metastatic head and neck cancer, and PD-L1 CPS testing became routine for these patients. In the UK, NICE approved pembrolizumab monotherapy first line for CPS 1 or more; the combination is licensed but its NHS availability has been more limited. It also moved immunotherapy earlier in the pathway, which led to the perioperative trials such as KEYNOTE-689. For an MDT today, CPS and symptom burden guide the choice between monotherapy and combination."
+    }
+  ]
+}

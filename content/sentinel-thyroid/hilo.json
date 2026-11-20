@@ -1,0 +1,126 @@
+{
+  "id": "hilo",
+  "title": "Ablation with Low-Dose Radioiodine and Thyrotropin Alfa in Thyroid Cancer (HiLo)",
+  "authors": "Mallick U, Harmer C, Yap B, Wadsley J, et al.",
+  "journal": "N Engl J Med",
+  "date": "2012-05-03",
+  "added": "2026-11-20",
+  "doi": "10.1056/NEJMoa1109589",
+  "pmid": "22551128",
+  "site": "Thyroid",
+  "discipline": [
+    "Radiotherapy and supportive care"
+  ],
+  "type": "RCT",
+  "depth": "full",
+  "reviewed": false,
+  "order": 2,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "438 patients aged 16 to 80 at 29 UK centres (2007 to 2010) after total thyroidectomy for differentiated thyroid cancer, T1 to T3, N0, Nx or N1, M0, with no residual disease and no aggressive histological variants. 23% T3; 16% node-positive."
+    },
+    {
+      "label": "Intervention",
+      "text": "Low-dose radioiodine 1.1 GBq, and recombinant human TSH (thyrotropin alfa, 0.9 mg on 2 days) for preparation, in a 2 by 2 factorial design."
+    },
+    {
+      "label": "Comparator",
+      "text": "High-dose radioiodine 3.7 GBq, and preparation by thyroid hormone withdrawal."
+    },
+    {
+      "label": "Outcome",
+      "text": "Primary: ablation success at 6 to 9 months (neck uptake below 0.1% on diagnostic scan and stimulated thyroglobulin below 2.0 ng/ml). Non-inferiority margin 10 percentage points. Secondary: hospital stay, adverse events, quality of life, recurrence."
+    }
+  ],
+  "bottom": "Low-dose radioiodine (1.1 GBq) achieved ablation in 85.0% against 88.9% with 3.7 GBq, and thyrotropin alfa matched hormone withdrawal (87.1% versus 86.7%), both within a 10-point non-inferiority margin, with shorter isolation, fewer adverse events and better quality of life before ablation. The full paper shows that the endpoint is ablation of the remnant, not recurrence, and that twice as many low-dose patients were given a second dose (9.5% versus 4.1%). Practice-changing for low- and intermediate-risk disease, with recurrence data provided later by the long-term follow-up.",
+  "checks": [
+    {
+      "label": "Randomised",
+      "answer": "yes"
+    },
+    {
+      "label": "Blinded",
+      "answer": "no"
+    },
+    {
+      "label": "Intention to treat",
+      "answer": "yes"
+    },
+    {
+      "label": "Power calculation",
+      "answer": "yes"
+    },
+    {
+      "label": "Arms balanced at baseline",
+      "answer": "yes"
+    },
+    {
+      "label": "Hard primary endpoint",
+      "answer": "no"
+    },
+    {
+      "label": "Independent of manufacturer",
+      "answer": "yes"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Most patients with differentiated thyroid cancer had radioiodine ablation after surgery, with UK guidance in 2007 recommending 3.7 GBq after thyroid hormone withdrawal. A lower dose would mean less time in isolation, fewer side effects and lower lifetime radiation exposure, and recombinant TSH would spare patients weeks of hypothyroidism. Earlier randomised and observational evidence was small and inconclusive. HiLo tested both questions at once."
+    },
+    {
+      "heading": "Who and where",
+      "text": "A UK National Cancer Research Network trial at 29 centres, led from Newcastle and run by the Cancer Research UK and UCL Cancer Trials Centre, published in the New England Journal of Medicine alongside the French ESTIMABL trial. Funded by Cancer Research UK. Genzyme supplied thyrotropin alfa from 2009 but had no other role. Registered as NCT00415233."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Open-label, non-inferiority, 2 by 2 factorial trial with central randomisation stratified by centre, T stage and N stage. Remnant size was assessed with technetium-99m to avoid stunning. Ablation success needed both a negative diagnostic scan and stimulated thyroglobulin below 2.0 ng/ml, or one of these when the other was unavailable; thyroglobulin antibody interference was handled with a second assay. Assuming 80% success with the standard arm and a 10-point margin, 421 evaluable patients gave 82% power at one-sided P 0.05. Four comparisons were reported, including low dose plus thyrotropin alfa against each high-dose arm."
+    },
+    {
+      "heading": "Results",
+      "text": "421 of 438 were evaluable. Ablation success: low dose 182 of 214 (85.0%) versus high dose 184 of 207 (88.9%), difference -3.8 points (95% CI -10.2 to 2.6); thyrotropin alfa 87.1% versus withdrawal 86.7%, difference 0.4 (-6.0 to 6.8). Low dose plus thyrotropin alfa 84.3% versus high dose plus withdrawal 87.6%. No interaction between dose and preparation, or between dose and T or N stage. Three or more days in isolation 13.0% versus 36.3%. Adverse events during ablation 21% versus 33% (low versus high dose). Withdrawal patients had more symptoms and more difficulty with work and childcare before ablation. A second radioiodine dose was given to 21 (9.5%) low-dose and 9 (4.1%) high-dose patients. Six recurrences at a median of 13 months."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "Large, multicentre and academically funded, run in routine NHS practice.",
+        "Factorial design answered two clinical questions efficiently, with no interaction found.",
+        "A prespecified non-inferiority margin agreed by independent peer reviewers.",
+        "Careful handling of thyroglobulin antibody interference and stunning, and central histology review.",
+        "Results matched those of the independent ESTIMABL trial published at the same time."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "The primary endpoint is remnant ablation, a surrogate. Whether ablation success predicts recurrence or survival was not answered by this paper.",
+        "The 10-point margin is generous. The lower confidence limit for dose (-10.2) touches it, and in a sensitivity analysis excluding T3 and T2N1 disease the difference was -6.2 points.",
+        "Twice as many low-dose patients had a second dose, often at more than 4 GBq, so cumulative radiation savings are smaller than the headline suggests.",
+        "Open label, and second doses were given at clinicians' discretion.",
+        "Thyroglobulin assays varied between centres and one criterion was used alone for 94 patients.",
+        "Follow-up for recurrence was very short (median 13 months)."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That the endpoint is remnant ablation, not cancer control. That 9.5% of low-dose patients were given a second, usually higher, dose. That removing T3 and T2N1 patients widened the gap to -6.2 points. That the thyrotropin alfa supplier came on board partway through. The participant flow, adverse event tables, quality-of-life scores and subgroup analyses by T and N stage are in the supplementary appendix, which was not read."
+    },
+    {
+      "heading": "How it changed practice",
+      "text": "HiLo and ESTIMABL made 1.1 GBq with recombinant TSH the standard for low- and intermediate-risk differentiated thyroid cancer in the UK and Europe, and are reflected in BTA and ATA guidance. They shortened isolation and avoided hormone withdrawal for most patients. They also set up the next question, whether ablation is needed at all, which ESTIMABL2 and IoN answered. The long-term HiLo recurrence data are in a separate paper, shown below."
+    }
+  ],
+  "flag": "Published 2012, included by agreement as the foundation of later radioiodine de-escalation trials.",
+  "related": [
+    {
+      "label": "Separate later analysis",
+      "title": "Recurrence after low-dose radioiodine ablation and recombinant human thyroid-stimulating hormone for differentiated thyroid cancer (HiLo): long-term results of an open-label, non-inferiority randomised controlled trial",
+      "journal": "Lancet Diabetes Endocrinol",
+      "date": "2019-01",
+      "doi": "10.1016/S2213-8587(18)30306-1",
+      "pmid": "30501974",
+      "note": "Long-term recurrence results of the same trial, published separately. Full text is available on PubMed Central and will be summarised here once read."
+    }
+  ]
+}

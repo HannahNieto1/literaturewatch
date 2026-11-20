@@ -1,0 +1,112 @@
+{
+  "id": "pdtc-staging",
+  "title": "Global Proposal for the TNM Staging System for Poorly Differentiated Thyroid Cancer",
+  "authors": "Shi X, Liu Q, Scholfield D, Li D, et al.",
+  "journal": "JAMA Oncol",
+  "date": "2026-11-06",
+  "added": "2026-11-16",
+  "doi": "10.1001/jamaoncol.2026.4705",
+  "pmid": "42994809",
+  "site": "Thyroid",
+  "discipline": [
+    "Staging and prognosis"
+  ],
+  "type": "Cohort",
+  "depth": "full",
+  "reviewed": false,
+  "order": 3,
+  "pico": [
+    {
+      "label": "Population",
+      "text": "1,010 consecutive patients with poorly differentiated thyroid cancer (Turin criteria) who had initial surgery at 91 centres in 14 countries, 1984 to 2026. 21.7% had distant metastases at presentation. Median follow-up 41 months, 341 deaths. 49% came from 68 Chinese centres. External cohort: 170 SEER patients diagnosed 2004 to 2015."
+    },
+    {
+      "label": "Index system",
+      "text": "A staging system specific to this cancer. The 55-year age cut-off is removed, level VII nodes become N1c, M1 disease is stage IVB, and stages I to IVA were chosen from 16,738 candidate groupings."
+    },
+    {
+      "label": "Comparator",
+      "text": "AJCC/UICC TNM 8th edition for differentiated thyroid cancer."
+    },
+    {
+      "label": "Outcome",
+      "text": "Overall survival from surgery, reported at 5 years. Discrimination judged by adjusted hazard ratios and the C statistic."
+    }
+  ],
+  "bottom": "Dropping the age-55 rule and upgrading level VII nodes moves 36.6% of patients to a different stage, mostly upward (stage I falls from 44.4% to 24.6%). Five-year survival then steps down in order from 89.2% to 38.2%. The gain in discrimination is small (C statistic 0.74 versus 0.71) and was not statistically confirmed in a 170-patient external cohort. The case against the age cut-off is the most convincing part.",
+  "checks": [
+    {
+      "label": "Large multinational cohort",
+      "answer": "yes"
+    },
+    {
+      "label": "Prospective data",
+      "answer": "no"
+    },
+    {
+      "label": "External validation done",
+      "answer": "yes"
+    },
+    {
+      "label": "Validation confirmed gain",
+      "answer": "no"
+    },
+    {
+      "label": "Adjusted for treatment",
+      "answer": "no"
+    },
+    {
+      "label": "Disease-specific endpoint",
+      "answer": "no"
+    }
+  ],
+  "appraisal": [
+    {
+      "heading": "The question",
+      "text": "Poorly differentiated thyroid cancer causes most deaths from non-anaplastic thyroid cancer but has no staging system of its own. AJCC gives no specific guidance and UICC applies the differentiated thyroid cancer rules, including the age-55 cut-off that makes any patient under 55 stage I or II. The authors ask whether those rules fit this disease."
+    },
+    {
+      "heading": "Who and where",
+      "text": "The International Aggressive Thyroid Cancer Collaborative Group, led from Fudan University Shanghai Cancer Center, Memorial Sloan Kettering and Royal North Shore. Published open access in JAMA Oncology, and written explicitly to inform the 9th version of AJCC staging."
+    },
+    {
+      "heading": "Design and methods",
+      "text": "Retrospective cohort of consecutive surgical patients, reported to STROBE. The authors first tested two inherited rules: whether N0 and NX can be merged, and whether age 55 separates outcomes in M1 disease. They then fitted every T and modified N grouping in 791 M0 patients (201 deaths) in adjusted Cox models and chose the one with the lowest Akaike information criterion. Validation used SEER cases coded as insular carcinoma. Sensitivity analyses excluded each large centre, each large continent and China, and split by era of diagnosis. Adjuvant treatment was not included in the adjustment."
+    },
+    {
+      "heading": "Results",
+      "text": "Among patients with distant metastases, survival did not differ either side of age 55, so the cut-off was dropped. Level VII nodal disease carried a 5-year overall survival of 45.2%, against 73.2% for level VI and 56.7% for lateral neck disease. Of 70 patients with level VII nodes, 92.9% had T3 or T4 tumours, 40.0% had distant metastases and 22.9% had an R2 resection. Under TNM-8, 5-year survival was 85.1%, 66.6%, 58.0%, 38.5% and 36.7% for stages I, II, III, IVA and IVB. Under the proposed system it was 89.2%, 78.8%, 68.3%, 53.8% and 38.2%. C statistic 0.74 versus 0.71 (difference 0.03, 95% CI 0.01 to 0.04). In SEER, 0.76 versus 0.74 (difference 0.02, 95% CI -0.01 to 0.06)."
+    },
+    {
+      "heading": "Strengths",
+      "points": [
+        "A large cohort for a tumour that makes up 1% to 3% of thyroid cancers, with 341 deaths.",
+        "The age cut-off was tested directly before being discarded.",
+        "Stage migration is reported in full, so the consequence for patients is visible.",
+        "Results held when any large centre, China or either large continent was removed, and across eras of diagnosis.",
+        "External validation was attempted and reported with confidence intervals."
+      ]
+    },
+    {
+      "heading": "Weaknesses and bias",
+      "points": [
+        "The improvement in discrimination is small, and the external validation interval includes zero.",
+        "The SEER cohort has 170 patients, with 13 to 37 in several stages, identified by a single histology code with no pathology review.",
+        "Level VII disease travels with advanced T stage, distant metastasis and incomplete resection. The headline survival comparison by nodal site is unadjusted, so level VII may be a marker of disease burden more than an independent factor.",
+        "Half the cohort comes from Chinese centres with a median follow-up of 27.5 months. Overall median follow-up is 41 months, which is short for staging.",
+        "Overall survival in patients with a median age of 58 includes deaths from other causes.",
+        "Adjuvant radioiodine, external beam radiotherapy and systemic therapy varied widely and were left out of the models.",
+        "The definition of this cancer changed over the 42-year period. Pathological verification is described only in the supplement.",
+        "No molecular data, and the system is untested in high-grade differentiated thyroid carcinoma."
+      ]
+    },
+    {
+      "heading": "What the abstract does not tell you",
+      "text": "That the age-55 cut-off was removed, which is the main driver of up-staging. That 40% of patients with level VII nodes already had distant metastases. That staging was derived in 791 M0 patients. That more than a third of patients change stage. That the SEER cohort was defined by the insular carcinoma code alone. That treatment was not adjusted for. The SEER validation curves rest on small numbers (13 patients in proposed stage IVA, 22 in stage III), and stage III and IVA cross each other, so separation of the upper stages in the external cohort is not convincing. The supplement, which holds the pathology verification methods, the age analysis and the adjusted hazard ratios, was not available for this appraisal."
+    },
+    {
+      "heading": "Will it change practice?",
+      "text": "Not directly, since it is a submission to AJCC. One message applies now. A patient under 55 with poorly differentiated carcinoma is stage I or II under TNM-8 whatever the nodal or metastatic status, and these data show that label is falsely reassuring. MDTs should not use differentiated thyroid cancer stage to judge risk in this disease."
+    }
+  ]
+}
