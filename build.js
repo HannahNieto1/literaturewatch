@@ -7,6 +7,12 @@ const root = __dirname;
 const out = path.join(root, 'dist');
 const tabs = ['latest', 'sentinel-head-neck', 'sentinel-thyroid'];
 
+// Netlify sets CONTEXT: 'production' for the live site, 'deploy-preview' for draft previews.
+// On the live site the main Literature Watch tab only shows clinician-reviewed papers.
+// Previews show everything, so reviewers can see a draft card before it goes live.
+const isLive = (process.env.CONTEXT || 'production') === 'production';
+const reviewedOnly = ['latest'];
+
 function toPage(p) {
   const pico = {};
   (p.pico || []).forEach(x => { pico[x.label] = x.text || ''; });
@@ -33,6 +39,7 @@ function loadTab(tab) {
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir).filter(f => f.endsWith('.json'))
     .map(f => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')))
+    .filter(p => !(isLive && reviewedOnly.includes(tab) && !p.reviewed))
     .sort((a, b) => (a.order || 9999) - (b.order || 9999) || String(b.date).localeCompare(String(a.date)))
     .map(toPage);
 }
@@ -42,8 +49,12 @@ let html = fs.readFileSync(path.join(root, 'src', 'template.html'), 'utf8');
 tabs.forEach(t => { html = html.replace(`/*DATA:${t}*/`, safe(loadTab(t))); });
 html = html.replace('/*DATA:trials*/', safe(JSON.parse(fs.readFileSync(path.join(root, 'content', 'trials.json'), 'utf8'))));
 if (html.includes('/*DATA:')) throw new Error('A data placeholder was not filled');
+html = html.replace("'No papers appraised yet'", "'New papers appear here once they have been clinician reviewed.'");
+if (!isLive) {
+  html = html.replace(/<body([^>]*)>/, '<body$1><div style="background:#fff3cd;color:#664d03;padding:8px 14px;font:14px system-ui;text-align:center">Preview only: includes cards awaiting clinician review. Not the live site.</div>');
+}
 
 fs.mkdirSync(path.join(out, 'admin'), { recursive: true });
 fs.writeFileSync(path.join(out, 'index.html'), html);
 ['index.html', 'config.yml'].forEach(f => fs.copyFileSync(path.join(root, 'admin', f), path.join(out, 'admin', f)));
-console.log('Built dist/index.html with', tabs.map(t => `${t}: ${loadTab(t).length}`).join(', '));
+console.log((isLive ? 'LIVE' : 'PREVIEW') + ' build:', tabs.map(t => `${t}: ${loadTab(t).length}`).join(', '));
