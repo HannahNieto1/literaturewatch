@@ -50,6 +50,10 @@ tabs.forEach(t => { html = html.replace(`/*DATA:${t}*/`, safe(loadTab(t))); });
 html = html.replace('/*DATA:trials*/', safe(JSON.parse(fs.readFileSync(path.join(root, 'content', 'trials.json'), 'utf8'))));
 if (html.includes('/*DATA:')) throw new Error('A data placeholder was not filled');
 html = html.replace("'No papers appraised yet'", "'New papers appear here once they have been clinician reviewed.'");
+// "Also on the radar" lists stay in draft previews for reviewers but are left off the live site.
+if (isLive) {
+  html = html.replace(/\s*<section class="radar"[\s\S]*?<\/section>/g, '');
+}
 if (!isLive) {
   html = html.replace(/<body([^>]*)>/, '<body$1><div style="background:#fff3cd;color:#664d03;padding:8px 14px;font:14px system-ui;text-align:center">Preview only: includes cards awaiting clinician review. Not the live site.</div>');
 }
