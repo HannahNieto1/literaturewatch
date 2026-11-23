@@ -1,5 +1,6 @@
 {
   "id": "pdtc-staging",
+  "order": 3,
   "title": "Global Proposal for the TNM Staging System for Poorly Differentiated Thyroid Cancer",
   "authors": "Shi X, Liu Q, Scholfield D, Li D, et al.",
   "journal": "JAMA Oncol",
@@ -13,8 +14,7 @@
   ],
   "type": "Cohort",
   "depth": "full",
-  "reviewed": false,
-  "order": 3,
+  "reviewed": true,
   "pico": [
     {
       "label": "Population",
@@ -102,11 +102,11 @@
     },
     {
       "heading": "What the abstract does not tell you",
-      "text": "That the age-55 cut-off was removed, which is the main driver of up-staging. That 40% of patients with level VII nodes already had distant metastases. That staging was derived in 791 M0 patients. That more than a third of patients change stage. That the SEER cohort was defined by the insular carcinoma code alone. That treatment was not adjusted for. The SEER validation curves rest on small numbers (13 patients in proposed stage IVA, 22 in stage III), and stage III and IVA cross each other, so separation of the upper stages in the external cohort is not convincing. The supplement, which holds the pathology verification methods, the age analysis and the adjusted hazard ratios, was not available for this appraisal."
+      "text": "That the age-55 cut-off was removed, which is the main driver of up-staging. That 40% of patients with level VII nodes already had distant metastases. That staging was derived in 791 M0 patients. That more than a third of patients change stage. That treatment was not adjusted for. The SEER validation curves rest on small numbers (13 patients in proposed stage IVA, 22 in stage III), and stage III and IVA cross each other, so separation of the upper stages in the external cohort is not convincing. How this new grading system will line up with high grade differentiated carcinoma is not answered. "
     },
     {
       "heading": "Will it change practice?",
-      "text": "Not directly, since it is a submission to AJCC. One message applies now. A patient under 55 with poorly differentiated carcinoma is stage I or II under TNM-8 whatever the nodal or metastatic status, and these data show that label is falsely reassuring. MDTs should not use differentiated thyroid cancer stage to judge risk in this disease."
+      "text": "Not directly, since it is a submission to AJCC. One message applies now. A patient under 55 years old with poorly differentiated carcinoma is stage I or II under TNM-8 whatever the nodal or metastatic status, and these data show that label is falsely reassuring. MDTs should not use differentiated thyroid cancer stage to judge risk in this disease."
     }
   ]
 }
